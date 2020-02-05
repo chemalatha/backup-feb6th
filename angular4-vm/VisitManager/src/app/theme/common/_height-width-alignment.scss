@@ -1,0 +1,152 @@
+$cnt_height: (
+	('example', 2em, 2em, 2.5em, 2.5em,2.5em),
+	('LoginView-loginFormBox-height', 100%, 100%, 100%, 100%, 100%),
+	('termsandconditionView-footer-height', 4.375rem,3.375rem, 4.375rem, 3.975rem, 3.975rem),
+	('settingsView-row-height', 4.688rem, 4.688rem,4.688rem, 4.688rem, 4.688rem),
+	('visitlistView-row-Height', 6.719rem, 6.719rem,5.156rem, 5.156rem,5.156rem),
+	('welcomeView-footer-set-height', 4.375rem, 4.375rem,5.156em, 5.156rem,5.156rem),
+	('forgotpasswordView-set-height',85%, 85%,85%,85%,85%),
+	('visitView-footer-height',4.375rem, 4.375rem,4.375rem,4.375rem,4.375rem),
+	('visitview-title-city-name-set-height',3.250rem, 4.250rem,4.250rem,4.250rem,4.250rem),
+	('sessionDownloadsView-image-body-height',8.188rem, 8.188rem,10.313rem,10.313rem,4.250rem),
+	('sessionDownloadsView-image-footer-height',2.813rem, 2.813rem,2.813rem,2.813rem,4.250rem),
+	('sessionDetails-tab-height',2.750rem, 2.750rem,3.188rem,3.188rem,4.250rem),
+	('checkInView-footer-height', 4.375rem,3.375rem, 4.375rem, 3.975rem, 100%),
+	('welcomeView-image-height', 4.375rem, 4.375rem, 7.063rem, 7.063rem,7.063rem),
+	('welcomeImages-image-height', 10.688rem, 10.688rem, 11.063rem, 11.063rem,11.063rem),
+	('dietarySettingsView-radio-btn-set-height', 1.250rem, 1.250rem, 1.250rem, 1.250rem,1.250rem),
+	('dietarySettingsView-textarea-set-height', 5.625rem, 5.625rem, 8rem, 8rem,8rem),
+	('height-p120-t200',3.75rem,3.75rem,6.250rem,6.250rem,6.250rem),
+	('height-p120-t180',3.75rem,3.75rem,5.625rem,5.625rem,5.625rem),
+	('height-p280-t570',8.75rem,8.75rem,17.813rem,17.813rem,17.813rem),
+	('safetyOverviewPopup-height', 34.8rem, 26.7rem, 57.1rem, 38rem, 57.1rem),
+	('height-p60-t60',1.875rem,1.875rem,1.875rem,1.875rem,1.875rem),
+	('height-p340-t365',10.625rem,10.625rem,11.406rem,11.406rem,11.406rem),
+	('height-p275-t365',8.594rem,8.594rem,11.406rem,11.406rem,11.406rem)
+);
+$cnt_width: (
+	('example', 2em, 2em, 2.5em, 2.5em,2.5em),
+	('welcomeView-image-Width', 4.375rem, 4.375rem, 7.063rem, 7.063rem,7.063rem),
+	('dietarySettingsView-radio-btn-set-width', 1.250rem, 1.250rem, 1.250rem, 1.250rem,1.250rem),
+	('width-p120-t180',3.75rem,3.75rem,5.625rem,5.625rem,5.625rem),
+	('width-p60-t60',1.875rem,1.875rem,1.875rem,1.875rem,1.875rem)
+);
+
+
+
+/*** media query as per bootstrap 4 ***/
+
+//Set Height for the devices
+@mixin set-Height($label-height) {
+	// Extra small devices (portrait phones, less than 576px)
+	// No media query since this is the default in Bootstrap
+
+	// Extra small devices (portrait phones, less than 576px)
+		@media (max-width: 575px) { 
+		 @each $height in $cnt_height {
+	      $label: nth($height, 1); // in SASS, list indices begin at 1
+	      @if ($label==$label-height) {
+	        height: nth($height, 2) !important;
+	      }
+	    }
+	 }
+
+	// Small devices (landscape phones, 576px and up)
+	@media (min-width: 576px) and (max-width: 767px) { 
+		@each $height in $cnt_height {
+	      $label: nth($height, 1); // in SASS, list indices begin at 1
+	      @if ($label==$label-height) {
+	        height: nth($height, 3) !important;
+	      }
+	    }
+
+	 }
+
+	// Medium devices (tablets, 768px and up)
+	@media (min-width: 768px) and (max-width: 991px) { 
+		@each $height in $cnt_height {
+	      $label: nth($height, 1); // in SASS, list indices begin at 1
+	      @if ($label==$label-height) {
+	        height: nth($height, 4) !important;
+	      }
+	    }
+	 }
+
+	// Large devices (desktops, 992px and up)
+	@media (min-width: 992px) and (max-width: 1199px){
+		@each $height in $cnt_height {
+	      $label: nth($height, 1); // in SASS, list indices begin at 1
+	      @if ($label==$label-height) {
+	        height: nth($height, 5) !important;
+	      }
+	    }
+	}
+	// Extra large devices (large desktops, 1200px and up)
+	@media (min-width: 1200px){
+		@each $height in $cnt_height {
+	      $label: nth($height, 1); // in SASS, list indices begin at 1
+	      @if ($label==$label-height) {
+	        height: nth($height, 6) !important;
+	      }
+	    }
+	}
+}
+
+/*** media query as per bootstrap 4 ***/
+
+//Set Width for the devices
+@mixin set-Width($label-width) {
+	// Extra small devices (portrait phones, less than 576px)
+	// No media query since this is the default in Bootstrap
+
+	// Extra small devices (portrait phones, less than 576px)
+		@media (max-width: 575px) { 
+		 @each $width in $cnt_width {
+	      $label: nth($width, 1); // in SASS, list indices begin at 1
+	      @if ($label==$label-width) {
+	        width: nth($width, 2) !important;
+	      }
+	    }
+	 }
+
+	// Small devices (landscape phones, 576px and up)
+	@media (min-width: 576px) and (max-width: 767px) { 
+		@each $width in $cnt_width {
+	      $label: nth($width, 1); // in SASS, list indices begin at 1
+	      @if ($label==$label-width) {
+	        width: nth($width, 3) !important;
+	      }
+	    }
+
+	 }
+
+	// Medium devices (tablets, 768px and up)
+	@media (min-width: 768px) and (max-width: 991px) { 
+		@each $width in $cnt_width {
+	      $label: nth($width, 1); // in SASS, list indices begin at 1
+	      @if ($label==$label-width) {
+	        width: nth($width, 4) !important;
+	      }
+	    }
+	 }
+
+	// Large devices (desktops, 992px and up)
+	@media (min-width: 992px) and (max-width: 1199px){
+		@each $width in $cnt_width {
+	      $label: nth($width, 1); // in SASS, list indices begin at 1
+	      @if ($label==$label-width) {
+	        width: nth($width, 5) !important;
+	      }
+	    }
+	}
+	// Extra large devices (large desktops, 1200px and up)
+	@media (min-width: 1200px){
+		@each $width in $cnt_width {
+	      $label: nth($width, 1); // in SASS, list indices begin at 1
+	      @if ($label==$label-width) {
+	        width: nth($width, 6) !important;
+	      }
+	    }
+	}
+}
+

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="com.aes.security" version="0.2.11">
+    <name>AESPlugin</name>
+    <description>The Secure Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,aes</keywords>
+    <repo></repo>
+    <issue></issue>
+    <js-module src="www/AESPlugin.js" name="AESPlugin">
+        <clobbers target="AESPlugin" />
+    </js-module>
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="AESPlugin">
+                <param name="android-package" value="com.aes.security.AESPlugin" />
+            </feature>
+        </config-file>
+        <source-file src="src/android/AESPlugin.java" target-dir="src/com/aes/security" />
+        <source-file src="src/android/AESFileDecryption.java" target-dir="src/com/aes/security" />
+        <source-file src="src/android/AESFileEncryption.java" target-dir="src/com/aes/security" />
+        <source-file src="src/android/AESCheckUserCredentialsExist.java" target-dir="src/com/aes/security" />
+        <source-file src="src/android/AESClearEncryptedData.java" target-dir="src/com/aes/security" />
+    </platform>
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="AESPlugin">
+                <param name="ios-package" value="AESPlugin" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+        <header-file src="src/ios/AESPlugin.h" />
+        <source-file src="src/ios/AESPlugin.m" />
+        <header-file src="src/ios/AccessToken.h" />
+        <source-file src="src/ios/AccessToken.m" />
+        <header-file src="src/ios/RNCryptor/RNCryptor.h" />
+        <source-file src="src/ios/RNCryptor/RNCryptor.m" />
+        <header-file src="src/ios/RNCryptor/RNCryptor+Private.h" />
+        <header-file src="src/ios/RNCryptor/RNCryptor+Swift.h" />
+        <header-file src="src/ios/RNCryptor/RNCryptorEngine.h" />
+        <source-file src="src/ios/RNCryptor/RNCryptorEngine.m" />
+        <header-file src="src/ios/RNCryptor/RNEncryptor.h" />
+        <source-file src="src/ios/RNCryptor/RNEncryptor.m" />
+        <header-file src="src/ios/RNCryptor/RNDecryptor.h" />
+        <source-file src="src/ios/RNCryptor/RNDecryptor.m" />
+        <header-file src="src/ios/SSKeychain/SSKeychain.h" />
+        <source-file src="src/ios/SSKeychain/SSKeychain.m" />
+        <header-file src="src/ios/SSKeychain/SSKeychainQuery.h" />
+        <source-file src="src/ios/SSKeychain/SSKeychainQuery.m" />
+        <resource-file src="src/ios/SSKeychain/en.lproj/SSKeychain.strings" />
+        <resource-file src="src/ios/myToken.archive" />
+        <framework src="Security.framework" />
+        <!-- <header-file src="src/ios/UIImage+CropScaleOrientation.h" />
+         <source-file src="src/ios/UIImage+CropScaleOrientation.m" /> -->
+        <!-- <framework src="CoreGraphics.framework" /> -->
+    </platform>
+</plugin>

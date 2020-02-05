@@ -1,0 +1,17 @@
+{
+  "items": [
+    {
+      "id": "photoAlbum",
+      "Title": localeString.photoGallery,
+      "ActionId": "photoAlbum"
+    },
+    {
+      "id": "visitSummary",
+      "Title": localeString.contentTitle,
+      "ActionId": "visitSummary"
+    }
+
+  ],
+  "ResponseStatus": "Success",
+  "ResponseMessage": ""
+}

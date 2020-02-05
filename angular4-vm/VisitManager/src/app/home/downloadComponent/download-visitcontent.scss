@@ -1,0 +1,64 @@
+@import "../../theme/theme.scss";
+.downloadVisitContentView {
+    .visitContentHeader {
+        padding-top: 1.500rem;
+        display: block;
+        padding-bottom: 1.000rem;
+    }
+    .visitContentDownload-details {
+        border: 1px solid $dark-grey;
+        margin-bottom: 15px;
+    }
+    .visitContentImage-body {
+        @include set-Height('sessionDownloadsView-image-body-height');
+    }
+    .visitContentImage-footer {
+        @include set-Height('sessionDownloadsView-image-footer-height');
+    }
+    .visitContentDownload-button-icon {
+        float: right;
+        padding-top: 0.625rem;
+        color: $dark-grey;
+    }
+    .visitContentImage-title {
+        position: absolute;
+        bottom: 0.625rem;
+        left: 1.250rem;
+        color: $button-text;
+        font-size: 0.938rem;
+    }
+    .align-right {
+        position: absolute;
+        right: 1rem
+    }
+    .alingn-left {
+        position: relative;
+        top: 0.1rem;
+    }
+    .icon-delete {
+        @include set-icon-font-size('icon-p40-t40');
+        color: $tab-disable;
+    }
+    .icon-email {
+        @include set-icon-font-size('icon-p44-t44');
+        position: relative;
+        color: $tab-disable;
+    }
+    .icon-preview {
+        @include set-icon-font-size('icon-p50-t50');
+        color: $color-primary;
+        position: relative;
+        top: 0.10rem;
+        color: $color-primary;
+    }
+    .icon-downloads {
+        @include set-icon-font-size('icon-p30-t30');
+        position: relative;
+        bottom: 0.625rem;
+        color: $tab-disable;
+    }
+    .custom-class {
+        padding-left: 0.938rem;
+        padding-right: 0.938rem;
+    }
+}

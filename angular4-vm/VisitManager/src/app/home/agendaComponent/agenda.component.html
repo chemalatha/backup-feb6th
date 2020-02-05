@@ -1,0 +1,53 @@
+<div class="agenda-home-view">
+    <div class="agenda-date">
+        <ul id="nav">
+            <li *ngFor='let agendadate of visitAgendaDates;' class="mr-1" [ngClass]="{'selected': (agendadate === activeVisitAgendaDate) }" (click)="displayVisitAgendaDate(agendadate)">{{agendadate | amDateFormat: 'DD MMM'}}</li>
+        </ul>
+    </div>
+    <div class="col">
+        <img [src]="visitThemeImage" class="visit-theme-image w-100">
+    </div>
+    <div class="row no-gutters agenda-Session-content mx-3" *ngFor='let agenda of userSelectedAgenda'>
+        <div class="col-3 text-center" (click)="goToSpeakerDetails(agenda.AgendaID, agenda.Title)">
+            <div>
+                <img *ngIf="agenda.AgendaAnchor.length" [src]="agenda.AgendaAnchor[0].Photo" class="rounded-circle agenda-speaker-image">
+            </div>
+            <div class="agenda-speaker-image-name" *ngIf="agenda.AgendaAnchor[0]">{{agenda.AgendaAnchor[0].FirstName}} {{agenda.AgendaAnchor[0].LastName}}
+            </div>
+        </div>
+        <div class="col-9 agenda-session-content" (click)="goToSessionDetails(agenda.AgendaID, agenda.Title)">
+            <div class="agenda-session-title pb-md-2 pb-lg-2 pb-xl-2">{{agenda.Title}}</div>
+            <div class="row no-gutters">
+                <div class="col-4 col-sm-4 col-md-3 col-lg-3 col-xl-3 flex flex-row align-items-center">
+                    <span class="agenda-calender-icon-container">
+                    <i class="icon-calendar agenda-calender-icon"></i></span>
+                    <span class="col p-0 agenda-session-date-label" >{{agenda.Date | amDateFormat: 'dddd'}}</span>
+                </div>
+                <div class="col-8 col-sm-8 col-md-4 col-lg-4 col-xl-4 flex flex-row align-items-center">
+                    <span class="icon-clock agenda-clock-icon"></span>
+                    <span class="agenda-session-date-label">{{agenda.TimeZone}} | {{agenda.StartTime}} - {{agenda.EndTime}}</span>
+                </div>
+                <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 no-gutters flex flex-row align-items-center">
+                    <div class="row no-gutters">
+                        <span class="agenda-meeting-icon-container"><i class="icon-meeting agenda-meeting-icon"></i></span>
+                        <span class="col agenda-session-date-label pl-1 mt-1 mt-sm-1 mt-md-0 mt-lg-0 mt-xl-0">{{agenda.Room}}</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row no-gutters flex flex-row align-items-center agenda-location-container">
+                <span class="icon-locationpin agenda-location-icon"></span>
+                <span class="col agenda-session-date-label pl-1">{{agenda.CityName}}</span>
+            </div>
+            <div class="row no-gutters">
+                <div *ngIf="agenda.IsSessionContentAvailable" class="col-4 col-sm-4 col-md-3 col-lg-2 col-xl-2 no-gutters py-1 py-sm-1 py-md-3 py-lg-3 py-xl-3" (click)="goToSessionDownloadsDetails(agenda.AgendaID, agenda.Title);$event.stopPropagation();">
+                    <div class="text-center"><i class="icon-downloads agenda-download-icon"></i></div>
+                    <div class="text-center agenda-download-label">{{"downloadLabel"| translate}}</div>
+                </div>
+                <div *ngIf="agenda.IsFeedbackApplicable" class="col-4 col-sm-4 col-md-3 col-lg-2 col-xl-2 py-1 py-sm-1 py-md-3 py-lg-3 py-xl-3" (click)="goToSessionFeedbackDetails(agenda.AgendaID, agenda.Title);$event.stopPropagation();">
+                    <div class="text-center"><i class="icon-feedback agenda-feedback-icon"></i></div>
+                    <div class="text-center agenda-feedback-label">{{"feedbackTitle"| translate}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

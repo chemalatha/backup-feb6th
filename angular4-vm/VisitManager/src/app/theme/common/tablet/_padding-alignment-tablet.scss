@@ -1,0 +1,447 @@
+/* Defined device resolutions:
+
+Format:  resolution -(Targetted Devices)- (Multiplication Factor with ipad as reference)
+
+1. 600X1024-(Samsung Tab 7 inch) -(0.78) 
+2. 800X1280 - (Samsung 7.7 ,8.9, 10 inch) -(1.06)
+3.  -Nexus 7(1) -(0.78)
+4. 1200X1920/1200X2048(Nexus 7(2)) -(0.76) 
+5.  1600X2560(Samsung 10 inch,nexus 10 inch) - (1.042) 
+6.  768X1024/1536X2048(ipad, ipad mini, ipad air) -(1)
+ */
+
+
+$padding_top_tablet: (
+                ('tablet', 0, 0, 8%, 10%, 10%),
+                ('termsandconditionView-data-padding-top-tablet', 0, 0, 3.438rem, 3.188em, 3.188rem,6.375em),
+                ('termsandconditionView-footer-padding-top-tablet', 0, 0, 4.438rem, 3.188em, 3.188rem,0.938rem),
+                ('LoginView-inputBox-padding-top-tablet', 1%, 2%, 75%, 5%, 10%,60%),
+                ('settingsView-settings-row-align-padding-top-25px-tablet', 0, 0, 1.563rem, 1.250rem, 10%,1.563rem),
+                
+);
+
+$padding_bottom_tablet: (
+                ('tablet', 0, 0, 0, 0, 0),
+                ('termsandconditionView-data-padding-bottom-tablet', 0, 0,3.125rem,1.969rem, 10%,4.225rem,3.125rem),
+                
+);
+
+$padding_right_tablet: (
+                ('tablet', 10%, 10%, 9%, 9%),
+                ('termsandconditionView-data-padding-right-tablet', 0, 0, 1.438rem,3.938em, 10%,1.969rem),
+                ('termsandconditionView-footer-padding-right-tablet', 0, 0, 1.475rem,1.969rem, 10%,1.969rem),
+                ('LoginView-inputBox-padding-right-tablet', 0, 0, 0.719rem, 1.250rem, 10%,9.250rem),
+                ('settingsView-col-2-padding-right-0rem-tablet', 0, 0, 0.719rem, 1.250rem, 10%,0rem),
+                ('settingsView-settings-container-padding-right-0rem-tablet', 0, 0, 0.719rem, 1.250rem, 10%,1.969rem),
+                
+                
+);
+
+$padding_left_tablet: (
+                ('tablet', 12%, 12%, 9%, 9%),
+                ('termsandconditionView-data-padding-left-tablet', 0, 0, 1.438rem, 1.969rem, 10%,1.969rem),
+                ('termsandconditionView-footer-padding-left-tablet', 0, 0, 1.475rem,1.969rem, 10%,1.969rem),
+                ('LoginView-inputBox-padding-left-tablet', 0, 0, 0.719rem, 1.250rem, 10%,9.250rem),
+                ('settingsView-col-10-padding-left-0rem-tablet', 0, 0, 0.719rem, 1.250rem, 10%,0rem),
+                ('settingsView-settings-container-padding-left-0rem-tablet', 0, 0, 0.719rem, 1.250rem, 10%,1.969rem),
+                
+);
+
+//padding-top alignment
+@mixin set-padding-top-tablet($label-padding) {
+  //1
+  @media (min-width: 600px) and (max-width: 1024px) and (-webkit-max-device-pixel-ratio: 1) {
+    @each $padding in $padding_top_tablet {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-top: nth($padding, 2);
+      }
+    }
+  }
+  //2
+  @media (min-width: 800px) and (max-width: 1280px) and (min-device-height: 800px) and (max-device-height: 1280px) and (-webkit-max-device-pixel-ratio: 1) {
+    @each $padding in $padding_top_tablet {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-top: nth($padding, 3);
+      }
+    }
+  }
+
+  //3
+  @media (min-width: 604px) and (max-width: 967px) and  (-webkit-min-device-pixel-ratio: 1.3) and (-webkit-max-device-pixel-ratio: 1.4){
+      @each $padding in $padding_top_tablet {
+        $label: nth($padding, 1); // in SASS, list indices begin at 1
+        @if ($label==$label-padding) {
+          padding-top: nth($padding, 4) !important;
+        }
+      }
+  }
+  
+  @media (min-device-height: 604px) and (max-device-height: 967px) and  (-webkit-min-device-pixel-ratio: 1.3) and (-webkit-max-device-pixel-ratio: 1.4){
+      @each $padding in $padding_top_tablet {
+        $label: nth($padding, 1); // in SASS, list indices begin at 1
+        @if ($label==$label-padding) {
+          padding-top: nth($padding, 4) !important;
+        }
+      }
+  }
+  
+
+  //4
+  @media (min-width: 600px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+    @each $padding in $padding_top_tablet {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-top: nth($padding, 5);
+      }
+    }
+
+  }
+  //4
+  @media (min-width: 600px) and (max-width: 960px) and (min-device-height: 600px) and (max-device-height: 960px)  and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    @each $padding in $padding_top_tablet {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-top: nth($padding, 5);
+      }
+    }
+  }
+  //5
+  @media (min-width: 774px) and (max-width: 1280px) and (min-device-height: 774px) and (max-device-height: 1280px) and  (-webkit-min-device-pixel-ratio: 2){
+    @each $padding in $padding_top_tablet {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-top: nth($padding, 6);
+      }
+    }
+  }
+
+  //6
+   @media (min-width: 768px) and (max-width: 1024px) and (min-device-height:768px) and (max-device-height:1024px){
+    @each $padding in $padding_top_tablet {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-top: nth($padding, 7);
+      }
+    }
+  }
+  @media (min-width: 695px) and (max-width: 1024px) and (min-device-height:695px) and (max-device-height:1024px){
+    @each $padding in $padding_top_tablet {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-top: nth($padding, 7);
+      }
+    }
+  }
+  //For Nexus 7 2013 Landscape
+  @media (min-width: 527px) and (max-width: 960px) and (min-device-height: 527px) and (max-device-height: 960px)  and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2){
+      @each $padding in $padding_top_tablet {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-top: nth($padding, 5);
+      }
+    }
+  }
+}
+
+//padding-bottom alignment
+@mixin set-padding-bottom-tablet($label-padding) {
+  //1
+  @media (min-width: 600px) and (max-width: 1024px) and (-webkit-max-device-pixel-ratio: 1) {
+    @each $padding in $padding_bottom_tablet {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-bottom: nth($padding, 2);
+      }
+    }
+
+  }
+  //2
+  @media (min-width: 800px) and (max-width: 1280px) and (min-device-height: 800px) and (max-device-height: 1280px) and (-webkit-max-device-pixel-ratio: 1) {
+    @each $padding in $padding_bottom_tablet {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-bottom: nth($padding, 3);
+      }
+    }
+  }
+
+  //3
+  @media (min-width: 604px) and (max-width: 967px) and  (-webkit-min-device-pixel-ratio: 1.3) and (-webkit-max-device-pixel-ratio: 1.4){
+      @each $padding in $padding_bottom_tablet {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+          padding-bottom: nth($padding, 4) !important;
+        }
+      }
+  }
+  @media (min-device-height: 604px) and (max-device-height: 967px) and  (-webkit-min-device-pixel-ratio: 1.3) and (-webkit-max-device-pixel-ratio: 1.4){
+      @each $padding in $padding_bottom_tablet {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+          padding-bottom: nth($padding, 4) !important;
+        }
+      }
+  }
+  //4
+  @media (min-width: 600px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2){
+    @each $padding in $padding_bottom_tablet {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-bottom: nth($padding, 5);
+      }
+    }
+
+  }
+
+  //4
+  @media (min-width: 600px) and (max-width: 960px) and (min-device-height: 600px) and (max-device-height: 960px)  and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    @each $padding in $padding_bottom_tablet {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-bottom: nth($padding, 5);
+      }
+    }
+  }
+
+  //5
+  @media (min-width: 774px) and (max-width: 1280px) and (min-device-height: 774px) and (max-device-height: 1280px) and  (-webkit-min-device-pixel-ratio: 2){
+    @each $padding in $padding_bottom_tablet {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-bottom: nth($padding, 6);
+      }
+    }
+  }
+
+  //6
+  @media (min-width: 768px) and (max-width: 1024px) and (min-device-height:768px) and (max-device-height:1024px){
+    @each $padding in $padding_bottom_tablet {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-bottom: nth($padding, 7);
+      }
+    }
+  }
+  @media (min-width: 695px) and (max-width: 1024px) and (min-device-height:695px) and (max-device-height:1024px){
+    @each $padding in $padding_bottom_tablet {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-bottom: nth($padding, 7);
+      }
+    }
+  }
+  //For Nexus 7 2013 Landscape
+  @media (min-width: 527px) and (max-width: 960px) and (min-device-height: 527px) and (max-device-height: 960px)  and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2){
+    @each $padding in $padding_bottom_tablet {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-bottom: nth($padding, 5);
+      }
+    }
+  }
+  
+}
+  
+//set padding-right for devices
+@mixin set-padding-right-tablet($label-padding) {
+
+  //1
+  @media (min-width: 600px) and (max-width: 1024px) and (-webkit-max-device-pixel-ratio: 1) {
+    @each $padding in $padding_right_tablet {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-right: nth($padding, 2);
+      }
+    }
+
+  }
+
+  //2
+  @media (min-width: 800px) and (max-width: 1280px) and (min-device-height: 800px) and (max-device-height: 1280px) and (-webkit-max-device-pixel-ratio: 1) {
+    @each $padding in $padding_right_tablet {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-right: nth($padding, 3);
+      }
+    }
+
+  }
+
+  //3
+  @media (min-width: 604px) and (max-width: 967px) and  (-webkit-min-device-pixel-ratio: 1.3) and (-webkit-max-device-pixel-ratio: 1.4) {
+    @each $padding in $padding_right_tablet {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-right: nth($padding, 4);
+      }
+    }
+  }
+   @media (min-device-height: 604px) and (max-device-height: 967px) and  (-webkit-min-device-pixel-ratio: 1.3) and (-webkit-max-device-pixel-ratio: 1.4) {
+    @each $padding in $padding_right_tablet {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-right: nth($padding, 4);
+      }
+    }
+  }
+
+  //4
+  @media (min-width: 600px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+    @each $padding in $padding_right_tablet {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-right: nth($padding, 5);
+      }
+    }
+  }
+
+  //4
+  @media (min-width: 600px) and (max-width: 960px) and (min-device-height: 600px) and (max-device-height: 960px)  and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    @each $padding in $padding_right_tablet {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-right: nth($padding, 5);
+      }
+    }
+  }
+
+  //5
+  @media (min-width: 774px) and (max-width: 1280px) and (min-device-height: 774px) and (max-device-height: 1280px) and  (-webkit-min-device-pixel-ratio: 2) {
+    @each $padding in $padding_right_tablet {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-right: nth($padding, 6);
+      }
+    }
+  }
+
+  //6
+  @media (min-width: 768px) and (max-width: 1024px) and (min-device-height:768px) and (max-device-height:1024px){
+    @each $padding in $padding_right_tablet {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-right: nth($padding, 7);
+      }
+    }
+  }
+  @media (min-width: 695px) and (max-width: 1024px) and (min-device-height:695px) and (max-device-height:1024px){
+    @each $padding in $padding_right_tablet {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-right: nth($padding, 7);
+      }
+    }
+  }
+  //For Nexus 7 2013 Landscape
+  @media (min-width: 527px) and (max-width: 960px) and (min-device-height: 527px) and (max-device-height: 960px)  and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2){
+      @each $padding in $padding_right_tablet {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-right: nth($padding, 5);
+      }
+    }
+  }
+}
+
+//set width for devices
+@mixin set-padding-left-tablet($label-padding) {
+
+  //1
+  @media (min-width: 600px) and (max-width: 1024px) and (-webkit-max-device-pixel-ratio: 1) {
+    @each $padding in $padding_left_tablet {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-left: nth($padding, 2);
+      }
+    }
+
+  }
+
+  //2
+  @media (min-width: 800px) and (max-width: 1280px) and (min-device-height: 800px) and (max-device-height: 1280px) and (-webkit-max-device-pixel-ratio: 1) {
+    @each $padding in $padding_left_tablet {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-left: nth($padding, 3);
+      }
+    }
+
+  }
+
+  //3
+  @media (min-width: 604px) and (max-width: 967px) and  (-webkit-min-device-pixel-ratio: 1.3) and (-webkit-max-device-pixel-ratio: 1.4) {
+    @each $padding in $padding_left_tablet {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-left: nth($padding, 4);
+      }
+    }
+  }
+   @media (min-device-height: 604px) and (max-device-height: 967px) and  (-webkit-min-device-pixel-ratio: 1.3) and (-webkit-max-device-pixel-ratio: 1.4) {
+    @each $padding in $padding_left_tablet {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-left: nth($padding, 4);
+      }
+    }
+  }
+
+  //4
+  @media (min-width: 600px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+    @each $padding in $padding_left_tablet {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-left: nth($padding, 5);
+      }
+    }
+  }
+
+  //4
+  @media (min-width: 600px) and (max-width: 960px) and (min-device-height: 600px) and (max-device-height: 960px)  and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2){
+    @each $padding in $padding_left_tablet {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-left: nth($padding, 5);
+      }
+    }
+  }
+
+  //5
+  @media (min-width: 774px) and (max-width: 1280px) and (min-device-height: 774px) and (max-device-height: 1280px) and  (-webkit-min-device-pixel-ratio: 2){
+    @each $padding in $padding_left_tablet {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-left: nth($padding, 6);
+      }
+    }
+  }
+
+  //6
+  @media (min-width: 768px) and (max-width: 1024px) and (min-device-height:768px) and (max-device-height:1024px){
+    @each $padding in $padding_left_tablet {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-left: nth($padding, 7);
+      }
+    }
+  }
+  @media (min-width: 695px) and (max-width: 1024px) and (min-device-height:695px) and (max-device-height:1024px){
+    @each $padding in $padding_left_tablet {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-left: nth($padding, 7);
+      }
+    }
+  }
+  //For Nexus 7 2013 Landscape
+  @media (min-width: 527px) and (max-width: 960px) and (min-device-height: 527px) and (max-device-height: 960px)  and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2){
+    @each $padding in $padding_left_tablet {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-left: nth($padding, 5);
+      }
+    }
+  }
+}

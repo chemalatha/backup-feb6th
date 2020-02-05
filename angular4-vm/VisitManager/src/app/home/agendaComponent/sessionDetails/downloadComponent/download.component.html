@@ -1,0 +1,31 @@
+<div class="sessionDownloadsView">
+    <div class="container container-width-100-tab" *ngIf="sessionContentAvailable">
+        <div class="download-details col-12 col-sm-12 offset-md-1 col-md-5">
+            <div class="row">
+                <div class="image-body col-12 col-sm-12 col-md-12 padding-zero-class">
+                    <div class="image-title w-75">{{sessionTitle}}</div>
+                </div>
+                <div class="image-footer col-12 col-sm-12 col-md-12 d-flex align-items-center">
+                    <span *ngIf="(!agendaSessionDetails || !agendaSessionDetails.isDownloaded) else elseBlock" class="download-button-icon">
+                        <span class="align-icon w-100">
+                            <span class="align-right">
+                                <span class="icon-downloads" (click)="downloadSessionContent()"></span>
+                            </span>
+                        </span>
+                    </span>
+                    <ng-template #elseBlock>
+                        <span class="align-icon w-100">
+                            <span class="align-left">
+                                <span class="icon-delete" (click)="removeSessionContent()"></span>
+                            </span>
+                            <span class="align-right">
+                                <span class="icon-email px-3" (click)="sendSessionContentEmail()"></span>
+                                <span class="icon-preview" (click)="viewSessionContent()"></span>
+                            </span>
+                        </span>
+                    </ng-template>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+{
+  "ResponseStatus": "Success",
+  "ResponseMessage": "",
+  "POCDetails": [
+    {
+      "POCID":"2323",
+      "IsPrimary":true,
+      "FirstName": "Raja",
+      "LastName": "Ganesan",
+      "Designation": "SE",
+      "Email": "raja.ganesan@accenture.com",
+      "ShortBio":"",
+      "ContactNo": "8934567810",
+      "Photo": "",
+      "City":"Bangalore",
+      "Country":"India"
+    },
+    {
+      "POCID":"2324",
+      "IsPrimary":false,
+      "FirstName": "Murali",
+      "LastName": "Prasath",
+      "Designation": "TL",
+      "Email": "murali.prasath@accenture.com",
+      "ShortBio":"",
+      "ContactNo": "8456787908",
+      "Photo":"",
+      "City":"Delhi",
+      "Country":"India"
+    },
+    {
+      "POCID":"2325",
+      "IsPrimary":false,
+      "FirstName": "Sakthi",
+      "LastName": "Vicraman",
+      "Designation": "TL",
+      "Email": "Sakthi.Vicraman@accenture.com",
+      "ShortBio":"",
+      "ContactNo": "989567890",
+      "Photo":"",
+      "City":"Chennai",
+      "Country":"India"
+    }
+  ]
+}

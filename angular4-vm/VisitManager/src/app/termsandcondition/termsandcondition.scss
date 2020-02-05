@@ -1,0 +1,39 @@
+@import "../theme/theme.scss";
+.termsandconditionView {
+    overflow-x: hidden;
+    .data {
+         @include set-font-size('text-p32-t40-Arial');
+        @include set-padding-bottom('termsandconditionView-data-padding-bottom');
+        @include set-padding-top('termsandconditionView-data-padding-top');
+        @include set-padding-right('termsandconditionView-data-padding-right');
+        @include set-padding-left('termsandconditionView-data-padding-left');
+        text-align: justify;
+        word-wrap: break-word;
+    }
+    .footer {
+        background-color: $button-text;
+        position: fixed;
+        bottom: 0rem;
+        border-top: 0.063rem solid $dark-grey;
+        @include set-Height('termsandconditionView-footer-height');
+        width: 100%;
+        @include set-padding-top('termsandconditionView-footer-padding-top');
+    }
+    .btn.btn-primary {
+         @include set-font-size('text-p32-t40-Arial');
+        width:100%;
+        color: $color-primary;
+        border: 1px solid $color-black;
+        border-radius: 1.875rem;
+    }
+    .btn.btn-secondary {
+        @include set-font-size('text-p32-t40-Arial');
+        width:100%;
+        color: $color-black;
+        border: 0.063rem solid $color-black;
+        border-radius: 1.875rem;
+    }
+    .button-padding {
+        padding: 0rem;
+    }
+}

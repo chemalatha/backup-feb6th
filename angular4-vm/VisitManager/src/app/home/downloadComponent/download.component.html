@@ -1,0 +1,5 @@
+<div (click)="isSideMenuVisible()">
+    <cvm-header-radiofield [showShortcutMenu]="showShortcutMenu" [items]="downloadItems" (sidemenuCallbackEvent)="triggerDownloadAction($event)" #headerNavCompRef></cvm-header-radiofield>
+
+    <router-outlet></router-outlet>
+</div>

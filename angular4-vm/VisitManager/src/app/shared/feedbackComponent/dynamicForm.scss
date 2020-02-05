@@ -1,0 +1,43 @@
+@import "../../theme/theme.scss";
+.star {
+    font-size: 1.8rem;
+    color: #e6e6e6;
+}
+
+.filled {
+    color: $color-primary;
+}
+.questionLabel{
+	@include set-font-size('text-p30-t34-Arial');
+	color:$label-text;
+	@include set-margin-bottom('AgendaView-container-margin-bottom');
+	@include set-margin-top('visit-feedback-margin-top');
+}
+.answerClass{
+	@include set-margin-bottom('feedback-answerClass-margin-bottom');
+}
+.ratingClass:focus{
+	outline-color:$button-text;
+	.star{
+		outline-color:$button-text;
+	}
+}
+
+.ratingClass{
+	@include set-icon-font-size('icon-p40-t44');
+}
+.radioLabelClass{
+	display:block;
+	input{
+		display:none;
+	}
+}
+.dropDownClass{
+	.btn.dropdown-toggle{
+		text-align:left !important;
+	}
+	.dropdown-toggle::after{
+		float:right;
+		margin-top:3%;
+	}
+}

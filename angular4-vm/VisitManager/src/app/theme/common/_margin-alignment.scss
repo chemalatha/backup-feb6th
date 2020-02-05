@@ -1,0 +1,180 @@
+$cnt_margin-top: (
+	('example', 2em, 2em, 2.5em, 2.5em,2.5em),
+	('loginform-margin-top', 18.125rem, 5rem, 31.5rem, 22rem,590px),
+	('forgotpasswordView-emailContainer-margin-top', 1.500rem, 1.500rem, 2.750rem, 2.750rem,2.750rem),
+	 ('forgotpasswordView-emailContainer-hintText-margin-top', 2.750rem, 2.750rem, 2.750rem, 2.750rem,2.750rem),
+	 ('changePasswordContainer-margin-top', 1.500rem, 1.500rem, 2.750rem, 2.750rem, 2.750rem),
+ 	 ('changePasswordContainer-hintText-margin-top', 0.719rem, 0.719rem, 0.719rem, 0.719rem, 2.5em),
+ 	 ('contactContainer-margin-top', 1.500rem, 1.500rem, 2.750rem, 2.750rem, 2.750rem),
+ 	 ('visitview-welcome-heading-margin-top', 0.769rem, 0.769rem, 2.813rem, 2.813rem, 2.813rem),
+ 	 ('welcomeView-welcome-user-details-margin-top', 1.469rem, 1.469rem,2.813rem, 2.813rem, 2.813rem),
+ 	 ('welcomeView-welcome-page-data-margin-top', 0rem, 0rem, 0.813rem, 0.813rem, 2.813rem),
+	('AgendaView-container-margin-top',0.734rem,0.734rem,0.938rem,0.938rem,0.938rem),
+	('session-title-margin-top', 1.469rem, 1.469rem, 1.875rem, 1.875rem, 1.875rem),
+	('barcodeView-barcode-title-margin-top', 1.406rem, 1.406rem, 1.500rem, 1.500rem, 1.500rem),
+	('hambugermenu-closebtn', 2.813rem, 2.813rem, 1.500rem, 1.500rem, 1.500rem),
+    ('pocView-poc-user-details-margin-top', 1.469rem, 1.469rem,2.813rem, 2.813rem, 2.813rem),
+	('travelGuideView-heading-margin-top', 1.469rem, 1.469rem,2.750rem, 2.750rem, 2.750rem),
+	('menubutton-margin-top', 0rem, 0rem,0.375rem, 0.375rem, 0.375rem),
+	('homebutton-margin-top', 0rem, 0rem,0.188rem, 0.188rem, 0.188rem),
+	('backbutton-margin-top', 0rem, 0rem,0.500rem, 0.500rem, 0.500rem),
+	('imageGallery-margin-top', 0.938rem, 0.938rem,0.938rem, 0.938rem, 0.938rem),
+	('presenterView-common-margin-top', 0.313rem, 0.313rem,0.313rem, 0.313rem, 0.313rem),
+	('presenterView-presenter-details-margin-top', 1.469rem, 1.469rem,2.813rem, 2.813rem, 2.813rem),
+	('presenterView-main-margin-top', 0.938rem, 0.938rem,0.938rem, 0.938rem, 0.938rem),
+	('carDetails-heading-margin-top', 1.469rem, 1.469rem,2.750rem, 2.750rem, 2.750rem),
+	('dietarySettingsView-title-margin-top', 1.375rem, 1.375rem,2.375rem, 2.375rem, 2.375rem),
+	('dietarySettingsView-input-radio-span-margin-top', 0.188rem, 0.188rem,0.188rem, 0.188rem, 0.188rem),
+	('visit-feedback-margin-top', 1.469rem, 1.469rem,2.813rem, 2.813rem, 2.813rem)
+  );
+$cnt_margin-bottom: (
+	('example', 2em, 2em, 2.5em, 2.5em,2.5em),
+	('welcomeView-user-email-margin-bottom',0rem,0rem, 0.431rem, 0.431rem, 0.431rem),
+	('welcomeView-user-designation-margin-bottom',0.750rem,0.750rem, 0.781rem,  0.781rem,  0.781rem),
+   	('AgendaView-container-margin-bottom',0.734rem,0.734rem,0.938rem,0.938rem,0.938rem),
+	('checkInView-heading-margin-bottom', 1.000rem, 1.000rem, 1.406rem, 1.406rem, 1.406rem),
+	('checkInView-image-margin-bottom', 1.000rem, 1.000rem, 1.406rem, 1.406rem, 1.406rem),
+	('checkInView-sub-class-margin-bottom', 2.063rem, 2.063rem, 2.750rem, 2.750rem,2.750rem),
+	('checkInView-col-data-margin-bottom', 2.063rem, 2.063rem, 2.750rem, 2.750rem,2.750rem),
+	('checkInView-icons-margin-bottom', 1.500rem, 1.500rem, 1.406rem, 1.406rem,1.406rem),
+	('session-title-margin-bottom', 1.469rem, 1.469rem, 1.875rem, 1.875rem, 1.875rem),
+	('session-detail-margin-bottom', 1.469rem, 1.469rem, 1.875rem, 1.875rem, 1.875rem),
+	('barcodeView-barcode-title-margin-bottom', 1.000rem, 1.000rem, 1.406rem, 1.406rem, 1.406rem),
+	('barcodeView-barcode-username-margin-bottom', 1.000rem, 1.000rem, 1.406rem, 1.406rem, 1.406rem),
+	('barcodeView-barcode-datevisit-margin-bottom', 3.281rem, 3.281rem, 4.063rem, 4.063rem, 4.063rem),
+	('barcodeView-barcode-notes-margin-bottom', 3.281rem, 3.281rem, 4.063rem, 4.063rem, 4.063rem),
+	('barcodeView-barcode-number-margin-bottom',2.063rem, 2.063rem, 4.063rem, 4.063rem, 4.063rem),
+	('barcodeView-barcode-note-margin-bottom',1.469rem, 1.469rem, 2.750rem, 2.750rem, 2.750rem),
+	('pocView-user-name-margin-bottom',0.625rem,0.625rem, 1.563rem, 1.563rem, 2.813rem),
+	('pocView-user-designation-margin-bottom',0.625rem,0.625rem,1.313rem, 1.313rem, 2.813rem),
+	('pocView-user-email-margin-bottom',0.625rem,0.625rem, 1.563rem, 1.563rem, 2.813rem),
+	('imageGallery-margin-bottom', 0.938rem, 0.938rem,0.938rem, 0.938rem, 0.938rem),
+	 ('presenterView-user-name-margin-bottom',0.625rem,0.625rem, 1.563rem, 1.563rem, 2.813rem),
+     ('presenterView-user-designation-margin-bottom',1.250rem,1.250rem,1.313rem, 1.313rem, 2.813rem),
+     ('carDetails-heading-margin-bottom', 1.406rem, 1.406rem,0.781rem, 0.781rem, 0.781rem),
+     ('dietarySettingsView-title-margin-bottom', 1.125rem, 1.125rem,0.981rem, 0.981rem, 0.981rem),
+     ('dietarySettingsView-food-preferences-margin-bottom', 1.125rem, 1.125rem,0.981rem, 0.981rem, 0.981rem),
+     ('dietarySettingsView-form-group-margin-bottom', 0.738rem, 0.738rem,1.038rem, 1.038rem, 1.038rem),
+     ('dietarySettingsView-comments-margin-bottom', 0.738rem, 0.738rem,0.738rem, 0.738rem, 0.738rem),
+     ('dietarySettingsView-form-check-margin-bottom', 0.750rem, 0.750rem,1.250rem, 1.250rem, 1.250rem),
+     ('feedback-answerClass-margin-bottom', 0.734rem, 0.734rem,0, 0, 0)
+
+);
+
+
+
+/*** media query as per bootstrap 4 ***/
+
+//Set margin-top for the devices
+@mixin set-margin-top($margin-top-label) {
+	// Extra small devices (portrait phones, less than 576px)
+	// No media query since this is the default in Bootstrap
+
+	// Extra small devices (portrait phones, less than 576px)
+	@media (max-width: 575px) { 
+		 @each $margin-top in $cnt_margin-top {
+	      $label: nth($margin-top, 1); // in SASS, list indices begin at 1
+	      @if ($label==$margin-top-label) {
+	        margin-top: nth($margin-top, 2) !important;
+	      }
+	    }
+	 }
+
+	// Small devices (landscape phones, 576px and up)
+	@media (min-width: 576px) and (max-width: 767px) { 
+		 @each $margin-top in $cnt_margin-top {
+	      $label: nth($margin-top, 1); // in SASS, list indices begin at 1
+	      @if ($label==$margin-top-label) {
+	        margin-top: nth($margin-top, 3) !important;
+	      }
+	    }
+
+	 }
+
+	// Medium devices (tablets, 768px and up)
+	@media (min-width: 768px) and (max-width: 991px) { 
+		 @each $margin-top in $cnt_margin-top {
+	      $label: nth($margin-top, 1); // in SASS, list indices begin at 1
+	      @if ($label==$margin-top-label) {
+	        margin-top: nth($margin-top, 4) !important;
+	      }
+	    }
+	 }
+
+	// Large devices (desktops, 992px and up)
+	@media (min-width: 992px) and (max-width: 1199px) {
+		 @each $margin-top in $cnt_margin-top {
+	      $label: nth($margin-top, 1); // in SASS, list indices begin at 1
+	      @if ($label==$margin-top-label) {
+	        margin-top: nth($margin-top, 5) !important;
+	      }
+	    }
+	}
+	// Extra large devices (large desktops, 1200px and up)
+	@media (min-width: 1200px){
+		 @each $margin-top in $cnt_margin-top {
+	      $label: nth($margin-top, 1); // in SASS, list indices begin at 1
+	      @if ($label==$margin-top-label) {
+	        margin-top: nth($margin-top, 6) !important;
+	      }
+	    }
+	}
+}
+
+
+//Set margin-bottom for the devices
+@mixin set-margin-bottom($margin-bottom-label) {
+	// Extra small devices (portrait phones, less than 576px)
+	// No media query since this is the default in Bootstrap
+
+	// Extra small devices (portrait phones, less than 576px)
+	@media (max-width: 575px) { 
+		 @each $margin-bottom in $cnt_margin-bottom {
+	      $label: nth($margin-bottom, 1); // in SASS, list indices begin at 1
+	      @if ($label==$margin-bottom-label) {
+	        margin-bottom: nth($margin-bottom, 2) !important;
+	      }
+	    }
+	 }
+
+	// Small devices (landscape phones, 576px and up)
+	@media (min-width: 576px) and (max-width: 767px) { 
+		 @each $margin-bottom in $cnt_margin-bottom {
+	      $label: nth($margin-bottom, 1); // in SASS, list indices begin at 1
+	      @if ($label==$margin-bottom-label) {
+	        margin-bottom: nth($margin-bottom, 3) !important;
+	      }
+	    }
+
+	 }
+
+	// Medium devices (tablets, 768px and up)
+	@media (min-width: 768px) and (max-width: 991px)  { 
+		 @each $margin-bottom in $cnt_margin-bottom {
+	      $label: nth($margin-bottom, 1); // in SASS, list indices begin at 1
+	      @if ($label==$margin-bottom-label) {
+	        margin-bottom: nth($margin-bottom, 4) !important;
+	      }
+	    }
+	 }
+
+	// Large devices (desktops, 992px and up)
+	@media (min-width: 992px) and (max-width: 1199px) {
+		 @each $margin-bottom in $cnt_margin-bottom {
+	      $label: nth($margin-bottom, 1); // in SASS, list indices begin at 1
+	      @if ($label==$margin-bottom-label) {
+	        margin-bottom: nth($margin-bottom, 5) !important;
+	      }
+	    }
+	}
+	// Extra large devices (large desktops, 1200px and up)
+	@media (min-width: 1200px){
+		 @each $margin-bottom in $cnt_margin-bottom {
+	      $label: nth($margin-bottom, 1); // in SASS, list indices begin at 1
+	      @if ($label==$margin-bottom-label) {
+	        margin-bottom: nth($margin-bottom, 6) !important;
+	      }
+	    }
+	}
+} 
+

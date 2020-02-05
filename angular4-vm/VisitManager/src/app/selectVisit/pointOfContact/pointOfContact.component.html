@@ -1,0 +1,43 @@
+<div class="pocView">
+    <div class="container">
+        <div *ngFor='let POCDetails of pointOfContactList'>
+            <div class="poc-user-details col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div class="row no-gutters pocView-container">
+                    <div class="col-3 col-sm-3 offset-md-1 col-md-2 offset-lg-1 col-lg-2 offset-xl-1 col-xl-2 mt-4">
+                        <div class="image">
+                            <img class="rounded-circle" width="70px" height="70px" style="border:1px solid" [src]="POCDetails.Photo">
+                        </div>
+                    </div>
+                    <div class="col-9 col-sm-9 col-md-8 col-lg-8 col-xl-8">
+                        <div class="user-info">
+                            <div class="row no-gutters">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                    <div class="name">
+                                        Primary Contact
+                                    </div>
+                                    <div class="user-name">
+                                        <span class="align-left red-color-class">{{POCDetails.FirstName}}</span>
+                                        <span class="align-right" style="float: right">
+                                        <span class="icon-addtocontacts" (click)="saveToMobileContact(POCDetails)" *ngIf="displayAddContacts"></span>
+                                        </span>
+                                    </div>
+                                    <div class="user-designation">
+                                        {{POCDetails.Designation}}
+                                    </div>
+                                    <div class="user-email common" (click)="openMailer(POCDetails.Email)">
+                                        <span class="icon-email  red-color-class"></span>
+                                        <span class="pocView-common">{{POCDetails.Email}}</span>
+                                    </div>
+                                    <div class="number common" (click)="openPhoneDialer(POCDetails.ContactNo)">
+                                        <span class="icon-call  red-color-class"></span>
+                                        <span class="pocView-common">{{POCDetails.ContactNo}}</span>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		

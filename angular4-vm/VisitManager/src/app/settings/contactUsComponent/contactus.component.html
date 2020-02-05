@@ -1,0 +1,25 @@
+<div class="container contactContainer p-0 m-0 w-100">
+    <form novalidate #contactForm="ngForm" autocomplete="off">
+        <div class="labelText ">
+            <div class="col col-sm offset-md-1 col-md-10 offset-lg-1 col-lg-10 offset-xl-1 col-xl-10">
+                <div class="form-group">
+                    {{"comments" | translate}}
+                </div>
+            </div>
+        </div>
+        <div class="offset-md-1 col-md-10">
+        <textarea class="form-control inputText" id="commentstext" rows="3" placeholder="{{'commentsPlaceHolder'| translate}}" [(ngModel)]="comment" #commentRef="ngModel" required name="comment" [ngClass]="{'input-errorCls': commentRef.invalid && (commentRef.dirty || commentRef.touched)}"></textarea>
+        <div *ngIf="commentRef.errors && (commentRef.dirty || commentRef.touched)" class="errorClass">
+            <div *ngIf="commentRef.errors.required">
+                {{"enterComments"| translate}}
+            </div>
+        </div>
+        
+        </div>
+        <div class="offset-3 col-6 offset-sm-3 col-sm-6 offset-md-4 col-md-4 offset-lg-4 col-lg-4 offset-xl- col-xl-4">
+            <div class="submitBtnCls">
+                <button type="button" class="btn btn-primary col-11 " [disabled]="contactForm.invalid" (click)="onSubmitBtnTap()"> Submit </button>
+            </div>
+        </div>
+    </form>
+</div>

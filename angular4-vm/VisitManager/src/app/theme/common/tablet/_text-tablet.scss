@@ -1,0 +1,288 @@
+/* _text.scss */
+// This files is for font definitions and text flow control.
+// Use the text() mixin in your component/functionality rules
+
+// === PUBLIC ===
+
+// This is only function you should need to call from outside this file!
+@mixin text-tablet($label, $multi-line) {
+  @include font-label($label);
+  @include text-lines($multi-line);
+}
+
+@mixin text-tablet-portrait($label, $multi-line) {
+  @include font-label-portrait($label);
+  @include text-lines($multi-line);
+}
+
+// ==== DATA ===
+
+/* Defined device resolutions:
+
+Format:  resolution -(Targetted Devices)- (Multiplication Factor with ipad as reference)
+
+1. 600X1024-(Samsung Tab 7 inch) -(0.78) 
+2. 800X1280 - (Samsung 7.7 ,8.9, 10 inch) -(1.06)
+3.  -Nexus 7(1) -(0.78)
+4. 1200X1920/1200X2048(Nexus 7(2)) -(0.76) 
+5.  1600X2560(Samsung 10 inch,nexus 10 inch) - (1.042) 
+6.  768X1024/1536X2048(ipad, ipad mini, ipad air) -(1)
+ */
+
+$font-data: (
+
+                ('example', bold, 1em, 2em, 3em, 4em, 5em, 6em, $color-white, none, CVMBook),
+                
+
+
+);
+@mixin font-label-portrait($font-label) {
+
+  $found: false;
+  @each $font in $font-data {
+
+    $label: nth($font, 1); // in SASS, list indices begin at 1
+    @if $font-label == $label {
+
+      //1
+      @media (min-width: 600px) and (max-width: 1024px) and (-webkit-max-device-pixel-ratio: 1) {
+        $found: true;
+        font-family: nth($font, 11);
+        font-weight: nth($font, 2);
+        font-size: nth($font, 3) !important;
+        color: nth($font, 9);
+      }
+
+      //2
+      @media (min-width: 800px) and (max-width: 1280px) and (min-device-height: 800px) and (max-device-height: 1280px) and (-webkit-max-device-pixel-ratio: 1)  {
+        $found: true;
+        font-family: nth($font, 11);
+        font-weight: nth($font, 2);
+        font-size: nth($font, 4) !important;
+        color: nth($font, 9);
+
+      }
+      //3
+      @media (min-width: 604px) and (max-width: 967px) and  (-webkit-min-device-pixel-ratio: 1.3) and (-webkit-max-device-pixel-ratio: 1.4) {
+        $found: true;
+        font-family: nth($font, 11);
+        font-weight: nth($font, 2);
+        font-size: nth($font, 5) !important;
+        color: nth($font, 9);
+      }
+      @media (min-device-height: 604px) and (max-device-height: 967px)  and  (-webkit-min-device-pixel-ratio: 1.3) and (-webkit-max-device-pixel-ratio: 1.4) {
+        $found: true;
+        font-family: nth($font, 11);
+        font-weight: nth($font, 2);
+        font-size: nth($font, 5) !important;
+        color: nth($font, 9);
+      }
+      
+      //4
+      @media (min-width: 600px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+        $found: true;
+        font-family: nth($font, 11);
+        font-weight: nth($font, 2);
+        font-size: nth($font, 6) !important;
+        color: nth($font, 9);
+      }
+
+      //4
+      @media (min-width: 600px) and (max-width: 960px) and (min-device-height: 600px) and (max-device-height: 960px)  and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2){
+        $found: true;
+        font-family: nth($font, 11);
+        font-weight: nth($font, 2);
+        font-size: nth($font, 6) !important;
+        color: nth($font, 9);
+      }
+
+      //5
+      @media (min-width: 774px) and (max-width: 1280px) and (min-device-height: 774px) and (max-device-height: 1280px) and  (-webkit-min-device-pixel-ratio: 2){
+        $found: true;
+        font-family: nth($font, 11);
+        font-weight: nth($font, 2);
+        font-size: nth($font, 7) !important;
+        color: nth($font, 9);
+      }
+
+      //6
+      @media (min-width: 768px) and (max-width: 1024px) and (min-device-height:768px) and (max-device-height:1024px){
+        $found: true;
+        font-family: nth($font, 11);
+        font-weight: nth($font, 2);
+        font-size: nth($font, 8) !important;
+        color: nth($font, 9);
+      }
+      @media (min-width: 695px) and (max-width: 1024px) and (min-device-height:695px) and (max-device-height:1024px){
+        $found: true;
+        font-family: nth($font, 11);
+        font-weight: nth($font, 2);
+        font-size: nth($font, 8) !important;
+        color: nth($font, 9);
+      }
+      //For Nexus 7 2013 Landscape
+      @media (min-width: 527px) and (max-width: 960px) and (min-device-height: 527px) and (max-device-height: 960px)  and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2){
+        $found: true;
+        font-family: nth($font, 11);
+        font-weight: nth($font, 2);
+        font-size: nth($font, 6) !important;
+        color: nth($font, 9);
+      }
+    }
+
+  }
+  @if not $found {
+    //@warn "Invalid font label specified: #{$font-label}";
+  }
+}
+
+// Generate the CSS for a named font
+@mixin font-label($font-label) {
+
+  $found: false;
+  @each $font in $font-data {
+
+    $label: nth($font, 1); // in SASS, list indices begin at 1
+    @if $font-label == $label {
+
+      //1
+      @media (min-width: 600px) and (max-width: 1024px) and (-webkit-max-device-pixel-ratio: 1)  {
+        $found: true;
+        font-family: nth($font, 11);
+        font-weight: nth($font, 2);
+        font-size: nth($font, 3) !important;
+        color: nth($font, 9);
+      }
+
+      //2
+      @media (min-width: 800px) and (max-width: 1280px) and (min-device-height: 800px) and (max-device-height: 1280px) and (-webkit-max-device-pixel-ratio: 1) {
+        $found: true;
+        font-family: nth($font, 11);
+        font-weight: nth($font, 2);
+        font-size: nth($font, 4) !important;
+        color: nth($font, 9);
+
+      }
+      //3
+      @media (min-width: 604px) and (max-width: 967px) and  (-webkit-min-device-pixel-ratio: 1.3) and (-webkit-max-device-pixel-ratio: 1.4) {
+        $found: true;
+        font-family: nth($font, 11);
+        font-weight: nth($font, 2);
+        font-size: nth($font, 5) !important;
+        color: nth($font, 9);
+
+      }
+      @media (min-device-height: 604px) and (max-device-height: 967px) and  (-webkit-min-device-pixel-ratio: 1.3) and (-webkit-max-device-pixel-ratio: 1.4) {
+        $found: true;
+        font-family: nth($font, 11);
+        font-weight: nth($font, 2);
+        font-size: nth($font, 5) !important;
+        color: nth($font, 9);
+
+      }
+      
+      //4
+      @media (min-width: 600px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+        $found: true;
+        font-family: nth($font, 11);
+        font-weight: nth($font, 2);
+        font-size: nth($font, 6) !important;
+        color: nth($font, 9);
+      }
+
+      //4
+      @media (min-width: 600px) and (max-width: 960px) and (min-device-height: 600px) and (max-device-height: 960px)  and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2){
+        $found: true;
+        font-family: nth($font, 11);
+        font-weight: nth($font, 2);
+        font-size: nth($font, 6) !important;
+        color: nth($font, 9);
+      }
+
+      //5
+      @media (min-width: 774px) and (max-width: 1280px) and (min-device-height: 774px) and (max-device-height: 1280px) and  (-webkit-min-device-pixel-ratio: 2) {
+        $found: true;
+        font-family: nth($font, 11);
+        font-weight: nth($font, 2);
+        font-size: nth($font, 7) !important;
+        color: nth($font, 9);
+      }
+
+      //6
+      @media (min-width: 768px) and (max-width: 1024px) and (min-device-height:768px) and (max-device-height:1024px){
+        $found: true;
+        font-family: nth($font, 11);
+        font-weight: nth($font, 2);
+        font-size: nth($font, 8) !important;
+        color: nth($font, 9);
+      }
+      @media (min-width: 695px) and (max-width: 1024px) and (min-device-height:695px) and (max-device-height:1024px){
+        $found: true;
+        font-family: nth($font, 11);
+        font-weight: nth($font, 2);
+        font-size: nth($font, 8) !important;
+        color: nth($font, 9);
+      }
+      //For Nexus 7 2013 Landscape
+      @media (min-width: 527px) and (max-width: 960px) and (min-device-height: 527px) and (max-device-height: 960px)  and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2){
+        $found: true;
+        font-family: nth($font, 11);
+        font-weight: nth($font, 2);
+        font-size: nth($font, 6) !important;
+        color: nth($font, 9);
+      }
+      
+    }
+
+  }
+  @if not $found {
+    //@warn "Invalid font label specified: #{$font-label}";
+  }
+}
+
+// Generate the CSS for a named line-mode
+@mixin text-lines($lines) {
+  @if $lines == 'multi' {
+    // The container will expand vertically as needed, by going multi-line.
+    // Strings will never overflow the container horizontally.
+    // Words that exceed a single line will break mid-word.
+    // Suggestions of &shy; and <wbr> will be taken if needed.
+    word-wrap: break-word; // Split single words that are simply too big
+    //-webkit-hyphens: auto;  // Attempt enhanced hyphenation if brwowser supports it
+    white-space: pre-wrap; // Consider tabs and spaces as important/intentional
+    overflow: visible; // Default, but important
+    word-break: break-word; // Default, but important
+    text-overflow: ellipsis;
+  } @else if $lines == 'single' {
+    // Single-line string.
+    // String will not overflow the container horizontally.
+    // String will ellipsize if needed.
+    overflow: hidden; // Don’t show out-of-bounds content
+    text-overflow: ellipsis; // Enable ellipsis on overflow
+    white-space: pre; // Consider tabs and spaces as important/intentional
+    word-wrap: normal; // Default, but important
+  } @else {
+    //@warn "Invalid text lines specified: #{$lines}";
+  }
+}
+
+// Generate concrete CSS rules for all (line-mode,font-label) pairs
+@each $font in $font-data {
+  $label: nth($font, 1);
+  @each $line-mode in ('multi', 'single') {
+    .text-#{$line-mode}-#{$label} {
+      @include text-tablet($label, $line-mode);
+    }
+  }
+}
+
+// Private function for assisting _distance.scss
+@function text-height($font-label) {
+  @each $font in $font-data {
+    $label: nth($font, 1); // in SASS, list indices begin at 1
+    @if $font-label == $label {
+      @return nth($font, 3) * $app-font-size-multiplier;
+    }
+  }
+  //@warn "Invalid font label specified: #{$font-label}";
+}

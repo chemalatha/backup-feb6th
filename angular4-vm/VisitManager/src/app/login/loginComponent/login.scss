@@ -1,0 +1,59 @@
+@import "../../theme/theme.scss";
+.loginView {
+    @include image-background-phone($login_background);
+    height: 100%;
+    overflow: hidden;
+    .container {
+        height: 100%;
+        overflow: scroll;
+    }
+    form{
+        @include set-margin-top('loginform-margin-top');
+    }
+    .loginFormBox {
+        @include set-Height(LoginView-loginFormBox-height);
+        @include set-padding-left('LoginView-loginFormBox-padding-left');
+        @include set-padding-right('LoginView-loginFormBox-padding-right');
+        
+    }
+    .btn-primary {
+        width: 100%;
+        border-radius: 5rem;
+        @include set-font-size('text-p34-t44-Arial');
+        color: $button-text;
+        background-color: $color-primary;
+        border: none;
+    }
+    .labelTextLogin {
+        @include set-font-size('text-p30-t32-Arial');
+        color: $button-text;
+       // @include set-padding-left('LoginView-labelTextLogin-padding-left');
+        @include set-padding-top('LoginView-labelTextLogin-padding-top');
+    }
+    .labelTextAutoLogin {
+        color:$button-text;
+        @include set-padding-left('LoginView-labelTextAutoLogin-padding-left');
+    }
+    .items-align-center {
+        display: flex;
+    }
+    .icon-info
+    {
+        color: $button-text;
+    }
+    .infoClass {
+        font-size: 1.375rem;
+    
+        display: block;
+        padding-left: 0.625rem;
+    }
+    button.icon-info {
+        background: none;
+        border: none;
+        height: 30px;
+        @include set-font-size('text-p44-t44-Arial');
+    }
+    button.icon-info:focus {
+        outline: none;
+    }
+}

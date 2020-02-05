@@ -1,0 +1,15 @@
+{
+  "odata.metadata": "https://clientvisitmanagementsvc.ciostage.accenture.com/ClientVisitManagement-Service/$metadata#GetCurrentAppVersions/@Element",
+  "AppVersion": [
+    {
+      "DeviceType": "I",
+      "CurVersion": "1.0"
+    },
+    {
+      "DeviceType": "A",
+      "CurVersion": "1.0.1"
+    }
+  ],
+  "ResponseStatus": "Success",
+  "ResponseMessage": ""
+}

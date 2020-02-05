@@ -1,0 +1,56 @@
+{
+    "ResponseStatus": "Success",
+    "ResponseMessage": "",
+    "WifiInformation": [
+        {
+            "WifiLoginID":"TestLogin1",
+            "FacilityID":1,
+            "FacilityName":"DDC 1",
+            "WifiConnectionName":"Wifi DC Data1",
+            "UserName":"TestUser1",
+            "Password":"TestPass1",
+            "CityID":1,
+            "CityName":"Delhi"
+        },
+        {
+            "WifiLoginID":"TestLogin2",
+            "FacilityID":2,
+            "FacilityName":"BDC 2",
+            "WifiConnectionName":"Wifi DC Data2",
+            "UserName":"TestUser2",
+            "Password":"TestPass2",
+            "CityID":2,
+            "CityName":"Bangalore"
+        },
+        {
+            "WifiLoginID":"TestLogin3",
+            "FacilityID":3,
+            "FacilityName":"BDC 3",
+            "WifiConnectionName":"Wifi DC Data3",
+            "UserName":"TestUser3",
+            "Password":"TestPass3",
+            "CityID":2,
+            "CityName":"Bangalore"
+        },
+        {
+            "WifiLoginID":"TestLogin4",
+            "FacilityID":4,
+            "FacilityName":"DDC 4",
+            "WifiConnectionName":"Wifi DC Data4",
+            "UserName":"TestUser4",
+            "Password":"TestPass4",
+            "CityID":1,
+            "CityName":"Delhi"
+        },
+        {
+            "WifiLoginID":"TestLogin5",
+            "FacilityID":5,
+            "FacilityName":"BDC 5",
+            "WifiConnectionName":"Wifi DC Data5",
+            "UserName":"TestUser5",
+            "Password":"TestPass5",
+            "CityID":2,
+            "CityName":"Bangalore"
+        }
+    ]
+}

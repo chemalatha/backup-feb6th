@@ -1,0 +1,76 @@
+@import "../../theme/theme.scss";
+.dietarySettingsView {
+    .title {
+        @include set-margin-top('dietarySettingsView-title-margin-top');
+        @include set-margin-bottom('dietarySettingsView-title-margin-bottom');
+        @include set-font-size('text-p34-t50-Arial');
+        color: $cvm-grey;
+    }
+    .food-preferences {
+        @include set-margin-bottom('dietarySettingsView-food-preferences-margin-bottom');
+        @include set-font-size('text-p26-t34-Arial');
+        color: $tab-disable;
+    }
+    .btn.btn-primary {
+        @include set-font-size('text-p32-t40-Arial');
+        width: 100%;
+        color: $color-primary;
+        border: 1px solid $color-black;
+        border-radius: 1.875rem;
+    }
+    .btn.btn-secondary {
+        @include set-font-size('text-p32-t40-Arial');
+        width: 100%;
+        color: $color-black;
+        border: 1px solid $color-black;
+        border-radius: 1.875rem;
+    }
+    input[type='radio'] {
+        -webkit-appearance: none;
+        @include set-Width('dietarySettingsView-radio-btn-set-width');
+        @include set-Height('dietarySettingsView-radio-btn-set-height');
+        border: 1px solid $color-blue;
+        border-radius: 50%;
+        outline: none;
+        box-shadow: 0 0 5px 0px gray inset;
+    }
+    input[type='radio']:before {
+        content: '';
+        display: block;
+        width: 60%;
+        height: 60%;
+        margin: 20% auto;
+        border-radius: 50%;
+    }
+    input[type='radio']:checked:before {
+        background: $color-blue;
+    }
+    input:focus {
+        padding: 0rem !important;
+    }
+    textarea {
+        @include set-Height('dietarySettingsView-textarea-set-height');
+        border: 1px solid $dark-grey;
+    }
+    .form-group {
+        @include set-margin-bottom('dietarySettingsView-form-group-margin-bottom');
+    }
+    .comments {
+        @include set-font-size('text-p26-t34-Arial');
+        color: $tab-disable;
+        @include set-margin-bottom('dietarySettingsView-comments-margin-bottom');
+    }
+    .footer {
+    	@include set-padding-top('dietarySettingsView-footer-set-padding-top');
+    	@include set-padding-bottom('dietarySettingsView-footer-set-padding-bottom');
+        /*border-bottom: 1px solid $tab-disable;*/
+    }
+    .input-radio-span {
+        display: inline-block;
+        @include set-margin-top('dietarySettingsView-input-radio-span-margin-top');
+        @include set-font-size('text-p30-t34-Arial');
+    }
+    .form-check {
+        @include set-margin-bottom('dietarySettingsView-form-check-margin-bottom');
+    }
+}

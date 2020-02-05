@@ -1,0 +1,7 @@
+{
+  "odata.metadata": "https://clientvisitmanagementsvc.ciodev.accenture.com/ClientVisitManagement-Service/$metadata#VisitorLoginAndGetVisitDetails/@Element",
+  "ResponseStatus": "Success",
+  "ResponseMessage": "",
+  "IsEulaAccepted": false,
+  "JsonWebToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJpc3N1ZXIiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjkwIiwibmJmIjoxNDI2NTk2MTU4LCJleHAiOjE0MjY1OTc5NTgsIkVtYWlsSUQiOiJ0ZXN0QGFjY2VudHVyZS5jb20iLCJQYXNzd29yZCI6IlJ7Z1tRQiIsIkNyZWF0ZWREYXRlVGltZSI6IjMvMTcvMjAxNSAxMjo0MjozOCBQTSJ9.fTi4n0J3ElGdXAOu2_ugbVKe-hJE_CZVod44SktSMm4"
+}

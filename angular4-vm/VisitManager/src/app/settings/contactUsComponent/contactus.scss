@@ -1,0 +1,32 @@
+@import "../../theme/theme.scss";
+.contactContainer{
+    position: relative;
+    @include set-margin-top('contactContainer-margin-top');
+    height:85%;
+    .hintText{
+        text-align: center;
+        @include set-margin-top('changePasswordContainer-hintText-margin-top');
+    }
+    .submitBtnCls{
+        @include set-padding-top('contactContainer-submitBtnCls-padding-top');
+        width: 100%;
+    }
+   .btn-primary {
+        width: 100%;
+    }
+    .btn-primary:disabled {
+        background-color: $button-text;
+        border: 1px solid $tab-disable !important;
+        color: $tab-disable;
+    
+    }
+
+    .form-group {
+        margin-bottom: 0.25rem;
+        
+    }
+
+    textarea, textarea:hover, textarea:focus{
+      height:10.75rem;
+    }
+}

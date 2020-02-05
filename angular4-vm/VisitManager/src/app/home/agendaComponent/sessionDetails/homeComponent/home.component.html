@@ -1,0 +1,39 @@
+<div *ngIf="displayAgendaDetails" class="agenda-session-details">
+    <div class="col session-theme-image">
+        <img [src]="displayAgendaDetails.sessionImage" class="w-100 session-theme-image">
+    </div>
+    <div class="offset-1 col-10 p-0">
+        <div class="text-center agenda-details-title">{{displayAgendaDetails.Title}}</div>
+        <div class="row no-gutters">
+            <div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3 flex flex-row align-items-center">
+                <span class="agenda-calender-icon-container">
+                    <i class="icon-calendar agenda-calender-icon"></i></span>
+                <span class="col pl-1 agenda-session-date-label">{{displayAgendaDetails.Date | amDateFormat: 'dddd'}}</span>
+            </div>
+            <div class="col-8 col-sm-8 col-md-5 col-lg-5 col-xl-5 flex flex-row align-items-center">
+                <span class="icon-clock agenda-clock-icon"></span>
+                <span class="agenda-session-date-label">{{displayAgendaDetails.TimeZone}} | {{displayAgendaDetails.StartTime}} - {{displayAgendaDetails.EndTime}}</span>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 no-gutters flex flex-row align-items-center">
+                <div class="row no-gutters">
+                    <span class="agenda-meeting-icon-container"><i class="icon-meeting agenda-meeting-icon"></i></span>
+                    <span class="col agenda-session-date-label pl-1 agenda-room-label">{{displayAgendaDetails.Room}}</span>
+                </div>
+            </div>
+        </div>
+        <div class="row no-gutters flex flex-row align-items-center agenda-location-container">
+            <span class="icon-locationpin agenda-location-icon"></span>
+            <span class="col agenda-session-date-label agenda-details-city-label">{{displayAgendaDetails.CityName}}</span>
+        </div>
+        <div class="row no-gutters py-3 agenda-details-description" [innerHTML]="displayAgendaDetails.Description">
+        </div>
+        <div class="row m-0 agenda-notes-header">
+            <div class="col p-0">{{"notes"| translate}}</div>
+            <div class="col text-right agenda-note-icon-container">
+                <span class="agenda-add-icon-container" (click)="addNotes()"><i class="icon-add agenda-add-icon"></i></span>
+                <span class="agenda-email-icon-container" (click)="emailNotes()"><i class="icon-emailsend agenda-email-icon"></i></span>
+            </div>
+        </div>
+        <div class="agenda-notes-label">{{displayAgendaDetails.VisitorRemark}}</div>
+    </div>
+</div>

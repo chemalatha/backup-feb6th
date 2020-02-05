@@ -1,0 +1,114 @@
+@import "../../theme/theme.scss";
+
+.mtmb-30
+	{margin-top:15px;
+	margin-bottom:15px
+}
+
+.carDetails-heading-margin{
+	@include set-margin-top('carDetails-heading-margin-top');
+	@include set-margin-bottom('carDetails-heading-margin-bottom');
+}
+.carDetails-main-heading{
+	@include set-font-size('text-p34-t50-Arial');
+	color:$cvm-grey;
+}
+.carDetails-timingDetails-label{
+	@include set-font-size('text-p22-t28-Arial');
+	color:$color-red;
+}
+
+.pickUpDetails-custom{
+	@include set-font-size('text-p30-t36-Arial');
+	color:$label-text;
+}
+
+.carDetails-heading{
+	font-weight:bold;
+	@include set-font-size('text-p26-t34-Arial');
+	color:$color-black;
+}
+
+.driverDetails-custom-heading{
+	font-weight:bold;
+	@include set-font-size('text-p36-t36-Arial');
+	color:$label-text;
+	margin-bottom: 0.4rem;
+}
+
+.custom-img{
+	@include set-Width('width-p60-t60');
+	@include set-Height('height-p60-t60');
+	background:$color-black;
+}
+.custom-icon{
+	font-size:15px;
+	color:$color-red;
+}
+.custom-large-icon{
+	font-size:24px;
+	color:$tab-disable;
+}
+
+.cabDetails-custom{
+	@include set-font-size('text-p30-t36-Arial');
+	color:$tab-disable;
+	margin-left: 14px;
+    margin-top: 7px;
+    float: left;
+}
+.cabContactNumber-custom{
+	@include set-font-size('text-p30-t36-Arial');
+	color:$color-black;
+	margin-left: 19px;
+}
+
+.hr-custom{
+	background:$dark-grey;
+}
+.custom-container{
+	border:1px solid $dark-grey;
+}
+.carDetails-custom-down-arrow{
+	display:block;
+}
+.custom-para-3{
+	font-family:'arial';
+	font-size:12px;
+	color:$cvm-light-grey;
+}
+.custom-margin-top{
+	margin-top:37px
+}
+.carDetails-driverDetails-container-height{
+	@include set-Height('height-p340-t365');
+	background:$cvm-comment-id-color;
+}
+.carDetails-timingDetails-container-height{
+	@include set-padding-top('carDetails-timings-padding-top');
+	@include set-padding-bottom('carDetails-timings-padding-bottom');
+	@include set-padding-left('carDetails-timings-padding-left');
+	@include set-padding-right('carDetails-timings-padding-right');
+	@include set-Height('height-p275-t365');
+	background:$button-text;
+}
+.carDetails-regNumber-custom{
+	font-size:1.875rem;
+	color:$info-text;
+	float: left;
+}
+.carDetails-mobNumber-custom{
+	font-size:1.250rem;
+	color:$info-text;
+	float: left;
+	margin-left: 6px;
+}
+
+.custom-heading-2{
+	@include set-font-size('text-p26-t36-Arial');
+	color:$tab-disable;	
+}
+
+.carDetails-driverDetails-section{
+	float: left;
+}

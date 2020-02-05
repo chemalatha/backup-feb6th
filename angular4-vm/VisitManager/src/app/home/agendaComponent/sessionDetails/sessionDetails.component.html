@@ -1,0 +1,11 @@
+<div class="agenda">
+    <cvm-header [pageTitle]="title" [isHomeBtn]=false [isBackBtn]=true [isMenuBtn]=true (backButtonEvent)="goBack($event)">
+    </cvm-header>
+    <ul id="nav">
+        <li routerLinkActive="selected" value="agenda" [routerLink]="['/home/agenda/sessiondetail/home', agendaId] "> {{'sessionDetails' |translate}}</li>
+        <li routerLinkActive="selected" value="dashboard" [routerLink]="['/home/agenda/sessiondetail/speaker', agendaId]">{{'speakerInfo'|translate}}</li>
+        <li routerLinkActive="selected" value="feedback" [routerLink]="['/home/agenda/sessiondetail/feedback', agendaId]">{{'feedbackTitle' |translate}}</li>
+        <li routerLinkActive="selected" value="downloads" [routerLink]="['/home/agenda/sessiondetail/download', agendaId]"> {{'download' |translate}}</li>
+    </ul>
+    <router-outlet></router-outlet>
+</div>

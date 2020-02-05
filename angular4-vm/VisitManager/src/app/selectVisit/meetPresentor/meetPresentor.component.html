@@ -1,0 +1,39 @@
+<div class="presenterView">
+    <div class="container">
+        <div *ngFor='let VisitContacts of meetPresentorList'>
+            <div class="presenter-details">
+                <div class="row no-gutters">
+                    <div class="col-3 col-sm-3 offset-md-1 col-md-1 mr-md-4 offset-lg-1 col-lg-2 offset-xl-1 col-xl-2">
+                        <div class="image">
+                            <img class="rounded-circle" width="70px" height="70px" style="border:1px solid" [src]="VisitContacts.Photo">
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-8 col-md-7 col-lg-8 col-xl-8">
+                        <div class="user-info">
+                            <div class="row no-gutters">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                    <div class="user-name">
+                                        <span class="align-left red-color-class">{{ VisitContacts.FirstName}}</span>
+                                    </div>
+                                    <div class="user-designation">
+                                        {{VisitContacts.Designation}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 col-sm-1 col-md-2 ">
+                        <div class="main">
+                            <span class="align-right">
+
+                           <span class="icon-email align-right red-color-class common" (click)="openMailer(VisitContacts.Email)"></span>
+                            <span class="icon-call align-right red-color-class common" (click)="openPhoneDialer(VisitContacts.ContactNo)"></span>
+                            <span class="icon-addtocontacts" (click)="saveToMobileContact(VisitContacts)"></span>
+
+                        </span>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

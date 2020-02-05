@@ -1,0 +1,120 @@
+<div class="checkInView">
+    <form novalidate #checkInForm="ngForm" autocomplete="off">
+        <div class="icons">
+        </div>
+        <div class="headers">
+            <div class="row no-gutters">
+                <div class="col-12 col-sm-12 offset-md-1 col-md-10 offset-lg-1 col-lg-10 offset-xl-1 col-xl-10">
+                    <div class="heading">
+                        <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+                            {{"checkInTitle" | translate}}
+                        </div>
+                    </div>
+                    <div class="image">
+                        <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+                            <img class="rounded-circle" width="70px" height="70px" style="border:1px solid" [src]="visitorDisplayDetails && visitorDisplayDetails.VisitorPhoto" (click)="takePicture()">
+                        </div>
+                    </div>
+                    <div class="common-class">
+                        <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+                            {{"visitDate" | translate}}
+                        </div>
+                    </div>
+                    <div class="sub-class">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            <input type="text" class="form-control inputText" [(ngModel)]='visitorDisplayDetails.VisitFormatDate' name='date' disabled="disabled">
+                        </div>
+                    </div>
+                    <div class="">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <div class="custom-class">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                    <div class="checkInView-col-title">{{"FIRST NAME" | translate}}</div>
+                                    <div class="checkInView-col-data">
+                                        <input type="text" class="form-control inputText" [(ngModel)]='visitorDisplayDetails.VisitorFirstName' required name='fname' #fname="ngModel" [disabled]="inputDisabled" [ngClass]="{'input-errorCls': fname.invalid && (fname.dirty || fname.touched)}">
+                                        <div *ngIf="fname.errors && (fname.dirty || fname.touched)" class="errorClass">
+                                            <div *ngIf="fname.errors.required">
+                                                {{"checkInErrorMessage" | translate}}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                    <div class="checkInView-col-title">{{"LAST NAME" | translate}}</div>
+                                    <div class="checkInView-col-data">
+                                        <input type="text" class="form-control inputText " [(ngModel)]='visitorDisplayDetails.VisitorLastName' required name='lname' #lname="ngModel" [disabled]="inputDisabled" [ngClass]="{'input-errorCls': lname.invalid && (lname.dirty || lname.touched)}">
+                                        <div *ngIf="lname.errors && (lname.dirty || lname.touched)" class="errorClass">
+                                            <div *ngIf="lname.errors.required">
+                                                {{"checkInErrorMessage" | translate}}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <div class="custom-class">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                    <div class="checkInView-col-title">{{"emailId" | translate}}</div>
+                                    <div class="checkInView-col-data">
+                                        <input type="text" class="form-control inputText" [(ngModel)]='visitorDisplayDetails.VisitorEmailID' name='email' disabled="disabled">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                    <div class="checkInView-col-title">{{"companyName" | translate}}</div>
+                                    <div class="checkInView-col-data">
+                                        <input type="text" class="form-control inputText" [(ngModel)]='visitorDisplayDetails.VisitorCompanyName' name='companyName' disabled="disabled">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="common-class">
+                        <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+                            {{"DESIGNATION" | translate}}
+                        </div>
+                    </div>
+                    <div class="sub-class">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            <input type="text" class="form-control inputText"  [(ngModel)]='visitorDisplayDetails.VisitorDesignation' required name='desg' [disabled]="inputDisabled" #desg="ngModel" [ngClass]="{'input-errorCls': desg.invalid && (desg.dirty || desg.touched)}">
+                            <div *ngIf="desg.errors && (desg.dirty || desg.touched)" class="errorClass">
+                                <div *ngIf="desg.errors.required">
+                                    {{"checkInErrorMessage" | translate}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <div class="container" [hidden]="editConfirm">
+                            <div class="row">
+                                <div class=" col-6 col-sm-6 col-md-3 offset-lg-1 col-lg-3 offset-xl-1 col-xl-3">
+                                    <button type="button" class="btn btn-secondary" (click)="onResetBtnTap()">{{"reset" | translate}}</button>
+                                </div>
+                                <div class="col-6 col-sm-6 offset-md-4 col-md-3 offset-lg-4 col-lg-3 offset-xl-4 col-xl-3">
+                                    <button type="button" class="btn btn-primary" [disabled]="checkInForm.invalid" (click)="onSaveBtnTap(checkInForm)">{{"saveLabel" | translate}}</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub-page" [hidden]="!editConfirm">
+                            <div class="container ">
+                                <div class="row ">
+                                    <div class=" col-6 col-sm-6 col-md-3 offset-lg-1 col-lg-3 offset-xl-1 col-xl-3 ">
+                                        <button type="button " class="btn btn-secondary" (click)="onEditBtnTap()">{{"edit" | translate}}</button>
+                                    </div>
+                                    <div class="col-6 col-sm-6 offset-md-4 col-md-3 offset-lg-4 col-lg-3 offset-xl-4 col-xl-3 ">
+                                        <button type="button " class="btn btn-primary" (click)="onConfirmBtnTap()">{{"confirm" | translate}}</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<photoselect-popup-component #photoselectpopup (photoSelectActionEvent)="photoSelectAction($event)"></photoselect-popup-component>

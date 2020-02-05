@@ -1,0 +1,86 @@
+@import "../../theme/theme.scss";
+.welcomeView {
+    .welcome-user-details {
+        @include set-margin-top(welcomeView-welcome-user-details-margin-top);
+    }
+    .row {
+        width: 100%;
+    }
+    .welcome-page-data {
+        @include set-margin-top(welcomeView-welcome-page-data-margin-top);
+        word-wrap: break-word;
+        text-align: justify;
+        padding-bottom: 25%;
+        .welcome-content {
+            white-space: pre-line;
+        }
+    }
+    .image {
+        .img-class {
+            @include set-Height('welcomeView-image-height');
+            @include set-Width('welcomeView-image-Width');
+        }
+    }
+    .footer {
+        background-color: $button-text;
+        position: fixed;
+        bottom: 0rem;
+        border-top: 1px solid $commentTopBorder;
+        @include set-Height(welcomeView-footer-set-height);
+        width: 100%;
+        @include set-padding-top(welcomeView-footer-set-padding-top);
+        justify-content: center;
+    }
+    .btn.btn-primary {
+        @include set-font-size('text-p32-t40-Arial');
+        width: 100%;
+        color: $color-primary;
+        border: 1px solid $color-black;
+        border-radius: 1.875rem;
+    }
+    .user-designation {
+        @include set-font-size('text-p24-t28-Arial');
+        color: $info-text;
+        display: inline-block;
+        @include set-margin-bottom(welcomeView-user-designation-margin-bottom);
+    }
+    .welcomeView-common {
+        color: $label-text;
+        @include set-font-size('text-p26-t34-Arial');
+    }
+    .common {
+        @include set-font-size('text-p26-t34-Arial');
+    }
+    .red-color-class {
+        color: $color-primary
+    }
+    .icon-addtocontacts {
+        color: $tab-disable;
+        font-size: 1.50rem;
+    }
+    .user-name {
+        @include set-font-size('text-p40-t48-Arial');
+    }
+    .user-email {
+        @include set-margin-bottom(welcomeView-user-email-margin-bottom);
+        
+    }
+    .align-vertical-custom {
+        vertical-align: middle;
+        display: flex;
+    }
+    .welcome-page-data {
+        @include set-font-size('text-p30-t34-Arial');
+    }
+    .container {
+        margin: 0rem;
+        width: 100%;
+    }
+    .align-left {
+        @include set-margin-bottom(welcomeView-user-name-margin-bottom);
+        display: inline-block;
+    }
+    .user-info{
+        @include set-padding-left(welcomevisit-user-info-padding-left);
+    }
+}

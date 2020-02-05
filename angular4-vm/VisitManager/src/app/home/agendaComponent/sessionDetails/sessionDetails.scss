@@ -1,0 +1,39 @@
+@import "../../../theme/theme.scss";
+
+ul {
+    margin-left: 0 !important;
+    padding-left: 0rem;
+    list-style: none;
+    display: block;
+    white-space: nowrap;
+    margin-bottom: 0.5rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+}
+
+li {
+    background: transparent;
+    color: $dark-grey;
+    /*padding: 0.5rem 0.8rem 0.5rem 0.8rem for phone with font-size 15px;
+     padding: 0.5rem  2.578rem 0.5rem  2.578rem for tab with font-size 20px; */
+    @include set-padding-top('sessionDetails-tab-padding-top');
+    @include set-padding-right('sessionDetails-tab-padding-right')
+    @include set-padding-bottom('sessionDetails-tab-padding-bottom')
+    @include set-padding-left('sessionDetails-tab-padding-left')
+    display: inline-block;
+    outline: none;
+    font-size: 0.938rem;
+    @include set-Height('sessionDetails-tab-height');
+    vertical-align: middle;
+}
+
+li.selected {
+    color: $color-primary;
+    border-bottom:2px solid $color-primary;
+}
+
+ul::-webkit-scrollbar {
+    width: 0 !important;
+}

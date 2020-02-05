@@ -1,0 +1,102 @@
+{
+    "ResponseStatus": "Success",
+    "ResponseMessage": "",
+    "VisitLocations": [
+        {
+            "Description": "Bang 7",
+            "Facility": "BDC7",
+            "Floor": "6th Flr",
+            "Room": "Bay 02",
+            "StartDate": "2015-05-15T00:00:00",
+            "EndDate": "2015-05-21T00:00:00",
+            "CityID": 1,
+            "CityName": "Bangalore",
+            "Longtitude": "77.5667",
+            "Latitude": "12.9667"
+        },
+        {
+            "Description": "bang8",
+            "Facility": "BDC8A",
+            "Floor": "3rd Flr",
+            "Room": "Bay 03",
+            "StartDate": "2015-05-22T00:00:00",
+            "EndDate": "2015-05-26T00:00:00",
+            "CityID": 2,
+            "CityName": "Delhi",
+            "Longtitude": "77.675064",
+            "Latitude": "12.92623"
+        },
+        {
+            "Description": "bang 9",
+            "Facility": "BDC9",
+            "Floor": "1st Flr",
+            "Room": "AHU",
+            "StartDate": "2015-05-27T00:00:00",
+            "EndDate": "2015-05-31T00:00:00",
+            "CityID": 1,
+            "CityName": "Bangalore",
+            "Longtitude": "77.681171",
+            "Latitude": "12.925779"
+        },
+        {
+            "Description": "phil 1",
+            "Facility": "PDC",
+            "Floor": "3rd Flr",
+            "Room": "Bay 10",
+            "StartDate": "2015-09-27T00:00:00",
+            "EndDate": "2015-09-31T00:00:00",
+            "CityID": 3,
+            "CityName": "Manila",
+            "Longtitude": "121.0000",
+            "Latitude": "14.5800"
+        },
+        {
+            "Description": "bang8",
+            "Facility": "BDC8A",
+            "Floor": "3rd Flr",
+            "Room": "Bay 03",
+            "StartDate": "2015-05-22T00:00:00",
+            "EndDate": "2015-05-26T00:00:00",
+            "CityID": 2,
+            "CityName": "Delhi",
+            "Longtitude": "77.675064",
+            "Latitude": "12.92623"
+        },
+        {
+            "Description": "bang8",
+            "Facility": "BDC8A",
+            "Floor": "3rd Flr",
+            "Room": "Bay 03",
+            "StartDate": "2015-05-22T00:00:00",
+            "EndDate": "2015-05-26T00:00:00",
+            "CityID": 4,
+            "CityName": "Chennai",
+            "Longtitude": "77.675064",
+            "Latitude": "12.92623"
+        },
+        {
+            "Description": "bang8",
+            "Facility": "BDC8A",
+            "Floor": "3rd Flr",
+            "Room": "Bay 03",
+            "StartDate": "2015-05-22T00:00:00",
+            "EndDate": "2015-05-26T00:00:00",
+            "CityID": 5,
+            "CityName": "Mumbai",
+            "Longtitude": "77.675064",
+            "Latitude": "12.92623"
+        },
+        {
+            "Description": "bang8",
+            "Facility": "BDC8A",
+            "Floor": "3rd Flr",
+            "Room": "Bay 03",
+            "StartDate": "2015-05-22T00:00:00",
+            "EndDate": "2015-05-26T00:00:00",
+            "CityID": 6,
+            "CityName": "Chennai",
+            "Longtitude": "77.675064",
+            "Latitude": "12.92623"
+        }
+    ]
+}

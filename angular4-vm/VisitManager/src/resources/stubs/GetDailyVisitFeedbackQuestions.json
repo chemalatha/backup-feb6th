@@ -1,0 +1,29 @@
+{
+    "ResponseStatus": "Success",
+    "ResponseMessage": "",
+    "GetVisitFeedbackQuestions": [{
+        "FeedbackQuestion": "Did the visit meet your objectives?",
+        "FeedbackQuestionID": 1,
+        "FeedbackRating": 2
+    }, {
+        "FeedbackQuestion": "How would you rate the logistics arrangements?",
+        "FeedbackQuestionID": 2,
+        "FeedbackRating": 0
+    }, {
+        "FeedbackQuestion": "Please rate your overall experience.",
+        "FeedbackQuestionID": 3,
+        "FeedbackRating": 1
+    }, {
+        "FeedbackQuestion": "Did the visit meet your objectives?",
+        "FeedbackQuestionID": 4,
+        "FeedbackRating": 1
+    }, {
+        "FeedbackQuestion": "Please rate your overall experience.",
+        "FeedbackQuestionID": 5,
+        "FeedbackRating": 3
+    },{
+        "FeedbackQuestion": "Comment",
+        "FeedbackQuestionID": 6,
+        "FeedbackRating": "hi"
+    }]
+}

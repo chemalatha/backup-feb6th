@@ -1,0 +1,35 @@
+@import "../../theme/theme.scss";
+.importantLinksView {
+    @include set-padding-left('importantLinksView-padding-left');
+    @include set-padding-right('importantLinksView-padding-right');
+    .links-title-border {
+        @include set-padding-bottom('importantLinksView-visit-title-padding-bottom');
+    }
+    .border-class {
+        align-items: center;
+    }
+    .custom-class .row {
+        border: 0px;
+    }
+    .linksView-col-title {
+        @include set-font-size('text-p22-t28-Arial');
+        color: $color-primary;
+        @include set-padding-top('visitlistView-col-title-padding-top');
+        @include set-padding-bottom('visitlistView-col-title-padding-bottom');
+    }
+    .linksView-col-data {
+        @include set-font-size('text-p30-t34-Arial');
+        @include set-padding-bottom('visitlistView-col-data-padding-bottom');
+    }
+    .row-icon-right {
+        float: right;
+        color: $dark-grey;
+    }
+    .row-icon-left {
+        color: $color-primary;
+        text-align: center;
+    }
+    .importantLinks {
+        border-bottom: 1px solid $dark-grey;
+    }
+}

@@ -1,0 +1,48 @@
+@import "../../theme/theme.scss";
+.visitlistView {
+    @include set-padding-left('visitlistView-padding-left');
+    @include set-padding-right('visitlistView-padding-right');
+    .visit-title {
+        @include set-padding-top('visitlistView-visit-title-padding-top');
+        text-align: center;
+        color: $info-text;
+        @include set-font-size('text-p24-t28-Arial');
+        display: inline-block;
+    }
+    .visit-title-border {
+        border-bottom: 1px solid $dark-grey;
+        @include set-padding-bottom('visitlistView-visit-title-padding-bottom');
+    }
+    .custom-class .row {
+        border: 0px
+    }
+    .border-class {
+        border-bottom: 1px solid $dark-grey;
+        align-items: center;
+        //@include set-Height(visitlistView-row-Height);
+        //min-height: 6.719rem;
+    }
+    .row-icon-right {
+        float: right;
+        color: $dark-grey;
+    }
+    .row-icon-left {
+        color: $color-primary;
+        text-align: center;
+    }
+    .visitlistView-col-title {
+        @include set-font-size('text-p22-t28-Arial');
+        color: $color-primary;
+        @include set-padding-top('visitlistView-col-title-padding-top');
+        @include set-padding-bottom('visitlistView-col-title-padding-bottom');
+    }
+    .visitlistView-col-data {
+        @include set-font-size('text-p30-t34-Arial');
+        padding-bottom: 0.438rem;
+        @include set-padding-bottom('visitlistView-col-data-padding-bottom');
+    }
+    .data-disabled {
+        color: $color-grey !important;
+    }
+    
+}

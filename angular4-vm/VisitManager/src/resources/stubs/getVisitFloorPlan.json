@@ -1,0 +1,48 @@
+{
+  "ResponseStatus": "Success",
+  "ResponseMessage": "",
+  "FloorPlan": [
+    {
+      "FloorID": 1,
+      "Floor": "Floor 1",
+      "Description": "This is a floor 1 map",
+      "CityID": "1",
+      "CityName": "Bangalore"
+    },
+    {
+      "FloorID": 2,
+      "Floor": "Floor 2",
+      "Description": "This is a floor 2 map",
+      "CityID": "4",
+      "CityName": "Chennai"
+    },
+    {
+      "FloorID": 3,
+      "Floor": "Floor 8",
+      "Description": "This is a floor 8 map",
+      "CityID": "4",
+      "CityName": "Chennai"
+    },
+    {
+      "FloorID": 4,
+      "Floor": "Floor 7",
+      "Description": "This is a floor 7 map",
+      "CityID": "4",
+      "CityName": "Chennai"
+    },
+    {
+      "FloorID": 5,
+      "Floor": "Floor 3",
+      "Description": "This is a floor 3 map",
+      "CityID": "2",
+      "CityName": "Bangalore"
+    },
+    {
+      "FloorID": 6,
+      "Floor": "Floor 4",
+      "Description": "This is a floor 4 map",
+      "CityID": "1",
+      "CityName": "Chennai"
+    }
+  ]
+}

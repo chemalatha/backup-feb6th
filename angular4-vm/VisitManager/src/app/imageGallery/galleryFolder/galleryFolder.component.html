@@ -1,0 +1,22 @@
+<div class="imageFolderView">
+    <div *ngIf="imageFolderObj">
+        <div class="container">
+            <div class="row">
+                <div class="imageFolder col-12 col-sm-6 col-md-6" *ngFor="let folder of imageFolderObj">
+                    <div class="defaultImageFolderDiv " (click)=photoAlbumClicked(folder.GalleryTypeID)>
+                        <img class="defaultImage" src={{folder.DefaultImage}}>
+                        <div class="eventInfo">
+                        	<div class="eventInfoLeft">
+                        		<div class="eventName">{{folder.GalleryTypeName}}</div>
+                        		<div class="eventDate">{{folder.Date|date}}</div>
+                        	</div>
+                        	<div class="eventInfoRight">
+                        	({{folder.GalleryListOfPhotos}})
+                        	</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

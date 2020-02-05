@@ -1,0 +1,87 @@
+$cvm_icon_font: (
+	('example', 2em, 2em, 2.5em, 2.5em,2.5em),
+	
+	('icon-p24-t30', 0.750rem, 0.750rem, 0.938rem, 0.938rem,0.938rem),
+	('icon-p26-t26', 0.813rem, 0.813rem, 0.813rem, 0.813rem,0.813rem),
+	('icon-p26-t32', 0.813rem, 0.813rem, 1rem, 1rem,1rem),
+	('icon-p30-t30', 0.938rem, 0.938rem, 0.938rem, 0.938rem,0.938rem),
+	('icon-p38-t47', 1.188rem, 1.188rem, 1.469rem, 1.469rem,1.469rem),
+	('icon-p44-t44', 1.375rem, 1.375rem, 1.375rem, 1.375rem,1.375rem),
+	('icon-p40-t40', 1.250rem, 1.250rem, 1.250rem, 1.250rem,1.250rem),
+	('icon-p40-t44', 1.250rem, 1.250rem, 1.375rem, 1.375rem,1.375rem),
+	('icon-p40-t54', 1.250rem, 1.250rem, 1.688rem, 1.688rem,1.688rem),
+	('icon-p40-t70', 1.250rem, 1.250rem, 2.188rem, 2.188rem,2.188rem),
+	('icon-p44-t44', 1.375rem, 1.375rem, 1.375rem, 1.375rem,1.375rem),
+	('icon-p48-t44',1.500rem,1.500rem, 1.375rem, 1.375rem,1.375rem),
+	('icon-p50-t50', 1.563rem, 1.563rem, 1.563rem, 1.563rem,1.563rem),
+	('icon-p56-t60', 1.750rem, 1.750rem, 1.875rem, 1.875rem,1.875rem),
+	
+	
+
+);
+
+
+
+/*** media query as per bootstrap 4 ***/
+
+//Set Height for the devices
+@mixin set-icon-font-size($label-text) {
+	// Extra small devices (portrait phones, less than 576px)
+	// No media query since this is the default in Bootstrap
+
+	// Extra small devices (portrait phones, less than 576px)
+		@media (max-width: 575px) { 
+		 @each $text in $cvm_icon_font {
+	      $label: nth($text, 1); // in SASS, list indices begin at 1
+	      @if ($label==$label-text) {
+	      	
+	        font-size: nth($text, 2) !important;
+	      }
+	    }
+	 }
+
+	// Small devices (landscape phones, 576px and up)
+	@media (min-width: 576px) and (max-width: 767px) { 
+		@each $text in $cvm_icon_font {
+	      $label: nth($text, 1); // in SASS, list indices begin at 1
+	      @if ($label==$label-text) {
+	      	
+	        font-size: nth($text, 3) !important;
+	      }
+	    }
+
+	 }
+
+	// Medium devices (tablets, 768px and up)
+	@media (min-width: 768px) and (max-width: 991px) { 
+		@each $text in $cvm_icon_font {
+	      $label: nth($text, 1); // in SASS, list indices begin at 1
+	      @if ($label==$label-text) {
+	      	
+	        font-size: nth($text, 4) !important;
+	      }
+	    }
+	 }
+
+	// Large devices (desktops, 992px and up)
+	@media (min-width: 992px) and (max-width: 1199px){
+		@each $text in $cvm_icon_font {
+	      $label: nth($text, 1); // in SASS, list indices begin at 1
+	      @if ($label==$label-text) {
+	      	
+	        font-size: nth($text, 5) !important;
+	      }
+	    }
+	}
+	// Extra large devices (large desktops, 1200px and up)
+	@media (min-width: 1200px){
+		@each $text in $cvm_icon_font {
+	      $label: nth($text, 1); // in SASS, list indices begin at 1
+	      @if ($label==$label-text) {
+	      	
+	        font-size: nth($text, 6) !important;
+	      }
+	    }
+	}
+}
+

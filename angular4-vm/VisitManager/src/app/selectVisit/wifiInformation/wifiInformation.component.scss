@@ -1,0 +1,28 @@
+@import "../../theme/theme.scss";
+.wifiView {
+    margin-top: 25px;
+    .sub {
+        @include set-font-size('text-p24-t28-Arial');
+        background-color: $cvm-comment-id-color;
+        color: $info-text;
+    }
+    .title {
+        @include set-font-size('text-p30-t34-Arial');
+        color: $label-text;
+        border-bottom: 1px solid $dark-grey;
+    }
+    .city {
+        background-color: $label-text;
+        color: $button-text;
+        @include set-font-size('text-p30-t34-Arial');
+        height: 30px;
+        border-radius: 4px;
+    }
+    .block {
+       height:70px;
+    }
+    .row-icon-right {
+        float: right;
+        color: $dark-grey;
+    }
+}

@@ -1,0 +1,97 @@
+/* body {
+  background-color: $color-white; 
+}
+.btn.btn-primary{
+	background-color:$header-color;
+	border:none;
+}
+.btn.btn-secondary{
+	background-color:$black;
+	border:none;
+}
+.labelText{
+	color: $color-white;
+} */
+
+body, html {
+	font-family:"Arial";
+	height:100%;
+
+}
+.labelText{
+	@include set-font-size('text-p22-t28-Arial');
+	color:$color-primary;
+	
+    }
+
+.inputText{
+	@include set-font-size('text-p24-t28-Arial');
+	color:$color-black;
+	
+}
+.hintText{
+	@include set-font-size('text-p24-t28-Arial');
+	color:$hint-text;
+	
+}
+input, input:focus, textarea, textarea:focus{
+	border: 1px solid $dark-grey;
+	height: 2.688rem;
+	padding:0 0.719rem;
+	outline-color:$dark-grey;
+}
+.form-control:focus{
+	border: 1px solid $dark-grey;
+}
+input::-webkit-input-placeholder {
+    color: $dark-grey;
+    -webkit-text-fill-color: $dark-grey;
+
+}
+.btn-primary, .btn-primary:hover, .btn-primary:focus{
+	border: 1px solid $color-primary !important;
+	background-color:transparent;
+	color:$color-primary;
+	border-radius:1.25rem;
+	box-shadow:none;
+}
+.submitBtnCls{
+	@include set-font-size('text-p32-t40-Arial');
+
+}
+.cancelCls{
+	margin-right: 0.625rem;
+}
+
+.input-errorCls {
+    background-color: $button-text;
+    border: 1px solid $color-red !important;
+}
+
+.errorClass {
+    color: $color-red;
+    font-weight: bold;
+   
+    text-align: center;
+    padding-bottom: 0.125rem;
+    padding-top: 0.125rem;
+    border-bottom-left-radius: 0.250rem;
+    border-bottom-right-radius: 0.250rem;
+    font-size: 0.750rem;
+    font-style: italic;
+}
+
+.padding-zero-class{
+    padding:0rem;
+}
+
+.btn-primary:disabled {
+    background-color: $button-text;
+    border: 1px solid $tab-disable !important;
+    color: $tab-disable;
+}
+
+.container-width-100-tab {
+
+    width: 100%;
+}

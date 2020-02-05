@@ -1,0 +1,43 @@
+{
+    "odata.metadata": "https://clientvisitmanagementsvc.ciostage.accenture.com/ClientVisitManagement-Service/$metadata#GetHotels/@Element",
+    "Hotels": [
+        {
+            "HotelID": 4,
+            "HotelName": "Ibis Bengaluru Techpark Hotel",
+            "CityName": "Bangalore",
+            "HotelAddress": "Opp RMZ Ecospace Business Park, Sarjapur Outer Ring Road, Kariyammana Agrahara, Bellandur, Bengaluru, Karnataka 560103, India",
+            "ContactNo": "(+91)8066700600",
+            "Website": "http://www.accorhotels.com/",
+            "Type": "3-Star",
+            "Latitude": "12.929706",
+            "Longitude": "77.683366",
+            "Description":"Test Description1"
+        },
+        {
+            "HotelID": 5,
+            "HotelName": "Aloft",
+            "CityName": "Bangalore",
+            "HotelAddress": "Sarjapur – Marathahalli Outer Ring Road, Kadubeesanahalli, Bellandur Post, Kaverappa Layout, Kadubeesanahalli, Bengaluru, Karnataka 560103, India",
+            "ContactNo": "(+91)8045101010",
+            "Website": "http://www.aloftbengalurucessnapark.com/",
+            "Type": "4-Star",
+            "Latitude": "12.93701",
+            "Longitude": "77.695278",
+            "Description":"Test Description2"
+        },
+        {
+            "HotelID": 6,
+            "HotelName": "JW Marriott Hotel",
+            "CityName": "Bangalore",
+            "HotelAddress": "24/1, Vittal Mallya Rd, KG Halli, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560001, India",
+            "ContactNo": "(+91)8067189999",
+            "Website": "http://www.marriott.com/",
+            "Type": "5-Star",
+            "Latitude": "12.972313",
+            "Longitude": "77.594971",
+            "Description":"Test Description3"
+        }
+    ],
+    "ResponseStatus": "Success",
+    "ResponseMessage": ""
+}

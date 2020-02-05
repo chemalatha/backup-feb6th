@@ -1,0 +1,200 @@
+@import "../../theme/theme.scss";
+.dashboardView {
+    .agenda-date {
+        margin-top: 0.5rem;
+        margin-left: 0 !important;
+        height: 2.25rem;
+        padding-right: 0.6rem;
+        ul {
+            margin-left: 0 !important;
+            padding-left: 0.6rem;
+            list-style: none;
+            display: block;
+            white-space: nowrap;
+            margin-bottom: 0.5rem;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            -ms-overflow-style: none;
+            overflow: -moz-scrollbars-none;
+        }
+        li {
+            background: transparent;
+            color: $info-text;
+            font-size: 0.875rem;
+            padding: 0.5rem 1.5rem;
+            display: inline-block;
+        }
+        li:hover,
+        li.selected {
+            background: $color-secondary;
+            color: white;
+            padding: 0.35rem 1.25rem;
+            border-radius: 2rem;
+        }
+        ul::-webkit-scrollbar {
+            width: 0 !important;
+        }
+    }
+    .sessionDetail{
+    	@include set-margin-top("session-title-margin-top");
+    	@include set-margin-bottom("session-detail-margin-bottom");
+    }
+	.sessionTitle{
+		background-color:$label-text;
+		@include set-font-size('text-p30-t34-Arial');
+		color:$button-text;
+		height:30px;
+		text-align: center;
+		border-radius:5px;
+		//@include set-margin-top("session-title-margin-top");
+		@include set-margin-bottom("session-title-margin-bottom");
+		padding-top:3px;
+	}
+	.commentsCollapse, .commentsHidden{
+		display:none;
+	}
+	.actionItems{
+		@include set-margin-bottom("session-title-margin-bottom");
+		.sessionkey{
+			color:$hint-text;
+			@include set-font-size('text-p28-t34-Arial');
+		}
+		.sessionValue{
+			color:$label-text;
+			@include set-font-size('text-p28-t34-Arial');
+		}
+		.Completed{
+			 //@extend .icon-statuscomplete;
+			 @include set-icon-font-size('icon-p30-t30');
+			 color:$cvm-green;
+		}
+		.InProgress{
+			@include set-icon-font-size('icon-p30-t30');
+			color:$color-inprogress;
+		}
+		.Draft{
+			@include set-icon-font-size('icon-p30-t30');
+			color:$color-grey;
+		}
+		.actionDiv{
+			display:inline;
+		}
+		.ownerDiv{
+			padding-left:1.438rem
+		}
+	}
+	.display-inline{
+		display:inline
+	}
+	.commentSection{
+		@include set-margin-top("session-title-margin-top");
+		@include set-margin-bottom("session-title-margin-bottom");
+		.commentHeader{
+			border-bottom:1px solid $hint-text;
+			padding-bottom:5px;
+			.collapseIcon{
+				@include set-icon-font-size('icon-p24-t30');
+                color: $color-black;
+			}
+			
+			.commentTitle{
+                @include set-font-size('text-p30-t34-Arial');
+				color:$label-text;
+			}
+			.addComments{
+				float:right;
+				@include set-icon-font-size('icon-p56-t60');
+				color:$color-primary;
+				line-height: normal;
+			}
+			.commentCount{
+				
+				@include set-font-size('text-p24-t28-Arial');
+				color:$color-black;
+				background-color:$dark-grey;
+                height: 18px;
+                width: 40px;
+				border-radius:20px;
+                display: inline-block;
+                text-align: center;
+			}
+			.totalComments{
+				@extend .display-inline;
+				@include set-font-size('text-p24-t28-Arial');
+				color:$dark-grey;
+			}
+		}
+	}
+	.circle {
+	  width: 35px;
+	  height: 35px;
+	  display:inline-block;
+	  border-radius: 50%;
+	  @include set-font-size('text-p26-t40-Arial');
+	  color: $info-text;
+	  line-height: 2.5;
+	  text-align: center;
+	  background: $cvm-comment-id-color;
+	}
+	.commentInfo{
+		@include set-margin-top("session-title-margin-top");
+	}
+	.username{
+		display:inline;
+		@include set-font-size('text-p24-t24-Arial');
+		color:$tab-disable;
+		
+	}
+	.comments{
+		@include set-font-size('text-p30-t30-Arial');
+		color:$label-text;
+		margin-left: 42px;
+		@include set-margin-bottom("session-title-margin-bottom");
+	}
+	.read-more-state {
+	  display: none;
+	}
+
+	.read-more-target {
+	  opacity: 0;
+	  max-height: 0;
+	  font-size: 0;
+	}
+
+	.read-more-state:checked ~ .read-more-wrap .read-more-target {
+	  opacity: 1;
+	  font-size: inherit;
+	  max-height: 999em;
+	}
+
+	.read-more-state ~ .read-more-trigger:before {
+	  content: 'Show more comments';
+	}
+
+	.read-more-state:checked ~ .read-more-trigger:before {
+	  content: 'Show less comments';
+	}
+
+	.read-more-trigger {
+	  cursor: pointer;
+	  display: inline-block;
+	  
+	  padding: 0.3rem;
+
+	  color: $hint-text;
+	  @include set-font-size('text-p32-t32-Arial');
+	  line-height: 2;
+	  border: 1px solid $hint-text;
+	  border-radius: 20px;
+	  height:44px;
+	}
+	.submit-comment{
+		@include set-icon-font-size('icon-p44-t44');
+		color:$color-primary;
+	}
+
+
+}
+.display-none{
+		display:none;
+	}

@@ -1,0 +1,243 @@
+//(name,ldpi,mdpi,hdpi,xhdpi,xxhdpi)
+//ldpi height<=320px and  width<=240px
+//mdpi 321px>height<=480px and  241px>width<=320px
+//hdpi 481px>height<=600px and  321px>width<=480px
+//xhdpi 600px>height<=800px  and width>481px
+//xxhdpi height>801 -only for height 
+$padding_top: (
+                ('example', 0, 0, 8%, 10%, 10%),
+                ('termsandconditionView-data-padding-top', 0, 0, 1.438rem, 3.188em, 3.188rem),
+                ('LoginView-inputBox-padding-top', 1%, 2%, 75%, 5%, 10%),
+                ('settingsView-settings-row-align-padding-top-25px', 0, 0, 1.563rem, 1.250rem, 10%),
+                
+);
+
+$padding_bottom: (
+                ('example', 0.625em, 0.625em, 0.625em, 0.625em, 0.625em),
+                ('termsandconditionView-data-padding-bottom', 0, 0,3.125rem,1.969rem, 10%),
+                
+
+);
+
+$padding_right: (
+                ('example', 10%, 10%, 9%, 9%),
+                ('termsandconditionView-data-padding-right', 0, 0, 1.438rem,1.969rem, 10%),     
+                ('termsandconditionView-footer-padding-right', 0, 0, 0.703rem,1.969rem, 10%),
+                ('LoginView-inputBox-padding-right', 0, 0, 0.719rem, 1.250rem, 10%),
+                ('settingsView-row-padding-right-0rem', 0, 0, 0rem, 1.250rem, 10%),
+                ('settingsView-settings-container-padding-right-0rem', 0, 0, 0.719rem, 1.250rem, 10%),
+                ('settingsView-settings-row-align-padding-right-0rem', 0, 0, 0.719rem, 1.250rem, 10%),
+
+                 
+             
+
+);
+
+$padding_left: (
+                ('example', 12%, 12%, 9%, 9%),
+                ('termsandconditionView-data-padding-left', 0, 0, 1.438rem, 1.969rem, 10%),
+                ('LoginView-inputBox-padding-left', 0, 0, 0.719rem, 1.250rem, 10%),
+                ('termsandconditionView-footer-padding-left', 0, 0, 0.703rem,1.969rem, 10%),
+                ('settingsView-row-padding-left-0rem', 0, 0, 0rem, 1.250rem, 10%),
+                ('settingsView-settings-container-padding-left-0rem', 0, 0, 0.719rem, 1.250rem, 10%), 
+                ('settingsView-settings-row-align-padding-left-0rem', 0, 0, 0.719rem, 1.250rem, 10%),
+
+                
+);
+
+//padding-top alignment
+@mixin set-padding-top($label-padding) {
+  //ldpi
+  @media (min-width: 240px) {
+    @each $padding in $padding_top {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-top: nth($padding, 2) !important;
+      }
+    }
+  }
+  //mdpi
+  @media (min-width: 241px) and (max-width: 320px){
+    @each $padding in $padding_top {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-top: nth($padding, 3) !important;
+      }
+    }
+
+  }
+  //hdpi
+  @media (min-width: 321px) and (max-width: 480px) {
+    @each $padding in $padding_top {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-top: nth($padding, 4) !important;
+      }
+    }
+
+  }
+  //xhdpi
+  @media (min-width: 481px) {
+    @each $padding in $padding_top {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-top: nth($padding, 5) !important;
+      }
+    }
+  }
+  //xxhdpi
+  @media (min-height: 801px) {
+    @each $padding in $padding_top {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-top: nth($padding, 6) !important;
+      }
+    }
+  }
+
+}
+
+//padding-bottom alignment
+@mixin set-padding-bottom($label-padding) {
+  //ldpi
+  @media (min-width: 240px) {
+    @each $padding in $padding_bottom {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-bottom: nth($padding, 2) !important;
+      }
+    }
+
+  }
+  //mdpi
+  @media (min-width: 241px) and (max-width: 320px) {
+    @each $padding in $padding_bottom {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-bottom: nth($padding, 3) !important;
+      }
+    }
+
+  }
+  //hdpi
+  @media (min-width: 321px) and (max-width: 480px) {
+    @each $padding in $padding_bottom {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-bottom: nth($padding, 4) !important;
+      }
+    }
+
+  }
+
+  //xhdpi
+  @media (min-width: 481px) {
+    @each $padding in $padding_bottom {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-bottom: nth($padding, 5) !important;
+      }
+    }
+  }
+  //xxhdpi
+  @media (min-height: 801px) {
+    @each $padding in $padding_bottom {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-bottom: nth($padding, 5) !important;
+      }
+    }
+  }
+}
+
+//set padding-right for devices
+@mixin set-padding-right($label-padding) {
+
+  //ldpi
+  @media (min-width: 240px) {
+    @each $padding in $padding_right {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-right: nth($padding, 2) !important;
+      }
+    }
+
+  }
+
+  //mdpi
+  @media (min-width: 241px) and (max-width: 320px) {
+    @each $padding in $padding_right {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-right: nth($padding, 3) !important;
+      }
+    }
+
+  }
+
+  //hdpi
+  @media (min-width: 321px) and (max-width: 480px) {
+    @each $padding in $padding_right {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-right: nth($padding, 4) !important;
+      }
+    }
+  }
+
+  //xhdpi
+  @media (min-width: 481px) {
+    @each $padding in $padding_right {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-right: nth($padding, 5) !important;
+      }
+    }
+  }
+}
+
+//set width for devices
+@mixin set-padding-left($label-padding) {
+
+  //ldpi
+  @media (min-width: 240px) {
+    @each $padding in $padding_left {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-left: nth($padding, 2) !important;
+      }
+    }
+
+  }
+
+  //mdpi
+  @media (min-width: 241px) and (max-width: 320px) {
+    @each $padding in $padding_left {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-left: nth($padding, 3) !important;
+      }
+    }
+
+  }
+
+  //hdpi
+  @media (min-width: 321px) and (max-width: 480px) {
+    @each $padding in $padding_left {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-left: nth($padding, 4) !important;
+      }
+    }
+  }
+
+  //xhdpi
+  @media (min-width: 481px) {
+    @each $padding in $padding_left {
+      $label: nth($padding, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-padding) {
+        padding-left: nth($padding, 5) !important;
+      }
+    }
+  }
+}

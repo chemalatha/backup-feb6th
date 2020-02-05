@@ -1,0 +1,42 @@
+<div class="visitlistView">
+    <span class="visit-title w-100">
+        Dear {{username}}, Please select your visit.</span>
+    <div class="visit-title-border offset-1 col-11 offset-sm-1 col-sm-11 offset-md-1 col-md-11 offset-lg-1 col-lg-11 offset-xl-1 col-xl-11">
+    </div>
+    <div *ngFor='let visit of visits'>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" (click)="onClickVisit(visit)">
+            <div class="row align-items-center">
+                <div class=" col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 pl-0">
+                    <div *ngIf="visit.isPast">
+                        <div class="row-icon-left">
+                            <span class="icon-tick align-middle"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-sm col-md-11 col-lg-11 col-xl-11 border-class ">
+                    <div class="row align-items-center">
+                        <div class="col-11 col-sm-11 col-md-11 col-lg-11 col-xl-11 p-0">
+                            <div class="custom-class">
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 pr-0">
+                                        <div class="visitlistView-col-title" [ngClass]="{'data-disabled': visit.isPast}">DATE</div>
+                                        <div class="visitlistView-col-data" [ngClass]="{'data-disabled': visit.isPast}">{{visit.VisitStartDate | amDateFormat:'Do MMM YYYY'}} - {{visit.VisitEndDate | amDateFormat:'Do MMM YYYY'}}</div>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 pr-0">
+                                        <div class="visitlistView-col-title" [ngClass]="{'data-disabled': visit.isPast}">TITLE</div>
+                                        <div class="visitlistView-col-data" [ngClass]="{'data-disabled': visit.isPast}">{{visit.VisitTitle}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 p-0">
+                            <div class="row-icon-right">
+                                <span class="icon-next align-middle"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

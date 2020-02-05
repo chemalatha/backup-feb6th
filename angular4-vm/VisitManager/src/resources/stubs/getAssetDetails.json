@@ -1,0 +1,18 @@
+{
+    "ResponseStatus": "Success",
+    "ResponseMessage": "",
+    "VisitorAssetDetails": [
+        {
+            "LaptopMake": "HP",
+            "Model": "HP-15",
+            "AssetNumber": "LTP666342",
+            "AssetID":1
+        },
+        {
+            "LaptopMake": "DELL",
+            "Model": "DELL-07",
+            "AssetNumber": "LTP567890",
+            "AssetID":2
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+@import "../../theme/theme.scss";
+.barcodeView {
+    .barcode-title {
+          @include set-font-size('text-p34-t50-Arial');
+        color: $cvm-grey;
+       @include set-margin-top(barcodeView-barcode-title-margin-top);
+       @include set-margin-bottom(barcodeView-barcode-title-margin-bottom);
+    
+    }
+    .barcode-username {
+           @include set-font-size('text-p30-t36-Arial');
+        color: $label-text;
+        font-weight: bold;
+        @include set-margin-bottom(barcodeView-barcode-username-margin-bottom);
+    }
+    .barcode-datevisit {
+        color: $label-text;
+         @include set-font-size('text-p30-t36-Arial');
+       
+        @include set-margin-bottom(barcodeView-barcode-datevisit-margin-bottom);
+    }
+    .barcode-notes {
+        @include set-font-size('text-p28-t34-Arial');
+        color:$cvm-light-grey;
+       @include set-margin-bottom(barcodeView-barcode-notes-margin-bottom);
+    }
+    .barcode-number {
+        @include set-font-size('text-p28-t40-Arial');
+        color: $info-text;
+        @include set-margin-bottom(barcodeView-barcode-number-margin-bottom);
+        text-align:center;
+    }
+    .barcode-note {
+        @include set-font-size('text-p28-t34-Arial');
+        color: $cvm-light-grey;
+       @include set-margin-bottom(barcodeView-barcode-note-margin-bottom);
+    }
+   .barcode-image img{
+   position:relative;
+   width:100%;
+   }
+}

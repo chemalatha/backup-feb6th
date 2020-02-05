@@ -1,0 +1,22 @@
+{
+  "items": [
+    {
+      "Title": "Change Password",
+      "ActionId": "changePassword",
+      "isOfflineEnabled": false
+    },
+    {
+      "Title": "Contact Us",
+      "ActionId": "contactUs",
+      "isOfflineEnabled": true
+    },
+    /*{
+      "Title": "About App",
+      "ActionId": "aboutApp",
+      "isOfflineEnabled": true
+    }*/
+
+  ],
+  "ResponseStatus": "Success",
+  "ResponseMessage": ""
+}

@@ -1,0 +1,10 @@
+<div>
+  <form (ngSubmit)="onSubmit(feedbackGroupForm.value)" [formGroup]="feedbackGroupForm">
+
+    <feedback-dynamic-form [feedbackControls]="feedbackControls" [feedbackGroupForm]="feedbackGroupForm" #feedbackDynamicFormRef></feedback-dynamic-form>
+
+    <div class="form-row">
+      <button type="submit" [disabled]="!feedbackGroupForm.valid">Save</button>
+    </div>
+  </form>
+</div>

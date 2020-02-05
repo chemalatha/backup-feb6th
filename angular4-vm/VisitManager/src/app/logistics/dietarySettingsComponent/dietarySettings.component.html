@@ -1,0 +1,45 @@
+<div class="dietarySettingsView">
+    <form novalidate #foodpreferencesForm="ngForm">
+        <div class="container offset-md-1 col-md-10 offset-lg-1 col-lg-10 offset-xl-1 col-xl-10">
+            <div class="custom-container px-3 px-sm-3 px-md-0 px-lg-0 px-xl-0">
+                <div class="title">
+                    <span>Your Dietary Preferences</span>
+                </div>
+                <fieldset class="form-group">
+                    <div class="food-preferences">Food Preferences</div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="foodpreferences" id="Vegan" [(ngModel)]="displayFoodPreferences.FoodPreferenceType" value="3">&nbsp;&nbsp;<span class="input-radio-span ml-2">Vegan</span>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="foodpreferences" id="veg" [(ngModel)]="displayFoodPreferences.FoodPreferenceType" value="1">&nbsp;&nbsp;<span class="input-radio-span ml-2">Veg</span>
+                        </label>
+                    </div>
+                    <div class="form-check disabled">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="foodpreferences" id="nonveg" [(ngModel)]="displayFoodPreferences.FoodPreferenceType" value="2" checked>&nbsp;&nbsp;<span class="input-radio-span ml-2">Non-Veg</span>
+                        </label>
+                    </div>
+                </fieldset>
+                <div class="form-group">
+                    <label class="comments">Comments</label>
+                    <textarea class="form-control" id="exampleTextarea" name="allergice" rows="3" [(ngModel)]="displayFoodPreferences.Allergice"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container mx-0 w-100">  
+                <div class="row">
+                    <div class="col-6 col-sm-6 offset-md-1 col-md-3 offset-lg-1 col-lg-3 offset-xl-1 col-xl-3 pr-2">
+                        <button type="reset" class="btn btn-secondary">{{"reset" | translate}}</button>
+                    </div>
+                    <div class="col-6 col-sm-6 offset-md-4 col-md-3 offset-lg-4 col-lg-3 offset-xl-4 col-xl-3 pl-2">
+                        <button type="button" class="btn btn-primary" (click)="saveFoodPreferenceDetails()">{{"saveLabel" | translate}}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

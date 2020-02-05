@@ -1,0 +1,18 @@
+{
+  "YourTravel": [
+    {
+      "id": "travel_guide",
+      "Title": localeString.travelGuideTitle,
+      "ActionId": "travel_guide",
+      "isOfflineEnabled": true
+    },
+    {
+      "id": "cityInsight",
+      "Title": localeString.cityInsightsTitle,
+      "ActionId": "cityInsight",
+      "isOfflineEnabled": false
+    }
+  ],
+  "ResponseStatus": "Success",
+  "ResponseMessage": ""
+}

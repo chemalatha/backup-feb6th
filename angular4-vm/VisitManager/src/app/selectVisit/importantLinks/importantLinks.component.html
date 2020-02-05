@@ -1,0 +1,42 @@
+
+<div class="importantLinksView">
+    <div class="links-title-border offset-1 col-11 offset-sm-1 col-sm-11 offset-md-1 col-md-10 offset-lg-1 col-lg-10 offset-xl-1 col-xl-10">
+    </div>
+        <div *ngFor='let News of newsAndEvents'>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" (click)="onClickLinks(News)">
+                <div class="row align-items-center importantLinks">
+                    <div class=" col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 pl-0">
+                        <div *ngIf="News.IsImportant">
+                            <div class="row-icon-left">
+                                <span class="icon-tick align-middle"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-md-10 border-class ">
+                        <div class="row align-items-center">
+                            <div class="col-11 col-sm-11 col-md-11 col-lg-11 col-xl-11 p-0">
+                                <div class="custom-class">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 pr-0">
+                                            <div class="linksView-col-title">DESCRIPTION</div>
+                                            <div class="linksView-col-data">{{ News.Description}}</div>
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 pr-0">
+                                            <div class="linksView-col-title">TITLE</div>
+                                            <div class="linksView-col-data">{{ News.Title}}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 p-0">
+                        <div class="row-icon-right">
+                            <span class="icon-next align-middle"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+</div>

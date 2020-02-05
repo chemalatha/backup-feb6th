@@ -1,0 +1,23 @@
+<ng-template #alertCompRef>
+    <div class="modal-alert-view">
+        <div class="row no-gutters">
+            <div class="col">
+                <div class="modal-header">
+                    <h5 class="modal-title">{{title}}</h5>
+                </div>
+                <div class="modal-body">
+                    <div [innerHTML]="message"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="modal-footer">
+                    <div *ngFor="let buttonInfo of displayButtonInfos">
+                        <button type="button" class="btn btn-primary" class="{{buttonInfo.class}}" (click)="modalAlertRef.close(buttonInfo.callbackText)">{{buttonInfo.text}}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-template>

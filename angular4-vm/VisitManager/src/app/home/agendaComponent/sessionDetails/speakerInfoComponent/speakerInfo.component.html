@@ -1,0 +1,36 @@
+<div class="speakerInfoView" *ngIf="displayAgendaDetails">
+    <div class="text-center mx-auto">
+        <img class="img-fluid" [src]="displayAgendaDetails.sessionImage" alt="Responsive image">
+    </div>
+	 <div class="container offset-1 col-10 col-md-10 offset-1">
+    <div class="row">
+        <div clas="col-sm-12 col-md-12">
+        <div class="mtmb-30 custom-heading-2">About the Speaker</div>
+        <div *ngFor='let speakerInfo of displayAgendaDetails.AgendaAnchor'>
+        <div class="row">
+            <div class="col-3 col-sm-2 col-md-2 pr-0 mr-2 mr-md-0">
+                <img class="img-fluid rounded-circle custom-img" [src]="speakerInfo.Photo">
+            </div>
+            <div class="col-7 col-sm-7 col-md-9 pl-0">
+                <div class="custom-heading-1">{{speakerInfo.LastName}} {{speakerInfo.FirstName}}</div>
+                <p class="custom-para-2">{{speakerInfo.Designation}}</p>
+                <p (click)="openMailer(speakerInfo.EmailID)"><i class="icon-email custom-icon" aria-hidden="true"></i>&nbsp;&nbsp;<span class="custom-span-1">{{speakerInfo.EmailID}}</span>
+                </p>
+                <p  (click)="openPhoneDialer(speakerInfo.ContactNo)"><i class="icon-call custom-icon" aria-hidden="true"></i>&nbsp;&nbsp;<span class="custom-span-1">{{speakerInfo.ContactNo}}</span>
+                </p>
+            </div>
+            <div class="col-1 col-sm-2 col-md-1 pull-left no-padding" (click)="saveToMobileContact(speakerInfo)">
+                <i class="icon-addtocontacts" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-12">
+                <p class="custom-para-1">{{speakerInfo.ShortBio}}</p>
+            </div>
+        </div>
+        </div>
+		</div>
+    </div>
+	</div>
+    <hr class="hr-custom">
+</div>

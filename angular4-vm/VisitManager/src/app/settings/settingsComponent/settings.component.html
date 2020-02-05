@@ -1,0 +1,4 @@
+<div class="settingsView" >
+    <cvm-header [pageTitle]='title' [isHomeBtn]=true [isBackBtn]=false [isMenuBtn]=true (backButtonEvent) = "goBack($event)" (homeButtonEvent) = "goHome($event)" #settingHeaderCompRef></cvm-header>
+    <router-outlet></router-outlet>
+</div>

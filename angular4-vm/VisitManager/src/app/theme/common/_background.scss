@@ -1,0 +1,11 @@
+$login_background: "../../../resources/images/login_background.png";
+$infoIcon: "../../../resources/images/info_icon_white.png";
+$loader: "../resources/images/loader.gif";
+$thumbnile: "../../../../../resources/images/download_thumbnail_phone.png";
+$thumbnile-session: "../../../resources/images/download_thumbnail_phone.png";
+
+@mixin image-background-phone($background-image) {
+    background-image: url($background-image) !important;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}

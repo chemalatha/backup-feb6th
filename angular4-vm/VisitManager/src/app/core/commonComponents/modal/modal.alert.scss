@@ -1,0 +1,30 @@
+@import "../../../theme/theme.scss";
+.modal-alert-view {
+    .modal-header {
+        background-color: $color-secondary;
+        display: flex;
+        justify-content: center;
+        color: $button-text;
+        border-top-left-radius: 0.250rem;
+        border-top-right-radius: 0.250rem;
+    }
+    .modal-footer {
+        display: flex;
+        justify-content: center;
+        border-top: 0rem;
+    }
+    .btn-primary {
+        width: 7.5rem;
+        padding: 0.50rem;
+    }
+    .btn-secondary {
+        width: 7.5rem;
+        border-radius: 1.25rem;
+        padding: 0.50rem;
+        border: 1px solid $color-black;
+    }
+    .modal-body {
+        text-align: center;
+        min-height: 3.125rem;
+    }
+}

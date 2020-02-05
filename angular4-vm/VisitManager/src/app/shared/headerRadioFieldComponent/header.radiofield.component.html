@@ -1,0 +1,22 @@
+<div class="header-radiofield">
+    <div class="container px-0">
+        <span *ngIf="showShortcutMenu" class="icon-shortmenu shortmenu-icon" (click)="menuItemTap();$event.stopPropagation();"></span>
+        <div *ngIf="showMenuItem" style="height:auto;width:7.5rem;position:absolute;background:#f2f2f2;top:0.75rem;right:0.75rem;z-index:1;box-shadow: 2px 2px 6px 0px #888888;padding:0.5rem">
+            <li *ngFor="let item of menuItems" style="list-style-type: none;padding:0.5rem 0;">
+                <span (click)="performDownloadSideMenu(item.callbackText)">{{item.title}}</span>
+            </li>
+        </div>
+        <div class="inner-container">
+            <ul class="node-container">
+                <li routerLinkActive="selected" class="listItem icon-no-outline" *ngFor='let item of items' [routerLink]="[item.routeLink]" [class.disabled]="!item.isActive">
+                    <div class="outer-nodes">
+                        <span class="{{item.iconCls}} icon-no-outline icon-position" style=""></span>
+                        <div class="nodes">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="ruler"></div>
+        </div>
+    </div>
+</div>

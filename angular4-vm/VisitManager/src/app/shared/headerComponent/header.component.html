@@ -1,0 +1,36 @@
+<div id="mySidenav" class="sidenav " [ngClass]="{'openNav': isNav}">
+    <a class="closebtn icon-close" (click)="closeNav()"></a>
+    <div class="hamburgerMenuContainer">
+        <div *ngFor='let item of returnVisitHamburgerMenu() '>
+            <div class="rowHamburger"  *ngIf="item.title !== 'Logout' && item.show" [routerLink]="[item.routeLink]" [queryParams]="item.queryParams" (click)="closeNav(false, true); $event.stopPropagation();">
+                <div class="rowHamburger-icon" >
+                    <span class="{{item.iconCls}}">
+	                </span>
+                </div>
+                <div class="rowHamburger-link">
+                    <a>{{item.title}}</a>
+                </div>
+            </div>
+
+            <div class="rowHamburger"  *ngIf="item.title === 'Logout'"  (click)="doLogout();$event.stopPropagation();">
+                <div class="rowHamburger-icon" >
+                    <span class="{{item.iconCls}}">
+	                </span>
+                </div>
+                <div class="rowHamburger-link">
+                    <a>{{item.title}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="header p-0" >
+    <div class="page-header">
+        <div class="PageTitleCls Graphik-Medium-Web">{{pageTitle}}
+            <div class="homeBtnCls icon-home" *ngIf='isHomeBtn' (click)='goHome()'></div>
+            <div class="backBtnCls icon-back pt-2" *ngIf='isBackBtn' (click)='goBack()'></div>
+            <div class="menuCls icon-menu" *ngIf='isMenuBtn' (click)='openNav()'>
+            </div>
+        </div>
+    </div>
+</div>

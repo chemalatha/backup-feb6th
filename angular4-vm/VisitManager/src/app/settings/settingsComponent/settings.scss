@@ -1,0 +1,21 @@
+@import "../../theme/theme.scss";
+.settingsView {
+    .row {
+        @include set-Height(settingsView-row-height);
+        width: 100%;
+        align-items: center;
+        border-bottom: 1px solid $dark-grey;
+    }
+    p {
+         @include set-font-size('text-p30-t34-Arial');
+    }
+    .settings-row-align-right {
+        float: right;
+    }
+    .icon-next {
+        color: $color-grey;
+    }
+    .settingsView-titles {
+        outline: none;
+    }
+}

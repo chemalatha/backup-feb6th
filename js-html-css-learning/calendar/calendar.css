@@ -1,0 +1,8 @@
+.dayContainer{
+    width: 25%;
+    float: left;
+    color:black;
+    background-color: lightblue;
+    border:1px solid white;
+    padding:10px;
+}

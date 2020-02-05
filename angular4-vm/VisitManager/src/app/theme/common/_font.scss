@@ -1,0 +1,582 @@
+@font-face {
+    font-family: 'Arial';
+    src:  url("theme/common/fonts/Arial/Arial.ttf.eot") format("opentype"),  url("theme/common/fonts/Arial/Arial.ttf.eot?#iefix") format('embedded-opentype'), url("theme/common/fonts/Arial/Arial.ttf.woff") format("woff"), url("theme/common/fonts/Arial/Arial.ttf.svg#Arial") format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+//graphik fonts
+@font-face {
+  font-family: 'Graphik LC Web';
+  src: url('theme/common/fonts/graphikFont/Graphik-SuperItalic-Web.eot');
+  src: url('theme/common/fonts/graphikFont/Graphik-SuperItalic-Web.eot?#iefix') format('embedded-opentype'),
+       url('theme/common/fonts/graphikFont/Graphik-SuperItalic-Web.woff2') format('woff2'),
+       url('theme/common/fonts/graphikFont/Graphik-SuperItalic-Web.woff') format('woff');
+  font-weight:  900;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+.Graphik-SuperItalic-Web {
+  font-family: 'Graphik LC Web';
+  font-weight:  900;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+
+@font-face {
+  font-family: 'Graphik LC Web';
+  src: url('theme/common/fonts/graphikFont/Graphik-Super-Web.eot');
+  src: url('theme/common/fonts/graphikFont/Graphik-Super-Web.eot?#iefix') format('embedded-opentype'),
+       url('theme/common/fonts/graphikFont/Graphik-Super-Web.woff2') format('woff2'),
+       url('theme/common/fonts/graphikFont/Graphik-Super-Web.woff') format('woff');
+  font-weight:  900;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+.Graphik-Super-Web {
+  font-family: 'Graphik LC Web';
+  font-weight:  900;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url('theme/common/fonts/graphikFont/Graphik-BlackItalic-Web.eot');
+  src: url('theme/common/fonts/graphikFont/Graphik-BlackItalic-Web.eot?#iefix') format('embedded-opentype'),
+       url('theme/common/fonts/graphikFont/Graphik-BlackItalic-Web.woff2') format('woff2'),
+       url('theme/common/fonts/graphikFont/Graphik-BlackItalic-Web.woff') format('woff');
+  font-weight:  800;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+.Graphik-BlackItalic-Web {
+  font-family: 'Graphik Web';
+  font-weight:  800;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url('theme/common/fonts/graphikFont/Graphik-Black-Web.eot');
+  src: url('theme/common/fonts/graphikFont/Graphik-Black-Web.eot?#iefix') format('embedded-opentype'),
+       url('theme/common/fonts/graphikFont/Graphik-Black-Web.woff2') format('woff2'),
+       url('theme/common/fonts/graphikFont/Graphik-Black-Web.woff') format('woff');
+  font-weight:  800;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+.Graphik-Black-Web {
+  font-family: 'Graphik Web';
+  font-weight:  800;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url('theme/common/fonts/graphikFont/Graphik-BoldItalic-Web.eot');
+  src: url('theme/common/fonts/graphikFont/Graphik-BoldItalic-Web.eot?#iefix') format('embedded-opentype'),
+       url('theme/common/fonts/graphikFont/Graphik-BoldItalic-Web.woff2') format('woff2'),
+       url('theme/common/fonts/graphikFont/Graphik-BoldItalic-Web.woff') format('woff');
+  font-weight:  700;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+.Graphik-BoldItalic-Web {
+  font-family: 'Graphik Web';
+  font-weight:  700;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url('theme/common/fonts/graphikFont/Graphik-Bold-Web.eot');
+  src: url('theme/common/fonts/graphikFont/Graphik-Bold-Web.eot?#iefix') format('embedded-opentype'),
+       url('theme/common/fonts/graphikFont/Graphik-Bold-Web.woff2') format('woff2'),
+       url('theme/common/fonts/graphikFont/Graphik-Bold-Web.woff') format('woff');
+  font-weight:  700;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+.Graphik-Bold-Web {
+  font-family: 'Graphik Web';
+  font-weight:  700;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+
+@font-face {
+  font-family: 'Graphik LC Web';
+  src: url('theme/common/fonts/graphikFont/Graphik-SemiboldItalic-Web.eot');
+  src: url('theme/common/fonts/graphikFont/Graphik-SemiboldItalic-Web.eot?#iefix') format('embedded-opentype'),
+       url('theme/common/fonts/graphikFont/Graphik-SemiboldItalic-Web.woff2') format('woff2'),
+       url('theme/common/fonts/graphikFont/Graphik-SemiboldItalic-Web.woff') format('woff');
+  font-weight:  600;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+.Graphik-SemiboldItalic-Web {
+  font-family: 'Graphik LC Web';
+  font-weight:  600;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+
+@font-face {
+  font-family: 'Graphik LC Web';
+  src: url('theme/common/fonts/graphikFont/Graphik-Semibold-Web.eot');
+  src: url('theme/common/fonts/graphikFont/Graphik-Semibold-Web.eot?#iefix') format('embedded-opentype'),
+       url('theme/common/fonts/graphikFont/Graphik-Semibold-Web.woff2') format('woff2'),
+       url('theme/common/fonts/graphikFont/Graphik-Semibold-Web.woff') format('woff');
+  font-weight:  600;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+.Graphik-Semibold-Web {
+  font-family: 'Graphik LC Web';
+  font-weight:  600;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url('theme/common/fonts/graphikFont/Graphik-MediumItalic-Web.eot');
+  src: url('theme/common/fonts/graphikFont/Graphik-MediumItalic-Web.eot?#iefix') format('embedded-opentype'),
+       url('theme/common/fonts/graphikFont/Graphik-MediumItalic-Web.woff2') format('woff2'),
+       url('theme/common/fonts/graphikFont/Graphik-MediumItalic-Web.woff') format('woff');
+  font-weight:  500;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+.Graphik-MediumItalic-Web {
+  font-family: 'Graphik Web';
+  font-weight:  500;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url('theme/common/fonts/graphikFont/Graphik-Medium-Web.eot');
+  src: url('theme/common/fonts/graphikFont/Graphik-Medium-Web.eot?#iefix') format('embedded-opentype'),
+       url('theme/common/fonts/graphikFont/Graphik-Medium-Web.woff2') format('woff2'),
+       url('theme/common/fonts/graphikFont/Graphik-Medium-Web.woff') format('woff');
+  font-weight:  500;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+.Graphik-Medium-Web {
+  font-family: 'Graphik Web';
+  font-weight:  500;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+
+@font-face {
+  font-family: 'Graphik LC Web';
+  src: url('theme/common/fonts/graphikFont/Graphik-RegularItalic-Web.eot');
+  src: url('theme/common/fonts/graphikFont/Graphik-RegularItalic-Web.eot?#iefix') format('embedded-opentype'),
+       url('theme/common/fonts/graphikFont/Graphik-RegularItalic-Web.woff2') format('woff2'),
+       url('theme/common/fonts/graphikFont/Graphik-RegularItalic-Web.woff') format('woff');
+  font-weight:  400;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+.Graphik-RegularItalic-Web {
+  font-family: 'Graphik LC Web';
+  font-weight:  400;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+
+@font-face {
+  font-family: 'Graphik LC Web';
+  src: url('theme/common/fonts/graphikFont/Graphik-Regular-Web.eot');
+  src: url('theme/common/fonts/graphikFont/Graphik-Regular-Web.eot?#iefix') format('embedded-opentype'),
+       url('theme/common/fonts/graphikFont/Graphik-Regular-Web.woff2') format('woff2'),
+       url('theme/common/fonts/graphikFont/Graphik-Regular-Web.woff') format('woff');
+  font-weight:  400;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+.Graphik-Regular-Web {
+  font-family: 'Graphik LC Web';
+  font-weight:  400;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url('theme/common/fonts/graphikFont/Graphik-LightItalic-Web.eot');
+  src: url('theme/common/fonts/graphikFont/Graphik-LightItalic-Web.eot?#iefix') format('embedded-opentype'),
+       url('theme/common/fonts/graphikFont/Graphik-LightItalic-Web.woff2') format('woff2'),
+       url('theme/common/fonts/graphikFont/Graphik-LightItalic-Web.woff') format('woff');
+  font-weight:  300;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+.Graphik-LightItalic-Web {
+  font-family: 'Graphik Web';
+  font-weight:  300;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url('theme/common/fonts/graphikFont/Graphik-Light-Web.eot');
+  src: url('theme/common/fonts/graphikFont/Graphik-Light-Web.eot?#iefix') format('embedded-opentype'),
+       url('theme/common/fonts/graphikFont/Graphik-Light-Web.woff2') format('woff2'),
+       url('theme/common/fonts/graphikFont/Graphik-Light-Web.woff') format('woff');
+  font-weight:  300;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+.Graphik-Light-Web {
+  font-family: 'Graphik Web';
+  font-weight:  300;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url('theme/common/fonts/graphikFont/Graphik-ExtralightItalic-Web.eot');
+  src: url('theme/common/fonts/graphikFont/Graphik-ExtralightItalic-Web.eot?#iefix') format('embedded-opentype'),
+       url('theme/common/fonts/graphikFont/Graphik-ExtralightItalic-Web.woff2') format('woff2'),
+       url('theme/common/fonts/graphikFont/Graphik-ExtralightItalic-Web.woff') format('woff');
+  font-weight:  200;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+.Graphik-ExtralightItalic-Web {
+  font-family: 'Graphik Web';
+  font-weight:  200;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url('theme/common/fonts/graphikFont/Graphik-Extralight-Web.eot');
+  src: url('theme/common/fonts/graphikFont/Graphik-Extralight-Web.eot?#iefix') format('embedded-opentype'),
+       url('theme/common/fonts/graphikFont/Graphik-Extralight-Web.woff2') format('woff2'),
+       url('theme/common/fonts/graphikFont/Graphik-Extralight-Web.woff') format('woff');
+  font-weight:  200;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+.Graphik-Extralight-Web {
+  font-family: 'Graphik Web';
+  font-weight:  200;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+
+@font-face {
+  font-family: 'Graphik LC Web';
+  src: url('theme/common/fonts/graphikFont/Graphik-ThinItalic-Web.eot');
+  src: url('theme/common/fonts/graphikFont/Graphik-ThinItalic-Web.eot?#iefix') format('embedded-opentype'),
+       url('theme/common/fonts/graphikFont/Graphik-ThinItalic-Web.woff2') format('woff2'),
+       url('theme/common/fonts/graphikFont/Graphik-ThinItalic-Web.woff') format('woff');
+  font-weight:  100;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+.Graphik-ThinItalic-Web {
+  font-family: 'Graphik LC Web';
+  font-weight:  100;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+
+@font-face {
+  font-family: 'Graphik LC Web';
+  src: url('theme/common/fonts/graphikFont/Graphik-Thin-Web.eot');
+  src: url('theme/common/fonts/graphikFont/Graphik-Thin-Web.eot?#iefix') format('embedded-opentype'),
+       url('theme/common/fonts/graphikFont/Graphik-Thin-Web.woff2') format('woff2'),
+       url('theme/common/fonts/graphikFont/Graphik-Thin-Web.woff') format('woff');
+  font-weight:  100;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+.Graphik-Thin-Web {
+  font-family: 'Graphik LC Web';
+  font-weight:  100;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+//icon fonts
+
+@charset "UTF-8";
+
+@font-face {
+  font-family: "cvm";
+  src:url("theme/common/fonts/iconFont/cvm.eot");
+  src:url("theme/common/fonts/iconFont/cvm.eot?#iefix") format("embedded-opentype"),
+    url("theme/common/fonts/iconFont/cvm.woff") format("woff"),
+    url("theme/common/fonts/iconFont/cvm.ttf") format("truetype"),
+    url("theme/common/fonts/iconFont/cvm.svg#cvm") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "cvm" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "cvm" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-add:before {
+  content: "\61";
+}
+.icon-addtocontacts:before {
+  content: "\62";
+}
+.icon-back:before {
+  content: "\63";
+}
+.icon-calendar:before {
+  content: "\64";
+}
+.icon-call:before {
+  content: "\65";
+}
+.icon-clock:before {
+  content: "\66";
+}
+.icon-close:before {
+  content: "\67";
+}
+.icon-dashboard:before {
+  content: "\68";
+}
+.icon-delete:before {
+  content: "\69";
+}
+.icon-email:before {
+  content: "\6a";
+}
+.icon-emailsend:before {
+  content: "\6b";
+}
+.icon-feedback:before {
+  content: "\6c";
+}
+.icon-home:before {
+  content: "\6d";
+}
+.icon-locationpin:before {
+  content: "\6e";
+}
+.icon-meeting:before {
+  content: "\6f";
+}
+.icon-menu:before {
+  content: "\70";
+}
+.icon-next:before {
+  content: "\71";
+}
+.icon-preview:before {
+  content: "\72";
+}
+.icon-ratings:before {
+  content: "\73";
+}
+.icon-send:before {
+  content: "\74";
+}
+.icon-sessioncontent:before {
+  content: "\75";
+}
+.icon-shortmenu:before {
+  content: "\76";
+}
+.icon-teabreak:before {
+  content: "\77";
+}
+.icon-tick:before {
+  content: "\78";
+}
+.icon-visitcontent:before {
+  content: "\79";
+}
+.icon-agenda:before {
+  content: "\7a";
+}
+.icon-checkin:before {
+  content: "\41";
+}
+.icon-downloads:before {
+  content: "\42";
+}
+.icon-imagegallery:before {
+  content: "\43";
+}
+.icon-implinks:before {
+  content: "\44";
+}
+.icon-logistics:before {
+  content: "\45";
+}
+.icon-logout:before {
+  content: "\46";
+}
+.icon-lunch:before {
+  content: "\47";
+}
+.icon-meetthepresenters:before {
+  content: "\48";
+}
+.icon-poc:before {
+  content: "\49";
+}
+.icon-selectvisit:before {
+  content: "\4a";
+}
+.icon-settings:before {
+  content: "\4b";
+}
+.icon-termsconditions:before {
+  content: "\4c";
+}
+.icon-welcome:before {
+  content: "\4d";
+}
+.icon-wifi:before {
+  content: "\4e";
+}
+.icon-cardetails:before {
+  content: "\4f";
+}
+.icon-dietarypreference:before {
+  content: "\50";
+}
+.icon-distance:before {
+  content: "\51";
+}
+.icon-down:before {
+  content: "\52";
+}
+.icon-hotels:before {
+  content: "\53";
+}
+.icon-info:before {
+  content: "\54";
+}
+.icon-landmarks:before {
+  content: "\55";
+}
+.icon-select:before {
+  content: "\56";
+}
+.icon-safetyoverview:before {
+  content: "\57";
+}
+.icon-offices:before {
+  content: "\58";
+}
+.icon-time:before {
+  content: "\59";
+}
+.icon-travelguide:before {
+  content: "\5a";
+}
+.icon-up:before {
+  content: "\30";
+}
+.icon-visitorguide:before {
+  content: "\31";
+}
+.icon-website:before {
+  content: "\32";
+}
+.icon-checkin:before {
+  content: "\41";
+}
+.icon-scanbarcode:before {
+  content: "\33";
+}
+.icon-registerlaptop:before {
+  content: "\34";
+}
+.icon-profileicon:before {
+  content: "\35";
+}
+.icon-addcomments:before {
+  content: "\36";
+}
+.icon-statuscomplete:before {
+  content: "\37";
+}
+.icon-statusnotstarted:before {
+  content: "\38";
+}
+.icon-statusongoing:before {
+  content: "\39";
+}
+

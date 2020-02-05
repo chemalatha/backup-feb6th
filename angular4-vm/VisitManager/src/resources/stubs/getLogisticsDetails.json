@@ -1,0 +1,36 @@
+{
+  "Logistics": [
+    /*{
+      "id": "travel_guide",
+      "Title": "Travel Guide",
+      "ActionId": "travel_guide",
+      "isOfflineEnabled": true
+    },*/
+    {
+      "id": "cars",
+      "Title": localeString.carBooking,
+      "ActionId": "cars",
+      "isOfflineEnabled": true
+    },
+    {
+      "id": "dietary_preferences",
+      "Title": localeString.dietaryPreferencesTitle,
+      "ActionId": "dietary_preferences",
+      "isOfflineEnabled": false
+    },
+    {
+      "id": "safety_overview",
+      "Title": localeString.safetyOverviewTitle,
+      "ActionId": "safety_overview",
+      "isOfflineEnabled": true
+    },
+    /*{
+      "id": "asset_tagging",
+      "Title": "Register Your Laptop",
+      "ActionId": "asset_tagging",
+      "isOfflineEnabled": false
+    }*/
+  ],
+  "ResponseStatus": "Success",
+  "ResponseMessage": ""
+}

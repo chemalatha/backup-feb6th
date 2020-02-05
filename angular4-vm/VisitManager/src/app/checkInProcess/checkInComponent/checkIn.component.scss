@@ -1,0 +1,66 @@
+@import "../../theme/theme.scss";
+.checkInView {
+    overflow-x: hidden;
+    .icons {
+        
+       
+        @include set-margin-bottom(checkInView-icons-margin-bottom);
+    }
+    .heading {
+       @include set-font-size('text-p34-t50-Arial');
+        color: $cvm-grey;
+        @include set-margin-bottom(checkInView-heading-margin-bottom);
+    }
+    .common-class {
+      @include set-font-size('text-p22-t28-Arial');
+        color: $color-primary;
+    }
+    .sub-class {
+       @include set-font-size('text-p30-t36-Arial');
+        color: $label-text;
+        @include set-margin-bottom(checkInView-sub-class-margin-bottom);
+    }
+    .image {
+        @include set-margin-bottom(checkInView-image-margin-bottom);
+       
+    }
+    .checkInView-col-title {
+          @include set-font-size('text-p22-t28-Arial');
+        color: $color-primary;
+    }
+    .checkInView-col-data {
+          @include set-font-size('text-p30-t36-Arial');
+        color: $label-text;
+        @include set-margin-bottom(checkInView-col-data-margin-bottom);
+    }
+    .footer {
+        background-color: $button-text;
+        bottom: 0rem;
+        @include set-Height('checkInView-footer-height');
+        width: 100%;
+    }
+    .btn.btn-primary {
+          @include set-font-size('text-p32-t40-Arial');
+        width: 100%;
+        
+        border: 1px solid $color-black;
+        border-radius: 1.875rem;
+    }
+    .btn.btn-secondary {
+          @include set-font-size('text-p32-t40-Arial');
+        width: 100%;
+        color: $color-black;
+        border: 0.063rem solid $color-black;
+        border-radius: 1.875rem;
+    }
+    .form-control:disabled {
+        background-color: $button-text !important;
+        border: none;
+        padding: 0px;
+    }
+    .btn-secondary:disabled {
+        background-color: $button-text;
+        border: 1px solid $tab-disable !important;
+        color: $tab-disable;
+    }
+}

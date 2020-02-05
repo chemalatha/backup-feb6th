@@ -1,0 +1,9 @@
+@import "../../theme/theme.scss";
+.visitorGuideView{
+	.heading{
+	 @include set-font-size('text-p34-t50-Arial');
+	color:$cvm-grey;
+	@include set-margin-top(travelGuideView-heading-margin-top);
+	
+	}
+}

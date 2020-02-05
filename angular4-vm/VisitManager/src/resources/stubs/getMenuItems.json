@@ -1,0 +1,200 @@
+{
+  "ResponseStatus": "Success",
+  "items": [
+    /*{
+      "title": localeString.dashboardTitle,
+      "actionId":"DashBoard",
+      "cls": "welcomeCls home_menu_icon_cls",
+      "selectedCls": "welcomeCls home_menu_icon_cls_selected",
+      "isOfflineEnabled":true
+    },*/
+    {
+      "title": localeString.chooseVisitTitle,
+      "actionId": "chooseVisits",
+      "cls": "welcomeCls select_visit__menu_icon_cls",
+      "selectedCls": "welcomeCls select_visit__menu_icon_cls_selected",
+      "isOfflineEnabled":true
+    },
+    {
+        "title": localeString.welcomeScreenTitle,
+        "actionId":"welcome",
+        "cls": "welcomeCls welcome_menu_icon_cls",
+      "selectedCls": "welcomeCls welcome_menu_icon_cls_selected",
+      "isOfflineEnabled":true
+    },
+    /*{
+      "title": localeString.aboutAccenture,
+      "actionId": "aboutAccenture",
+      "cls": "welcomeCls aboutAccenture_menu_icon_cls",
+      "selectedCls": "welcomeCls aboutAccenture_menu_icon_cls_selected",
+      "isOfflineEnabled":true
+    },*/
+   
+  /*  {
+      "title": "Pre-Visit Logistics",
+      "actionId": "logistics",
+      "cls": "welcomeCls"
+    },
+    {
+      "title": localeString.assetTaggingTitle,
+      "actionId": "asset_tagging",
+      "cls": "welcomeCls register_laptop_menu_icon_cls",
+      "selectedCls": "welcomeCls register_laptop_menu_icon_cls_selected",
+      "isOfflineEnabled":false
+    },*/
+    /*
+    {
+      "title": localeString.visitGuidelines,
+      "actionId": "visitGuidelines",
+      "cls": "welcomeCls visit_menu_icon_cls",
+      "selectedCls": "welcomeCls visit_menu_icon_cls_selected",
+      "isOfflineEnabled":true
+    },*/
+    
+    /*{
+      "title": localeString.carBooking,
+      "actionId": "cars",
+      "cls": "welcomeCls cars_menu_icon_cls",
+      "selectedCls": "welcomeCls cars_menu_icon_cls_selected",
+      "isOfflineEnabled":true
+    },
+    {
+      "title": localeString.dietaryPreferencesTitle,
+      "actionId": "dietary_preferences",
+      "cls": "welcomeCls dietary_menu_icon_cls",
+      "selectedCls": "welcomeCls dietary_menu_icon_cls_selected",
+      "isOfflineEnabled":false
+    },
+    {
+      "title": localeString.cityInsightsTitle,
+      "actionId": "cityInsight",
+      "cls": "welcomeCls cityInsights_menu_icon_cls",
+      "selectedCls": "welcomeCls cityInsights_menu_icon_cls_selected",
+      "isOfflineEnabled":false
+    },
+    {
+      "title": localeString.safetyOverviewTitle,
+      "actionId": "safety_overview",
+      "cls": "welcomeCls safety_overview_menu_icon_cls",
+      "selectedCls": "welcomeCls safety_overview_menu_icon_cls_selected",
+      "isOfflineEnabled":true
+    },*/
+    {
+      "title": localeString.pointOfContact,
+      "actionId": "pointOfContact",
+      "cls": "welcomeCls POC_menu_icon_cls",
+      "selectedCls": "welcomeCls POC_menu_icon_cls_selected",
+      "isOfflineEnabled":true
+    },
+    /*{
+      "title": localeString.materialMenuTitle,
+      "actionId": "material",
+      "cls": "welcomeCls material_menu_icon_cls",
+      "selectedCls": "welcomeCls material_menu_icon_cls_selected",
+      "isOfflineEnabled":false
+    },*/
+     {
+      "title": localeString.newsAndEvents,
+      "actionId": "news_events",
+      "cls": "welcomeCls newsAndEvents_menu_icon_cls",
+      "selectedCls": "welcomeCls newsAndEvents_menu_icon_cls_selected",
+      "isOfflineEnabled":false
+    },
+    {
+      "title": localeString.logistics,
+      "actionId": "logistics",
+      "cls": "welcomeCls logistics_menu_icon_cls",
+      "selectedCls": "welcomeCls logistics_menu_icon_cls_selected",
+      "isOfflineEnabled":true
+    },
+    {
+      "title": localeString.yourTravel,
+      "actionId": "yourTravelList",
+      "cls": "welcomeCls travel_menu_icon_cls",
+      "selectedCls": "welcomeCls travel_menu_icon_cls_selected",
+      "isOfflineEnabled":true
+    },
+    {
+      "title": localeString.agenda,
+      "actionId": "agenda",
+      "cls": "welcomeCls agenda_menu_icon_cls",
+      "selectedCls": "welcomeCls agenda_menu_icon_cls_selected",
+      "isOfflineEnabled":true
+    },
+    {
+      "title": localeString.peopleTitle,
+      "actionId": "people",
+      "cls": "welcomeCls test_Cls meetTheTeam_menu_icon_cls",
+      "selectedCls": "welcomeCls meetTheTeam_menu_icon_cls_selected",
+      "isOfflineEnabled":true
+    },
+    {
+      "title": localeString.wifiTitle,
+      "actionId": "wifi",
+      "cls": "welcomeCls wifi_menu_icon_cls",
+      "selectedCls": "welcomeCls wifi_menu_icon_cls_selected",
+      "isOfflineEnabled":true
+    },
+    {
+      "title": localeString.photoAlbum,
+      "actionId": "photoAlbum",
+      "cls": "welcomeCls photo_album_menu_icon_cls",
+      "selectedCls": "welcomeCls photo_album_menu_icon_cls_selected",
+      "isOfflineEnabled":true
+    },
+    /*{
+      "title": localeString.feedbackTitle,
+      "actionId": "feedback",
+      "cls": "welcomeCls feedback_menu_icon_cls",
+      "selectedCls": "welcomeCls feedback_menu_icon_cls_selected",
+      "isOfflineEnabled":false
+    },*/
+    /*{
+      "title": localeString.visitSummary,
+      "actionId": "visitRecap",
+      "cls": "welcomeCls visitRecap_menu_icon_cls",
+      "selectedCls": "welcomeCls visitRecap_menu_icon_cls_selected",
+      "isOfflineEnabled":true
+    },*/
+    /*{
+      "title": localeString.photoAlbum,
+      "actionId": "photoAlbum",
+      "cls": "welcomeCls photo_album_menu_icon_cls",
+      "selectedCls": "welcomeCls photo_album_menu_icon_cls_selected",
+      "isOfflineEnabled":true
+    },
+    {
+      "title": localeString.visitSummary,
+      "actionId": "visitSummary",
+      "cls": "welcomeCls visit_summary_menu_icon_cls",
+      "selectedCls": "welcomeCls visit_summary_menu_icon_cls_selected",
+      "isOfflineEnabled":true
+    },*/
+  /*  {
+      "title": "Floor Map",
+      "actionId": "floor",
+      "cls": "welcomeCls"
+    },*/
+    {
+      "title": localeString.privacyStmtTitle,
+      "actionId": "EULAMenu",
+      "cls": "welcomeCls TnC_menu_icon_cls",
+      "selectedCls": "welcomeCls TnC_menu_icon_cls_selected",
+      "isOfflineEnabled":true
+    },
+    {
+      "title": "Settings",
+      "actionId": "settings",
+      "cls": "welcomeCls settings_menu_icon_cls",
+      "selectedCls": "welcomeCls settings_menu_icon_cls_selected",
+      "isOfflineEnabled":true
+    },
+    {
+      "title": "Logout",
+      "actionId": "logout",
+      "cls": "welcomeCls logout_menu_icon_cls",
+      "selectedCls": "welcomeCls logout_menu_icon_cls_selected",
+      "isOfflineEnabled":false
+    }
+  ]
+}

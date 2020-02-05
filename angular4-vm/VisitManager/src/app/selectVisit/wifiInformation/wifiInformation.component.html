@@ -1,0 +1,59 @@
+
+<div class="wifiView">
+ <div class="container">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 px-0" class="wifiAccordionDiv">
+        <ngb-accordion class="wifiAccordion" (panelChange)="beforeChange($event)">
+            <div *ngFor='let WifiInformation of  wifiDownloadDetails'>
+                <ngb-panel ngbPanelTitle>
+                    <ng-template ngbPanelTitle>
+                        <div class="city pl-2 pt-1 pr-2">{{ WifiInformation.city}}
+                         <div class="row-icon-right">
+                                <span class=" align-right" [ngClass]="{'icon-down':!WifiInformation.collapsible, 'icon-up':WifiInformation.collapsible}"></span>
+                            </div>
+                        </div>
+                      
+                    </ng-template>
+                    <ng-template ngbPanelContent>
+                        <div class="sub  pl-2 pt-1">
+                            <div class="row">
+                                <div class="col-2">
+                                    <span>Facility</span>
+                                </div>
+                                <div class="col-2">
+                                    <span>Wifi</span>
+                                </div>
+                                <div class="col-4">
+                                    <span>Username</span>
+                                </div>
+                                <div class="col-4">
+                                    <span>Password</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block  pl-2 pt-2" *ngFor='let WifiInfo of WifiInformation.wifiInformation'>
+                            <div class="title">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <span>{{ WifiInfo.FacilityName}}</span>
+                                    </div>
+                                    <div class="col-2">
+                                        <span>{{ WifiInfo.WifiConnectionName}}</span>
+                                    </div>
+                                    <div class="col-4">
+                                        <span>{{ WifiInfo.UserName}}</span>
+                                    </div>
+                                    <div class="col-4">
+                                        <span>{{WifiInfo.Password}}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ng-template>
+                </ngb-panel>
+            </div>
+        </ngb-accordion>
+    </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,53 @@
+@import "../../../../theme/theme.scss";
+.sessionDownloadsView {
+    .download-details {
+        border: 1px solid $dark-grey;
+    }
+    .image-body {
+        @include set-Height('sessionDownloadsView-image-body-height');
+        @include image-background-phone($thumbnile);
+    }
+    .image-footer {
+        @include set-Height('sessionDownloadsView-image-footer-height');
+    }
+    .download-button-icon {
+        float: right;
+        padding-top: 0.625rem;
+        color: $dark-grey;
+    }
+    .image-title {
+        position: absolute;
+        bottom: 0.625rem;
+        left: 1.250rem;
+        color: $button-text;
+    }
+    .align-right {
+        position: absolute;
+        right: 1rem
+    }
+    .alingn-left {
+        position: relative;
+        top: 0.1rem;
+    }
+    .icon-delete {
+        @include set-icon-font-size('icon-p40-t40');
+        color: $tab-disable;
+    }
+    .icon-email {
+        @include set-icon-font-size('icon-p44-t44');
+        color: $tab-disable;
+    }
+    .icon-preview {
+        @include set-icon-font-size('icon-p50-t50');
+        color: $color-primary;
+        position: relative;
+        top: 0.10rem;
+    }
+    .icon-downloads
+    {
+        @include set-icon-font-size('icon-p30-t30');
+        position:relative;
+        bottom: 0.625rem;
+        color: $tab-disable;
+    }
+}

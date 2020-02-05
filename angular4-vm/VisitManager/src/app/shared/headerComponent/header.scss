@@ -1,0 +1,122 @@
+@import "../../theme/theme.scss";
+.page-header {
+    background: $gradient-left;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, $gradient-left, $gradient-right);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, $gradient-left, $gradient-right);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, $gradient-left, $gradient-right);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, $gradient-left, $gradient-right);
+    /* Standard syntax (must be last) */
+    //padding: 1.250rem 0.719rem;
+    line-height: 3;
+    text-align: center;
+    .PageTitleCls {
+        color: $button-text;
+        @include set-font-size('text-p37-t44-Graphik');
+    }
+    .homeBtnCls {
+        @include set-icon-font-size('icon-p44-t44');
+        color: $button-text;
+        position: absolute;
+        top: 0;
+        left: 0.625rem;
+        @include set-margin-top('homebutton-margin-top');
+    }
+    .backBtnCls {
+        @include set-icon-font-size('icon-p26-t26');
+        color: $button-text;
+        position: absolute;
+        top: 0;
+        left: 0.625rem;
+        @include set-margin-top('backbutton-margin-top');
+
+    }
+    .menuCls {
+    @include set-icon-font-size('icon-p44-t44');
+    color: $button-text;
+    position: absolute;
+    right: 0.938rem;
+    top: 0;
+    @include set-margin-top('menubutton-margin-top');
+    }
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: $color-black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 9999;
+}
+
+.sidenav.openNav {
+    width: 100%;
+    z-index: 9999;
+}
+
+.sidenav a {
+    text-decoration: none;
+    color: $button-text;
+    display: block;
+    transition: 0.3s;
+    @include set-font-size('text-p32-t40-Arial');
+}
+
+.sidenav a:hover,
+.offcanvas a:focus {
+    color: $button-text;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right:1.250rem;
+    @include set-margin-top('hambugermenu-closebtn');
+    color: $color-secondary;
+}
+
+.hamburgerMenuContainer {
+    position: relative;
+    margin: 2.188rem;
+}
+
+.rowHamburger {
+    @include set-Height('rowHamburger-menu-height');
+    height: 2.669rem;
+    display: flex;
+    outline-color:$color-black;
+    align-items: center;
+}
+
+.rowHamburger:active {
+    background: $color-secondary;
+    border-radius: 2rem;
+}
+
+.rowHamburger-icon {
+    float: left;
+    padding-left: 1.563rem;
+    color:$button-text;    
+}
+.rowHamburger-link{
+    padding-left: 2.500rem;
+}
+.backBtnCls.icon-feedback {
+        color:$button-text;
+    }
+/*
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 0.938rem;
+    }
+    .sidenav a {
+        font-size: 1.125rem;
+    }
+}*/

@@ -1,0 +1,14 @@
+{
+    "feedback": [{
+        "name" : "Objective",
+        "label": localeString.feedbackObjectivesQuestion
+    },
+    {
+        "name" : "Logistics",
+        "label": localeString.feedbackLogisticsQuestion
+    },
+    {
+        "name" : "Overall",
+        "label": localeString.feedbackOverallQuestion
+   }]
+}

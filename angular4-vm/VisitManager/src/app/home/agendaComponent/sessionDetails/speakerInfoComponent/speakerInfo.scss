@@ -1,0 +1,47 @@
+@import "../../../../theme/theme.scss";
+.mtmb-30{
+	margin-top:15px;
+	margin-bottom:15px;
+}
+.custom-heading-1{
+	@include set-font-size('text-p40-t48-Arial');
+	color: $color-primary;
+}
+.custom-heading-2{
+	@include set-font-size('text-p34-t44-Arial');
+	color: $tab-disable;
+}
+.custom-img{
+	width:70px;
+	height:70px;
+}
+.custom-icon{
+	@include set-icon-font-size('icon-p30-t30');
+    color: $color-primary;
+}
+.custom-large-icon{
+	@include set-icon-font-size('icon-p48-t44');
+    color: $tab-disable;
+}
+.custom-para-1{
+	@include set-font-size('text-p30-t34-Arial');
+	color: $label-text;
+}
+.custom-para-2{
+	@include set-font-size('text-p24-t28-Arial');
+	color: $info-text;
+}
+.custom-span-1{
+	@include set-font-size('text-p26-t34-Arial');
+	color: $label-text;
+}
+.no-padding{
+	padding:0px;
+}
+.hr-custom{
+	background: $dark-grey;
+}
+.icon-addtocontacts{
+	@include set-icon-font-size('icon-p48-t44');
+	color: $tab-disable;
+}

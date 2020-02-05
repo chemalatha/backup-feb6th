@@ -1,0 +1,58 @@
+@import "../theme.scss";
+//for rotating the spinner
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.dark-modal {
+    .modal-dialog {
+        position: relative;
+        margin: 0 auto;
+        @include set-padding-top('spinner-padding-top');
+        @include set-padding-left('spinner-padding-left');
+        .modal-content {
+            color: red;
+            border: none;
+            position: relative;
+            background: transparent;
+            /* color: #fff; */
+            text-align: center;
+            padding: .4em;
+            font-size: .95em;
+            font-weight: bold;
+            .spinner-header {
+                border: none;
+                .loader-outer {
+                    min-width: 7em !important;
+                    height: 5em !important;
+                    align-items: initial;
+                    flex-direction: initial;
+                    display: flex !important;
+                    justify-content: flex-start !important;
+                    .spinnerClass {
+                        @include image-background-phone($loader);
+                        width: 70%;
+                        height: 100%;
+                        -webkit-animation: rotation 1s infinite linear;
+                        animation: rotation 1s infinite linear;
+                    }
+                }
+                
+            }
+        }
+    }
+}

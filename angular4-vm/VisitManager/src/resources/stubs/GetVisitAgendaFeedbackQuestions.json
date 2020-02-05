@@ -1,0 +1,29 @@
+{
+    "ResponseStatus": "Success",
+    "ResponseMessage": "",
+    "AgendaFeedbackQuestions": [{
+        "AgendaFeedbackQuestion": "Did the visit meet your objectives?",
+        "AgendaAgendaFeedbackQuestionID": 1,
+        "AgendaFeedbackRating": 2
+    }, {
+        "AgendaFeedbackQuestion": "How would you rate the logistics arrangements?",
+        "AgendaAgendaFeedbackQuestionID": 2,
+        "AgendaFeedbackRating": 0
+    }, {
+        "AgendaFeedbackQuestion": "Please rate your overall experience.",
+        "AgendaAgendaFeedbackQuestionID": 3,
+        "AgendaFeedbackRating": 1
+    }, {
+        "AgendaFeedbackQuestion": "Did the visit meet your objectives?",
+        "AgendaAgendaFeedbackQuestionID": 4,
+        "AgendaFeedbackRating": 2
+    }, {
+        "AgendaFeedbackQuestion": "Please rate your overall experience.",
+        "AgendaAgendaFeedbackQuestionID": 5,
+        "AgendaFeedbackRating": 3
+    },{
+        "AgendaFeedbackQuestion": "Comment",
+        "AgendaAgendaFeedbackQuestionID": 5,
+        "AgendaFeedbackRating": "hi"
+    }]
+}

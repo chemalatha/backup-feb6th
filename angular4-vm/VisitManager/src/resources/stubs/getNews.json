@@ -1,0 +1,24 @@
+{
+  "News": [
+        {
+            "Title": "Nasscom",
+            "Description": "Nasscom Events",
+            "URL": "http://www.nasscom.in/events",
+            "IsImportant":1
+        },
+        {
+            "Title": "google news",
+            "Description": "Google news",
+            "URL": "https://news.google.co.in/nwshp?hl=en&tab=wn&ei=eTiNVeLnKMmhugT7_4H4Ag&ved=0CAUQqS4oBQ",
+            "IsImportant":0
+        },
+        {
+            "Title": "Times of India",
+            "Description": "Times of India headlines",
+            "URL": "http://timesofindia.indiatimes.com/international-home",
+            "IsImportant":1
+        }
+    ],
+    "ResponseStatus": "Success",
+    "ResponseMessage": ""
+}

@@ -1,0 +1,12 @@
+{
+  "Checkin": [
+    {
+      "id": "asset_tagging",
+      "Title": localeString.assetTaggingTitle,
+      "ActionId": "asset_tagging",
+      "isOfflineEnabled": false
+    },
+  ],
+  "ResponseStatus": "Success",
+  "ResponseMessage": ""
+}

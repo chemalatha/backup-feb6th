@@ -1,0 +1,121 @@
+@import "../../theme/theme.scss";
+.agenda-home-view {
+    .agenda-date {
+        margin-top: 0.5rem;
+        margin-left: 0 !important;
+        height: 3rem;
+        padding-right: 0.6rem;
+        ul {
+            margin-left: 0 !important;
+            padding-left: 0.6rem;
+            list-style: none;
+            display: block;
+            white-space: nowrap;
+            margin-bottom: 0.5rem;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            -ms-overflow-style: none;
+            overflow: -moz-scrollbars-none;
+        }
+        li {
+            background: transparent;
+            color: $info-text;
+            @include set-font-size('text-p28-t40-Arial');
+            @include set-padding-top('HomeView-datelist-padding-top');
+            @include set-padding-right('HomeView-datelist-padding-right');
+            @include set-padding-left('HomeView-datelist-padding-left');
+            @include set-padding-bottom('HomeView-datelist-padding-bottom');
+            display: inline-block;
+        }
+        li:hover,
+        li.selected {
+            background: $color-secondary;
+            color: white;
+            padding: 0.5rem 1.25rem;
+            border-radius: 2rem;
+        }
+        ul::-webkit-scrollbar {
+            width: 0 !important;
+        }
+    }
+    .visit-theme-image {
+        @include set-Height('height-p280-t570');
+    }
+    .agenda-Session-content {
+        @include set-margin-top('AgendaView-container-margin-top');
+        @include set-margin-bottom('AgendaView-container-margin-bottom');
+    }
+    .agenda-speaker-image {
+        @include set-Height('height-p120-t180');
+        @include set-Width('width-p120-t180');
+    }
+    .agenda-speaker-image-name {
+        @include set-font-size('text-p24-t30-Arial');
+        color: $color-black;
+    }
+    .agenda-session-content {
+        border-bottom: 1px solid grey;
+        @include set-padding-bottom('AgendaView-conent-padding-bottom')
+    }
+    .agenda-session-date-label {
+        @include set-font-size('text-p24-t28-Arial');
+        color: $info-text;
+    }
+    .agenda-session-title {
+        @include set-font-size('text-p34-t44-Arial');
+        color: $color-primary;
+    }
+    .agenda-calender-icon-container {
+        position: relative;
+        top: 0.15rem;
+    }
+    .agenda-calender-icon {
+        @include set-icon-font-size('icon-p26-t32');
+        padding-right: 0.1rem;
+        margin-left: 0.15rem;
+    }
+    .agenda-clock-icon {
+        @include set-icon-font-size('icon-p26-t32');
+        position: relative;
+        top: 0.1rem;
+    }
+    .agenda-meeting-icon-container {
+        height: 1.5rem;
+    }
+    .agenda-meeting-icon {
+        @include set-icon-font-size('icon-p38-t47');
+        position: relative;
+        top: 0.15rem;
+    }
+    .agenda-room-label {
+        margin-top: 0.3rem;
+    }
+    .agenda-location-container {
+        margin-top: 0.2rem;
+    }
+    .agenda-location-icon {
+        @include set-icon-font-size('icon-p26-t32');
+        margin-left: 0.15rem;
+        padding-top: 0.05rem;
+    }
+    .agenda-download-icon {
+        color: $color-primary;
+        @include set-icon-font-size('icon-p40-t70');
+        position: relative;
+        top: 0.4rem;
+    }
+    .agenda-download-label {
+        color: $color-primary;
+        @include set-font-size('text-p26-t40-Arial');
+    }
+    .agenda-feedback-icon {
+        color: $cvm-green;
+        @include set-icon-font-size('icon-p40-t70');
+        position: relative;
+        top: 0.4rem;
+    }
+    .agenda-feedback-label {
+        color: $cvm-green;
+        @include set-font-size('text-p26-t40-Arial');
+    }
+}

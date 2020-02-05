@@ -1,0 +1,38 @@
+@import "../../theme/theme.scss";
+.visitDetailsView {
+    .visitDetailsView-header-body {
+        margin-bottom: 20%;
+    }
+    .visitId-title {
+        font-size: 18px;
+    }
+    .common-heading-custom {
+        border-bottom: 1px solid $dark-grey;
+        color: #dark-grey;
+    }
+    .common-title-custom {
+        width: 100%;
+        text-align: start;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+    }
+    .common-class {
+        padding-bottom: 5px;
+        font-size: 15px;
+    }
+    .footer {
+        position: fixed;
+        height: 70px;
+        bottom: 0;
+        width: 100%;
+        justify-content: center;
+        border-top: 1px solid $dark-grey;
+        background: $button-text;
+    }
+    .btn.btn-primary {
+        width: 100%;
+        padding: 0.6rem;
+    }
+}

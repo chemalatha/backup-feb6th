@@ -1,0 +1,32 @@
+{
+    "ResponseStatus": "Success",
+    "ResponseMessage": "",
+    "Visits": [
+        {
+            "VisitID": 283,
+            "VisitTitle": "Visit June10",
+            "VisitStartDate": "2015-06-10T00:00:00",
+            "VisitEndDate": "2015-06-10T00:00:00",
+            "CityID": 1,
+            "CityName": "Bangalore",
+            "Longtitude": null,
+            "Latitude": null,
+            "IsFeedbackSubmitted": true,
+            "Country": "India",
+            "FacilityName": "BDC7"
+        },
+        {
+            "VisitID": 283,
+            "VisitTitle": "pdc Visit June10",
+            "VisitStartDate": "2015-06-10T00:00:00",
+            "VisitEndDate": "2015-06-12T00:00:00",
+            "CityID": 1,
+            "CityName": "Manila",
+            "Longtitude": null,
+            "Latitude": null,
+            "IsFeedbackSubmitted": true,
+            "Country": "Philippines",
+            "FacilityName": "BDC7"
+        }
+    ]
+}

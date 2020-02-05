@@ -1,0 +1,135 @@
+/* _text.scss */
+// This files is for font definitions and text flow control.
+// Use the text() mixin in your component/functionality rules
+
+// === PUBLIC ===
+
+// This is only function you should need to call from outside this file!
+@mixin text($label, $multi-line) {
+  @include font-label($label);
+  @include text-lines($multi-line);
+}
+
+// ==== DATA ===
+
+// label,ldpi,mdpi,hdpi,xhdpi, font-weight, font-size, color, text-shadow
+//ldpi height<=320px
+//mdpi 321px>height<=480px 
+//hdpi 481px>height<=800px 
+//xhdpi height>801px
+
+$font-data: (
+              ('label-40-Arial', normal, 1.250rem, 1.250rem, 1.250rem, 1.250rem, none, "Arial"),
+              ('label-37-graphik-medium', medium, 1.156rem, 1.156rem, 1.156rem, 1.156rem, none, "Graphik Web"),
+              ('label-36-Arial', normal, 0.813rem, 0.813rem, 0.813rem, 0.813rem, none, "Arial"),
+              ('label-34-Arial', normal, 1.063rem, 1.063rem, 1.063rem, 1.063rem, none, "Arial"),
+              ('label-32-Arial', normal, 1rem, 1rem, 1rem, 1rem, none, "Arial"),
+              ('label-30-Arial', normal, 0.938rem, 0.938rem, 0.938rem, 0.938rem, none, "Arial"),
+              ('label-28-Arial', normal, 0.875rem, 0.875rem, 0.875rem, 0.875rem, none, "Arial"),
+              ('label-26-Arial', normal, 0.813rem, 0.813rem, 0.813rem, 0.813rem, none, "Arial"),
+              ('label-24-Arial', normal, 0.750rem, 0.750rem, 0.750rem, 0.750rem, none, "Arial"),
+              ('label-22-Arial', normal, 0.688rem, 0.688rem, 0.688rem, 0.688rem, none, "Arial")
+);
+
+// Generate the CSS for a named font
+@mixin font-label($font-label) {
+  @if length($font-data) != 8 and length($font-data) != 9 and length($font-data) != 10 {
+    // We expect the table rows to have 4 or 5 items
+    @warn "Font data table corrupted";
+  }
+  $found: false;
+  @each $font in $font-data {
+    $label: nth($font, 1); // in SASS, list indices begin at 1
+    @if $font-label == $label {
+
+     //ldpi
+      @media (min-width: 240px) {
+        $found: true;
+        font-family: nth($font, 8);
+        font-weight: nth($font, 2);
+        font-size: nth($font, 3) !important;
+        //color: nth($font, 7);
+      }
+
+     //mdpi
+      @media (min-width: 241px) and (max-width: 320px)  {
+        $found: true;
+        font-family: nth($font, 8);
+        font-weight: nth($font, 2);
+        font-size: nth($font, 4) !important;
+       // color: nth($font, 7);
+
+      }
+      //hdpi
+      @media (min-width: 321px) and (max-width: 480px){
+        $found: true;
+        font-family: nth($font, 8);
+        font-weight: nth($font, 2);
+        font-size: nth($font, 5) !important;
+       // color: nth($font, 7);
+
+      }
+      //xhdpi
+      @media (min-width: 481px) {
+        $found: true;
+        font-family: nth($font, 8);
+        font-weight: nth($font, 2);
+        font-size: nth($font, 6) !important;
+       // color: nth($font, 7);
+      }
+    }
+    @if length($font) > 6 {
+      text-shadow: nth($font, 7);
+    }
+  }
+  @if not $found {
+    @warn "Invalid font label specified: #{$font-label}";
+  }
+}
+
+// Generate the CSS for a named line-mode
+@mixin text-lines($lines) {
+  @if $lines == 'multi' {
+    // The container will expand vertically as needed, by going multi-line.
+    // Strings will never overflow the container horizontally.
+    // Words that exceed a single line will break mid-word.
+    // Suggestions of &shy; and <wbr> will be taken if needed.
+    word-wrap: break-word; // Split single words that are simply too big
+    //-webkit-hyphens: auto;  // Attempt enhanced hyphenation if brwowser supports it
+    white-space: pre-wrap; // Consider tabs and spaces as important/intentional
+    overflow: visible; // Default, but important
+    word-break: break-word; // Default, but important
+    text-overflow: ellipsis;
+  } @else if $lines == 'single' {
+    // Single-line string.
+    // String will not overflow the container horizontally.
+    // String will ellipsize if needed.
+    overflow: hidden; // Don’t show out-of-bounds content
+    text-overflow: ellipsis; // Enable ellipsis on overflow
+    white-space: pre; // Consider tabs and spaces as important/intentional
+    word-wrap: normal; // Default, but important
+  } @else {
+    @warn "Invalid text lines specified: #{$lines}";
+  }
+}
+
+// Generate concrete CSS rules for all (line-mode,font-label) pairs
+@each $font in $font-data {
+  $label: nth($font, 1);
+  @each $line-mode in ('multi', 'single') {
+    .text-#{$line-mode}-#{$label} {
+      @include text($label, $line-mode);
+    }
+  }
+}
+
+// Private function for assisting _distance.scss
+@function text-height($font-label) {
+  @each $font in $font-data {
+    $label: nth($font, 1); // in SASS, list indices begin at 1
+    @if $font-label == $label {
+      @return nth($font, 3) * $app-font-size-multiplier;
+    }
+  }
+  @warn "Invalid font label specified: #{$font-label}";
+}

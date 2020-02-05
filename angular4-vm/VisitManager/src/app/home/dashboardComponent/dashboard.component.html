@@ -1,0 +1,49 @@
+<div class="dashboardView col-12 col-sm-12 col-lg-12">
+    <div class="agenda-date">
+        <ul id="nav">
+            <li *ngFor='let sessionDate of sessionDates;' [ngClass]="{'selected': (sessionDate === activeSessionDate) }" (click)="displaySessionInfoDate(sessionDate)">{{sessionDate | amDateFormat: 'DD MMM'}}</li>
+        </ul>
+    </div>
+    <div class="sessionDetail" *ngFor='let sessioninfo of sessionArray;let j=index'>
+        <div class="sessionTitle">{{sessioninfo.Title}}</div>
+        <div class="actionItems" *ngFor='let actionitem of sessioninfo.AgendaActionItemDashboard'>
+            <div>
+                <span class="{{actionitem.iconCls}} {{actionitem.ActionItemDashboardStatus}}">&nbsp;</span>
+                <div class="actionDiv">
+                    <span class="sessionkey">{{'response'|translate}}</span>
+                    <span class="sessionValue ">{{actionitem.DashboardTitle}}</span>
+                </div>
+                <div class="ownerDiv">
+                    <span class="sessionkey ">{{'owner'|translate}}</span>
+                    <span class="sessionValue ">{{actionitem.FirstName }} {{actionitem.LastName }}</span>
+                </div>
+            </div>
+        </div>
+        <div class="commentSection">
+            <div class="commentHeader">
+                <span class=' collapseIcon' [ngClass]="{'icon-down':sessioninfo.collapsible, 'icon-up':!sessioninfo.collapsible}" (click)="toggleComments(sessioninfo.AgendaID)"></span>
+                <div class="display-inline  commentTitle ml-2 mr-4">{{'comments' |translate}}</div>
+                <div class="commentCount mx-2 col-2">{{sessioninfo.CommentsCount}}</div>
+                <div class="totalComments">{{"totalcomments"|translate}}</div>
+                <div class="icon-addcomments addComments" (click)="addComments($event)"></div>
+            </div>
+            <div [ngClass]="{'commentsCollapse':sessioninfo.collapsible, 'commentsExpand':!sessioninfo.collapsible}">
+                <input type="checkbox" class="read-more-state" [attr.id]='j' />
+                <div class="read-more-wrap">
+                    <div class="commentInfo" *ngFor="let commentObj of commentsArray; let i=index">
+                        <div [ngClass]="{'read-more-target':i>1}">
+                        <div class="circle">{{commentObj.firstName[0]}}{{commentObj.lastName[0]}}</div>
+                            <div class="username"> {{commentObj.VisitorName}} </div>
+                            <div class="comments">{{commentObj.VisitorComment}}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="display-none">
+                	<textarea class=" col-11 col-sm-11 col-md-11 offset-sm-4  offset-md-4" ></textarea> 
+                	<div class="icon-add display-inline submit-comment" (click)="submitComment($event,sessioninfo.AgendaID)"></div>
+                </div>
+                <label [attr.for]='j' class="read-more-trigger offset-2 col-7 col-sm-4 col-md-4 offset-sm-4  offset-md-4 text-center"></label>
+            </div>
+        </div>
+    </div>
+</div>

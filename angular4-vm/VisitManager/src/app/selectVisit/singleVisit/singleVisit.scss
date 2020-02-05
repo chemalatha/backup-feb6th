@@ -1,0 +1,44 @@
+@import "../../theme/theme.scss";
+.visitView {
+    .nativeMapContainer {
+        height: 21.875rem;
+        /*350px*/
+    }
+    .visitview-welcome-heading {
+        text-align: center;
+        @include set-font-size('text-p30-t34-Arial');
+        color: $label-text;
+        @include set-margin-top('visitview-welcome-heading-margin-top');
+        border-bottom: 1px solid #cccccc;
+        padding-bottom: 0.769rem;
+    }
+    .visitview-title-city-name {
+        @include set-Height('visitview-title-city-name-set-height');
+        text-align: center;
+        color: $color-primary;
+        @include set-font-size('text-p36-t50-Arial');
+        font-family: arial;
+        padding-top: 0.769rem;
+    }
+    .selected-city {
+       @include set-font-size('text-p36-t50-Arial');  
+    }
+    .btn.btn-primary {
+        width: 100%;
+        padding: 0.7rem;
+        border-radius: 2.25rem;
+    }
+    .footer {
+        padding-right: 0.938rem;
+        position: fixed;
+        left: 0;
+        width: 100%;
+        bottom:0;
+        @include set-Height('visitView-footer-height');
+        padding-top: 0.938rem;
+    }
+    .tag-line {
+        @include set-font-size('text-p24-t34-Arial');
+        padding-top: 0.625rem;
+    }
+}

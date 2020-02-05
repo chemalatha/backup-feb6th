@@ -1,0 +1,128 @@
+@import 'common/background';
+@import 'common/colors';
+
+@import 'common/phone/margin-alignment';
+@import 'common/phone/heightandwidth-alignment';
+@import 'common/phone/padding-alignment';
+@import 'common/phone/text';
+
+
+
+@import 'common/margin-alignment';
+@import 'common/_height-width-alignment';
+@import 'common/padding-alignment';
+@import 'common/text';
+@import 'common/iconfont';
+
+.alert-modal-popup {
+    display: flex !important;
+    align-items: center;
+    position: absolute;
+    .modal-dialog {
+        width: 100%;
+        @include set-padding-left('Modal-alert-padding-left');
+        @include set-padding-right('Modal-alert-padding-right');
+    }
+}
+
+.wifiAccordion {
+    .card-header {
+        padding: 0 !important;
+        margin-bottom: 0 !important; ////
+        background-color: #f7f7f9; ////
+        border-bottom: 0 !important
+    }
+    .card {
+        border: 0 !important;
+        border-radius: 0 !important;
+    }
+    .card-block {
+        padding: 0 !important;
+    }
+}
+
+.safetyOverview {
+  .safetyOverview-carousel-container {
+    background: $cvm-comment-id-color;
+    .carousel {
+      height: 24rem;
+      .carousel-control-prev, .carousel-control-next {
+        display: none;
+      }
+      .carousel-inner {
+        padding-top: 1.07rem;
+        padding-bottom: 1.07rem;
+        @include set-padding-left(safetyOverview-padding-left);
+        @include set-padding-right(safetyOverview-padding-right);
+        height: 21rem;
+        overflow: auto;
+        .carousel-dec {
+          @include set-font-size('text-p30-t34-Arial');
+          .safety-list-title {
+            font-weight: 700;
+          }
+          .safety-list {
+            padding-left: 1rem;
+          }
+        }
+      }
+    }
+    .carousel-indicators {
+      bottom: 0.09rem;
+    }
+    .carousel-indicators li {
+      max-width: 1.07rem;
+      height: 1.07rem;
+      border-radius: 50%;
+      border: 0.07rem solid $color-red;
+    }
+    .carousel-indicators li.active {
+      background-color: $color-red;
+    }
+
+  }
+}
+.safetyOverviewpopup {
+  .modal-dialog {
+    max-width: 100%;
+    @include set-padding-left('safetyOverviewPopup-padding-left');
+    @include set-padding-right('safetyOverviewPopup-padding-right');
+    .close {
+      font-size: 1.5rem;
+      color: $color-red;
+    }
+    .modal-content {
+      border-radius: 0;
+      .safetyOverviewPopup-header {
+        background: $cvm-comment-id-color;
+        .modal-title {
+          width: 100%;
+        }
+      }
+      .modal-body {
+        @include set-padding-bottom('safetyOverviewPopup-padding-bottom');
+        .carousel {
+          .carousel-control-prev, .carousel-control-next {
+            display: none;
+          }
+          img {
+            max-width: 100%;
+            @include set-Height('safetyOverviewPopup-height');
+          }
+        }
+        .carousel-indicators {
+          bottom: -2.5rem;
+        }
+        .carousel-indicators li {
+          max-width: 1.07rem;
+          height: 1.07rem;
+          border-radius: 50%;
+          border: 0.07rem solid $color-red;
+        }
+        .carousel-indicators li.active {
+          background-color: $color-red;
+        }
+      }
+    }
+  }
+}

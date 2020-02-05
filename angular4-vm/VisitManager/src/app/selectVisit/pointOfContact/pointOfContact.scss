@@ -1,0 +1,52 @@
+@import "../../theme/theme.scss";
+.pocView {
+    .poc-user-details {
+       /*@include set-margin-top(pocView-poc-user-details-margin-top);*/
+        border-bottom: 1px solid $dark-grey;
+    }
+    .user-info {
+        padding-left: 0.625rem;
+    }
+    .user-name {
+        /*@include set-margin-bottom(pocView-user-name-margin-bottom);*/
+        @include set-font-size('text-p40-t48-Arial');
+    }
+    .icon-addtocontacts {
+        color: $tab-disable;
+        font-size: 1.50rem;
+    }
+    .user-designation {
+        @include set-font-size('text-p24-t28-Arial');
+        color: $info-text;
+         @include set-margin-bottom(pocView-user-designation-margin-bottom);
+    }
+    .user-email {
+       @include set-margin-bottom(pocView-user-name-margin-bottom);
+    }
+    .common {
+        @include set-font-size('text-p26-t34-Arial');
+    }
+    .red-color-class {
+        color: $color-primary
+    }
+    .container {
+        margin: 0rem;
+        width: 100%;
+    }
+    .pocView-common {
+        color: $label-text;
+        padding-left: 0.313rem;
+    }
+    .row {
+        width: 100%;
+    }
+    .pocView-container{
+        margin-top: 1.469rem!important;
+        margin-bottom: 1.469rem!important;
+    }
+    .name{
+    @include set-font-size('text-p28-t28-Arial');
+    color:$info-text;
+
+    }
+}

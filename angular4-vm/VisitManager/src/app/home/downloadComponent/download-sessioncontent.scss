@@ -1,0 +1,48 @@
+@import "../../theme/theme.scss";
+.downloadSessionContentView {
+    .sessionContentHeader {
+        padding-top: 1.500rem;
+        display: block;
+        padding-bottom: 1.000rem;
+    }
+    .sessionContentDownload-details {
+        border: 1px solid $dark-grey;
+    }
+    .sessionContentImage-body {
+        @include set-Height('sessionDownloadsView-image-body-height');
+        @include image-background-phone($thumbnile-session);
+    }
+    .sessionContentImage-footer {
+        @include set-Height('sessionDownloadsView-image-footer-height');
+    }
+    .sessionContentImage-title {
+        position: absolute;
+        bottom: 0.625rem;
+        left: 1.250rem;
+        color: $button-text;
+    }
+    .align-right {
+        position: absolute;
+        right: 1rem
+    }
+    .alingn-left {
+        position: relative;
+        top: 0.1rem;
+    }
+    .icon-delete {
+        @include set-icon-font-size('icon-p40-t40');
+        color: $tab-disable;
+    }
+    .icon-email {
+        @include set-icon-font-size('icon-p44-t44');
+        position: relative;
+        color: $tab-disable;
+    }
+    .icon-preview {
+        @include set-icon-font-size('icon-p50-t50');
+        color: $color-primary;
+        position: relative;
+        top: 0.10rem;
+        color: $color-primary;
+    }
+}

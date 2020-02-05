@@ -1,0 +1,25 @@
+<div class="settingsView">
+    <div class="col-12 col-sm-12 offset-md-1 col-md-10 col-lg-10 offset-lg-1 col-xl-10 offset-xl-1">
+        <div class="row no-gutters" *ngFor="let setting of settingsContent; let i = index">
+            <div class=" settingsView-titles col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10" [routerLink]="[setting.route]">
+                {{setting.title}}
+            </div>
+            <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                <div class="settings-row-align-right pt-3">
+                    <div *ngIf='false; else elseBlock'>
+                        <label>
+                            <span class="switch">
+                              <input type="checkbox" name="touchEnableId" >
+                              <div class="slider round"></div>
+                            </span>
+                        </label>
+                    </div>
+                    <ng-template #elseBlock>
+                        <div class="icon-next" [routerLink]="[setting.route]">
+                        </div>
+                    </ng-template>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

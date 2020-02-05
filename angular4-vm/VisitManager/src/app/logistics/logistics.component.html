@@ -1,0 +1,5 @@
+<div class="checkInView">
+    <cvm-header [pageTitle]='title' [isHomeBtn]=true [isBackBtn]=false [isMenuBtn]=true (backButtonEvent)="goBack($event)" (homeButtonEvent)="goHome($event)"></cvm-header>
+<cvm-header-radiofield [items]="logisticsItems"></cvm-header-radiofield>
+    <router-outlet></router-outlet>
+</div>

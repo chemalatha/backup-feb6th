@@ -1,0 +1,336 @@
+{
+  "ResponseStatus": "Success",
+  "items": [
+ /* {
+      "title": localeString.homeMenuTitle,
+      "actionId": "agenda",
+      "type": "dynamic",
+      "activeIDCVisit": "true",
+      "pastIDCVisit": "false",
+      "activePDCVisit": "true",
+      "pastPDCVisit": "false",
+      "cls": "menuIconCls agenda_menu_icon_cls",
+      "selectedCls": "menuIconCls agenda_menu_icon_cls_selected",
+      "isOfflineEnabled":true
+    },*/
+  {
+      "title": localeString.chooseVisitTitle,
+      "actionId": "chooseVisits",
+      "type": "dynamic",
+      "activeIDCVisit": "true",
+      "pastIDCVisit": "false",
+      "activePDCVisit": "true",
+      "pastPDCVisit": "false",
+      "cls": "menuIconCls select_visit__menu_icon_cls",
+      "selectedCls": "menuIconCls select_visit__menu_icon_cls_selected",
+      "isOfflineEnabled":true
+    },
+    {
+      "title": localeString.welcomeScreenTitle,
+      "actionId": "welcome",
+      "type": "dynamic",
+      "activeIDCVisit": "true",
+      "pastIDCVisit": "false",
+      "activePDCVisit": "true",
+      "pastPDCVisit": "false",
+      "cls": "menuIconCls welcome_menu_icon_cls",
+      "selectedCls": "menuIconCls welcome_menu_icon_cls_selected",
+      "isOfflineEnabled":true
+    },
+    /*{
+      "title": localeString.aboutAccenture,
+      "actionId": "aboutAccenture",
+      "type": "dynamic",
+      "activeIDCVisit": "true",
+      "pastIDCVisit": "false",
+      "activePDCVisit": "true",
+      "pastPDCVisit": "false",
+      "cls": "menuIconCls aboutAccenture_menu_icon_cls",
+      "selectedCls": "menuIconCls aboutAccenture_menu_icon_cls_selected",
+      "isOfflineEnabled":true
+    },*/
+    
+    {
+      "title": localeString.checkIn,
+      "actionId": "checkinList",
+      "type": "dynamic",
+      "activeIDCVisit": "true",
+      "pastIDCVisit": "false",
+      "activePDCVisit": "false",
+      "pastPDCVisit": "true",
+      "cls": "menuIconCls checkIn_menu_icon_cls",
+      "selectedCls": "menuIconCls checkIn_menu_icon_cls_selected",
+      "isOfflineEnabled":true
+    },
+    {
+      "title": localeString.assetTaggingTitle,
+      "actionId": "asset_tagging",
+      "type": "dynamic",
+      "activeIDCVisit": "false",
+      "pastIDCVisit": "true",
+      "activePDCVisit": "true",
+      "pastPDCVisit": "true",
+      "cls": "menuIconCls register_laptop_menu_icon_cls",
+      "selectedCls": "menuIconCls register_laptop_menu_icon_cls_selected",
+      "isOfflineEnabled":false
+    },
+    
+    
+    /*{
+      "title": localeString.visitGuidelines,
+      "actionId": "visitGuidelines",
+      "type": "dynamic",
+      "activeIDCVisit": "true",
+      "pastIDCVisit": "false",
+      "activePDCVisit": "true",
+      "pastPDCVisit": "false",
+      "cls": "menuIconCls visit_menu_icon_cls",
+      "selectedCls": "menuIconCls visit_menu_icon_cls_selected",
+      "isOfflineEnabled":true
+    },*/
+    
+    {
+      "title": localeString.pointOfContact,
+      "actionId": "pointOfContact",
+      "type": "dynamic",
+      "activeIDCVisit": "true",
+      "pastIDCVisit": "false",
+      "activePDCVisit": "true",
+      "pastPDCVisit": "false",
+      "cls": "menuIconCls POC_menu_icon_cls",
+      "selectedCls": "menuIconCls POC_menu_icon_cls_selected",
+      "isOfflineEnabled":true
+    },
+    /*{
+      "title": localeString.materialMenuTitle,
+      "actionId": "material",
+      "type": "dynamic",
+      "activeIDCVisit": "true",
+      "pastIDCVisit": "false",
+      "activePDCVisit": "true",
+      "pastPDCVisit": "false",
+      "cls": "menuIconCls material_menu_icon_cls",
+      "selectedCls": "menuIconCls material_menu_icon_cls_selected",
+      "isOfflineEnabled":false
+    },*/
+    {
+      "title": localeString.newsAndEvents,
+      "actionId": "news_events",
+      "type": "dynamic",
+      "activeIDCVisit": "true",
+      "pastIDCVisit": "false",
+      "activePDCVisit": "true",
+      "pastPDCVisit": "false",
+      "cls": "menuIconCls important_links_menu_icon_cls",
+      "selectedCls": "menuIconCls important_links_menu_icon_cls_selected",
+      "isOfflineEnabled":false
+    },
+    {
+      "title": localeString.logistics,
+      "actionId": "logistics",
+      "type": "dynamic",
+      "activeIDCVisit": "true",
+      "pastIDCVisit": "false",
+      "activePDCVisit": "true",
+      "pastPDCVisit": "false",
+      "cls": "menuIconCls logistics_menu_icon_cls",
+      "selectedCls": "menuIconCls logistics_menu_icon_cls_selected",
+      "isOfflineEnabled":true
+    },
+    /*{
+      "title": localeString.assetTaggingTitle,
+      "actionId": "asset_tagging",
+      "type": "dynamic",
+      "activeIDCVisit": "false",
+      "pastIDCVisit": "true",
+      "activePDCVisit": "true",
+      "pastPDCVisit": "false",
+      "cls": "menuIconCls register_laptop_menu_icon_cls",
+      "selectedCls": "menuIconCls register_laptop_menu_icon_cls_selected",
+      "isOfflineEnabled":false
+    },*/
+    {
+      // "title": localeString.travelGuide,
+      "title": localeString.yourTravel,
+      "actionId": "yourTravelList",
+      "type": "dynamic",
+      "activeIDCVisit": "true",
+      "pastIDCVisit": "false",
+      "activePDCVisit": "true",
+      "pastPDCVisit": "false",
+      "cls": "menuIconCls travel_menu_icon_cls",
+      "selectedCls": "menuIconCls travel_menu_icon_cls_selected",
+      "isOfflineEnabled":true
+    },
+    {
+      "title": localeString.agenda,
+      "actionId": "agenda",
+      "type": "dynamic",
+      "activeIDCVisit": "true",
+      "pastIDCVisit": "false",
+      "activePDCVisit": "true",
+      "pastPDCVisit": "false",
+      "cls": "menuIconCls agenda_menu_icon_cls",
+      "selectedCls": "menuIconCls agenda_menu_icon_cls_selected",
+      "isOfflineEnabled":true
+    },
+    {
+      "title": localeString.peopleTitle,
+      "actionId": "people",
+      "type": "dynamic",
+      "activeIDCVisit": "true",
+      "pastIDCVisit": "false",
+      "activePDCVisit": "true",
+      "pastPDCVisit": "false",
+      "cls": "menuIconCls meet_presenter_menu_icon_cls",
+      "selectedCls": "menuIconCls meet_presenter_menu_icon_cls_selected",
+      "isOfflineEnabled":true
+    },
+    /*
+    {
+      "title": localeString.carBooking,
+      "actionId": "cars",
+      "type": "dynamic",
+      "activeIDCVisit": "true",
+      "pastIDCVisit": "false",
+      "activePDCVisit": "true",
+      "pastPDCVisit": "false",
+      "cls": "menuIconCls cars_menu_icon_cls",
+      "selectedCls": "menuIconCls cars_menu_icon_cls_selected",
+      "isOfflineEnabled":true
+    },
+    {
+      "title": localeString.dietaryPreferencesTitle,
+      "actionId": "dietary_preferences",
+      "type": "dynamic",
+      "activeIDCVisit": "true",
+      "pastIDCVisit": "false",
+      "activePDCVisit": "true",
+      "pastPDCVisit": "false",
+      "cls": "menuIconCls dietary_menu_icon_cls",
+      "selectedCls": "menuIconCls dietary_menu_icon_cls_selected",
+      "isOfflineEnabled":false
+    },
+    {
+      "title": localeString.cityInsightsTitle,
+      "actionId": "cityInsight",
+      "type": "dynamic",
+      "activeIDCVisit": "true",
+      "pastIDCVisit": "false",
+      "activePDCVisit": "false",
+      "pastPDCVisit": "true",
+      "cls": "menuIconCls cityInsights_menu_icon_cls",
+      "selectedCls": "menuIconCls cityInsights_menu_icon_cls_selected",
+      "isOfflineEnabled":false
+    },
+    {
+      "title": localeString.safetyOverviewTitle,
+      "actionId": "safety_overview",
+      "type": "dynamic",
+      "activeIDCVisit": "true",
+      "pastIDCVisit": "false",
+      "activePDCVisit": "true",
+      "pastPDCVisit": "false",
+      "cls": "menuIconCls safety_overview_menu_icon_cls",
+      "selectedCls": "menuIconCls safety_overview_menu_icon_cls_selected",
+      "isOfflineEnabled":true
+    },*/
+    {
+      "title": localeString.wifiTitle,
+      "actionId": "wifi",
+      "type": "dynamic",
+      "activeIDCVisit": "true",
+      "pastIDCVisit": "false",
+      "activePDCVisit": "true",
+      "pastPDCVisit": "false",
+      "cls": "menuIconCls wifi_menu_icon_cls",
+      "selectedCls": "menuIconCls wifi_menu_icon_cls_selected",
+      "isOfflineEnabled":true
+    },
+    {
+      "title": localeString.photoAlbum,
+      "actionId": "photoAlbum",
+      "type": "dynamic",
+      "activeIDCVisit": "true",
+      "pastIDCVisit": "false",
+      "activePDCVisit": "true",
+      "pastPDCVisit": "false",
+      "cls": "menuIconCls photo_album_menu_icon_cls",
+      "selectedCls": "menuIconCls photo_album_menu_icon_cls_selected",
+      "isOfflineEnabled":true
+    },
+   /* {
+      "title": localeString.feedbackTitle,
+      "actionId": "feedback",
+      "type": "dynamic",
+      "activeIDCVisit": "true",
+      "pastIDCVisit": "false",
+      "activePDCVisit": "true",
+      "pastPDCVisit": "false",
+      "cls": "menuIconCls POC_menu_icon_cls",
+      "selectedCls": "menuIconCls POC_menu_icon_cls_selected",
+      "isOfflineEnabled":false
+    },
+    {
+      "title": localeString.visitSummary,
+      "actionId": "visitRecap",
+      "type": "dynamic",
+      "activeIDCVisit": "true",
+      "pastIDCVisit": "false",
+      "activePDCVisit": "true",
+      "pastPDCVisit": "false",
+      "cls": "menuIconCls visitRecap_menu_icon_cls",
+      "selectedCls": "menuIconCls visitRecap_menu_icon_cls_selected",
+      "isOfflineEnabled":true
+    },*/
+    
+   /* {
+      "title": localeString.visitSummary,
+      "actionId": "visitSummary",
+      "type": "dynamic",
+      "activeIDCVisit": "true",
+      "pastIDCVisit": "false",
+      "activePDCVisit": "true",
+      "pastPDCVisit": "false",
+      "cls": "menuIconCls visit_summary_menu_icon_cls",
+      "selectedCls": "menuIconCls visit_summary_menu_icon_cls_selected",
+      "isOfflineEnabled":true
+    },*/
+    {
+      "title": localeString.privacyStmtTitle,
+      "actionId": "EULAMenu",
+      "type": "dynamic",
+      "activeIDCVisit": "true",
+      "pastIDCVisit": "false",
+      "activePDCVisit": "true",
+      "pastPDCVisit": "false",
+      "cls": "menuIconCls TnC_menu_icon_cls",
+      "selectedCls": "menuIconCls TnC_menu_icon_cls_selected",
+      "isOfflineEnabled":true
+    },
+    {
+      "title": "Settings",
+      "actionId": "settings",
+      "type": "static",
+      "activeIDCVisit": "true",
+      "pastIDCVisit": "false",
+      "activePDCVisit": "true",
+      "pastPDCVisit": "false",
+      "cls": "menuIconCls settings_menu_icon_cls",
+      "selectedCls": "menuIconCls settings_menu_icon_cls_selected",
+      "isOfflineEnabled":true
+    },
+    {
+      "title": "Logout",
+      "actionId": "logout",
+      "type": "static",
+      "activeIDCVisit": "true",
+      "pastIDCVisit": "false",
+      "activePDCVisit": "true",
+      "pastPDCVisit": "false",
+      "cls": "menuIconCls logout_menu_icon_cls",
+      "selectedCls": "menuIconCls logout_menu_icon_cls_selected",
+      "isOfflineEnabled":false
+    }
+  ]
+}

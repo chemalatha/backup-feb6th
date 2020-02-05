@@ -1,0 +1,70 @@
+{
+    "ResponseStatus": "Success",
+    "ResponseMessage": "",
+    "CabBooking": [
+        {
+            "CabRequestID": "",
+            "CityId": 3,
+            "RequestStatus": 3,
+            "CabDetails": {
+                "PickupDate": "25/11/2015",
+                "PickupTime": "10:30:00",
+                "DriverName": "Jane",
+                "DriverNumber": "9876556789",
+                "CarDetails": "KA-05-1383",
+                "PickupLocation": "Hotel Aloft",
+                "CabBookedForDays": 2,
+                "CityId": 3,
+                "CityName": "Delhi"
+            }
+        },
+        {
+            "CabRequestID": "",
+            "CityId": 1,
+            "RequestStatus": 2,
+            "CabDetails": {
+                "PickupDate": "22/11/2015",
+                "PickupTime": "14:30:00",
+                "DriverName": "John",
+                "DriverNumber": "987654321",
+                "CarDetails": "KA-05-1434",
+                "PickupLocation": "Hotel Zuri",
+                "CabBookedForDays": 2,
+                "CityId": 1,
+                "CityName": "Bangalore"
+            }
+        },
+        {
+            "CabRequestID": "",
+            "CityId": 2,
+            "RequestStatus": 1,
+            "CabDetails": {
+                "PickupDate": "25/11/2015",
+                "PickupTime": "",
+                "DriverName": "",
+                "DriverNumber": "",
+                "CarDetails": "",
+                "PickupLocation": "",
+                "CabBookedForDays": 2,
+                "CityId": 2,
+                "CityName": "Mumbai"
+            }
+        },
+        {
+            "CabRequestID": "",
+            "CityId": 3,
+            "RequestStatus": 3,
+            "CabDetails": {
+                "PickupDate": "20/11/2015",
+                "PickupTime": "16:30:00",
+                "DriverName": "Jane",
+                "DriverNumber": "9876556789",
+                "CarDetails": "KA-05-1383",
+                "PickupLocation": "Hotel Aloft",
+                "CabBookedForDays": 2,
+                "CityId": 3,
+                "CityName": "Delhi"
+            }
+        }
+    ]
+}

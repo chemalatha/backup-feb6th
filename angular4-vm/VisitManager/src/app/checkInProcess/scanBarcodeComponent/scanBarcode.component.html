@@ -1,0 +1,34 @@
+<div class="barcodeView">
+    <div class="scan-barcode" *ngIf="visitorBarcodeDetails">
+        <div class="headers">
+            <div class="row no-gutters">
+                <div class="col-12 col-sm-12 offset-md-1 col-md-10 offset-lg-1 col-lg-10 offset-xl-1 col-xl-10">
+                    <div class="common">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            <div class="barcode-title">
+                                {{"scanBarCode" | translate}}
+                            </div>
+                            <div class="barcode-username">
+                                {{FirstLastName}}
+                            </div>
+                            <div class="barcode-datevisit">
+                                Date of Visit: {{dateOfVisit | amDateFormat: 'DD MMM YYYY'}}</div>
+                            <div class="barcode-notes">
+                                Scan the barcode at the front desk kiosk or reception for the hard copy of your ID card.
+                            </div>
+                            <div class="barcode-image">
+                                <img [src]="visitorBarcodeDetails.ConfirmationNumberImage" />
+                            </div>
+                            <div class="barcode-number">
+                                {{visitorBarcodeDetails.ConfirmationNumberBarCode}}
+                            </div>
+                            <div class="barcode-note">
+                                Barcode can be retrieved for later usage.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

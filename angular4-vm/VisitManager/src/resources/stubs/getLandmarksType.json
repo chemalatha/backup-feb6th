@@ -1,0 +1,15 @@
+{
+    "odata.metadata": "https://clientvisitmanagementsvc.ciostage.accenture.com/ClientVisitManagement-Service/$metadata#GetLandmarksType/@Element",
+    "Landmarks": [
+        {
+            "LandmarksID": 3,
+            "LandmarkType": "Ancient Sites"
+        },
+        {
+            "LandmarksID": 4,
+            "LandmarkType": "Movie Theatres"
+        }
+    ],
+    "ResponseStatus": "Success",
+    "ResponseMessage": ""
+}

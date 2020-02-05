@@ -1,0 +1,52 @@
+{
+    "odata.metadata": "https://clientvisitmanagementsvc.ciostage.accenture.com/ClientVisitManagement-Service/$metadata#GetCityLandmarks/@Element",
+    "Landmarks": [
+        {
+            "CityTourID": 42,
+            "LandmarkType": "Shopping Centre",
+            "Title": "UB City",
+            "Description": "UB City is the biggest luxury commercial property project in Bangalore, India",
+            "Longitude": "77.59",
+            "Latitude": "12.97",
+            "Description":"Test Description1"
+        },
+        {
+            "CityTourID": 43,
+            "LandmarkType": "Shopping Centre",
+            "Title": "Commercial Street",
+            "Description": "Commercial Street is one of the busiest markets in the garden city. A tangle of by-lanes, the street is lined with jewellery and antique stores, book shops, apparel outlets and accessory stalls",
+            "Longitude": "77.61",
+            "Latitude": "12.98",
+            "Description":"Test Description2"
+        },
+        {
+            "CityTourID": 44,
+            "LandmarkType": "Shopping Centre",
+            "Title": "Cottage Emporium",
+            "Description": "The Cottage Emporium is the leading source for Indian handicrafts created by skilled Indian Artists & Masters of Crafts. Artist made- handicrafts, furnishings, jewellery & accessories, Art objects & accents for your home or office.",
+            "Longitude": "77.60",
+            "Latitude": "12.97",
+            "Description":"Test Description3"
+        },
+        {
+            "CityTourID": 45,
+            "LandmarkType": "Shopping Centre",
+            "Title": "MG Road",
+            "Description": "Mahatma Gandhi Road also known as M.G. Road is a road in Bangalore. It runs east from Trinity Circle at one end to Anil Kumble circle at the other. M. G. Road is also one of the busiest roads in the city and is lined on one side with retail stores, food outlets and restaurants.",
+            "Longitude": "77.60",
+            "Latitude": "12.97",
+            "Description":"Test Description4"
+        },
+        {
+            "CityTourID": 46,
+            "LandmarkType": "Shopping Centre",
+            "Title": "Forum Mall",
+            "Description": "Popular Shopping Mall with many retail outlets and Cinema multiplex",
+            "Longitude": "77.61",
+            "Latitude": "12.93",
+            "Description":"Test Description5"
+        }
+    ],
+    "ResponseStatus": "Success",
+    "ResponseMessage": ""
+}

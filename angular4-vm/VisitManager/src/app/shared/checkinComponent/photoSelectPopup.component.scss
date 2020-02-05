@@ -1,0 +1,36 @@
+@import "../../theme/theme.scss";
+.photoselect-modal-popup{
+
+    	@include set-margin-top('photoselect-modal-popup-margin-top');
+    	position: absolute;
+    	width: 100%;
+
+    .modal-content{
+    	background:none!important;
+    	border:none!important;
+    }
+
+    .btn-primary-custom {
+    	background-color: $color-red;
+        border-radius: 1.25rem;
+        padding: 0.50rem;
+        color: $button-text;
+        border-color: transparent;
+    }
+
+    .photo-modal-button-1-marginTop{
+    	margin-bottom: 4px;
+    }
+
+    .photo-modal-button-2-marginTop{
+    	margin-bottom: 12px;
+    }
+
+    .btn-secondary-custom{
+    	background-color: $color-black;
+        border-radius: 1.25rem;
+        padding: 0.50rem;
+        color: $button-text;
+        border-color: transparent;
+    }
+}

@@ -1,0 +1,30 @@
+@import "../theme/theme.scss";
+.agenda-tab-view {
+    .tabmain {
+        width: 100%;
+        @include set-Height('height-p120-t200')
+    }
+    .tabCls {
+        flex: 1;
+        @include set-Height('height-p120-t200');
+        @include set-font-size('text-p28-t40-Arial');
+        @include set-padding-top('HomeView-Tabpanel-padding-top');
+        @include set-padding-right('HomeView-Tabpanel-padding-right');
+        @include set-padding-left('HomeView-Tabpanel-padding-left');
+        @include set-padding-bottom('HomeView-Tabpanel-padding-bottom')
+        color: $color-grey;
+        background-color: $label-text;
+        border-bottom: 4px solid $label-text;
+        border-radius: 0px;
+        border-left: 1px solid $color-black;
+        box-shadow: none !important;
+        &.active {
+            color: white;
+            background-color: $color-black;
+            border-bottom: 4px solid $color-primary;
+        }
+    }
+    .tab-icons {
+        @include set-icon-font-size('icon-p40-t54');
+    }
+}

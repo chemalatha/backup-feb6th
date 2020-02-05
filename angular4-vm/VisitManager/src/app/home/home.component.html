@@ -1,0 +1,24 @@
+<div class="agenda-tab-view">
+    <cvm-header [pageTitle]="title" [isHomeBtn]=false [isBackBtn]=false [isMenuBtn]=true></cvm-header>
+    <form [formGroup]="radioGroupForm">
+        <div ngbRadioGroup name="agendaTab" formControlName="tab" class="tabmain">
+            <label class="btn tabCls">
+                <div class="icon-selectvisit tab-icons"></div>
+                <input type="radio" value="agenda" [routerLink]="['/home/agenda']"> {{'agenda' |translate}}
+            </label>
+            <label class="btn tabCls">
+                <div class="icon-downloads tab-icons"></div>
+                <input type="radio" value="downloads" [routerLink]="['/home/downloads']"> {{'download' |translate}}
+            </label>
+            <label class="btn tabCls">
+                <div class="icon-feedback tab-icons"></div>
+                <input type="radio" value="feedback" [routerLink]="['/home/feedback']"> {{'feedbackTitle' |translate}}
+            </label>
+            <label class="btn tabCls">
+                <div class="icon-dashboard tab-icons"></div>
+                <input type="radio" value="dashboard" [routerLink]="['/home/dashboard']"> {{'dashboard'|translate}}
+            </label>
+        </div>
+    </form>
+    <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,12 @@
+<div class="previewView">
+    <a *ngIf="!isFirst" class="prev icon-back" (click)="swipe('swiperight')"></a>
+    <!-- loop each avatar in our avatar list -->
+    <div class="swipe-box" *ngFor="let previewImage of previewImages; let idx=index" (swipeleft)="swipe( $event.type)" (swiperight)="swipe( $event.type)" [class.visible]="previewImage.visible" [class.hidden]="!previewImage.visible">
+        <div >
+            <img [src]="previewImage.image" id={{previewImage.imageId}}>
+        </div>
+
+    </div>
+
+<a *ngIf="!isLast" class="next icon-next" (click)="swipe('swipeleft')"></a>
+</div>

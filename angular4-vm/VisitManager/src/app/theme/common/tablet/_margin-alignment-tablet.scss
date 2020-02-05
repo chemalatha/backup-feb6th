@@ -1,0 +1,441 @@
+/* Defined device resolutions:
+
+Format:  resolution -(Targetted Devices)- (Multiplication Factor with ipad as reference)
+
+1. 600X1024-(Samsung Tab 7 inch) -(0.78) 
+2. 800X1280 - (Samsung 7.7 ,8.9, 10 inch) -(1.06)
+3.  -Nexus 7(1) -(0.78)
+4. 1200X1920/1200X2048(Nexus 7(2)) -(0.76) 
+5.  1600X2560(Samsung 10 inch,nexus 10 inch) - (1.042) 
+6.  768X1024/1536X2048(ipad, ipad mini, ipad air) -(1)
+ */
+
+
+$margin_top_tablet: (
+                ('tablet', 0, 0, 8%, 10%, 10%),
+                ('termsandconditionView-button-margin-top-tablet', 0, 0, 8%, 7%, 10%,0%,10%),
+                ('LoginView-infoClass-margin-top-tablet', 0, 0,-0.250rem, 7%, 0%,0,0%),
+                ('LoginView-labeltextAutoLogin-margin-top', 0, 0,0.125em, 7%, 10%,0%,0%),
+                
+);
+
+$margin_bottom_tablet: (
+                ('tablet', 0, 0, 0, 0, 0),
+                
+
+
+);
+
+$margin_right_tablet: (
+                ('tablet', 10%, 10%, 9%, 9%),
+
+               );
+
+$margin_left_tablet: (
+                ('tablet', 12%, 12%, 9%, 9%),
+                ('LoginView-labeltextAutoLogin-margin-left', 0, 0,0.125em, 7%, 10%,0%,0%),
+                ('settingsView-row-margin-left-0rem-tablet', 3rem, 3.5rem, 0rem, 4.688rem, 4.688rem,0rem,0rem),
+               
+);
+
+//margin-top alignment
+@mixin set-margin-top-tablet($label-margin) {
+  //1
+  @media (min-width: 600px) and (max-width: 1024px) and (-webkit-max-device-pixel-ratio: 1) {
+    @each $margin in $margin_top_tablet {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-top: nth($margin, 2) !important;
+      }
+    }
+  }
+  //2
+  @media (min-width: 800px) and (max-width: 1280px) and (min-device-height: 800px) and (max-device-height: 1280px) and (-webkit-max-device-pixel-ratio: 1) {
+    @each $margin in $margin_top_tablet {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-top: nth($margin, 3) !important;
+      }
+    }
+  }
+
+  //3
+  @media (min-width: 604px) and (max-width: 967px) and  (-webkit-min-device-pixel-ratio: 1.3) and (-webkit-max-device-pixel-ratio: 1.4){
+      @each $margin in $margin_top_tablet {
+        $label: nth($margin, 1); // in SASS, list indices begin at 1
+        @if ($label==$label-margin) {
+          margin-top: nth($margin, 4) !important;
+        }
+      }
+  }
+  @media (min-device-height: 604px) and (max-device-height: 967px) and  (-webkit-min-device-pixel-ratio: 1.3) and (-webkit-max-device-pixel-ratio: 1.4){
+      @each $margin in $margin_top_tablet {
+        $label: nth($margin, 1); // in SASS, list indices begin at 1
+        @if ($label==$label-margin) {
+          margin-top: nth($margin, 4) !important;
+        }
+      }
+  }
+
+   
+  //4
+  @media (min-width: 600px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+    @each $margin in $margin_top_tablet {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-top: nth($margin, 5) !important;
+      }
+    }
+
+  }
+  //4
+  @media (min-width: 600px) and (max-width: 960px) and (min-device-height: 600px) and (max-device-height: 960px)  and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    @each $margin in $margin_top_tablet {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-top: nth($margin, 5) !important;
+      }
+    }
+  }
+  //5
+  @media (min-width: 774px) and (max-width: 1280px) and (min-device-height: 774px) and (max-device-height: 1280px) and  (-webkit-min-device-pixel-ratio: 2){
+    @each $margin in $margin_top_tablet {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-top: nth($margin, 6) !important;
+      }
+    }
+  }
+
+  //6
+   @media (min-width: 768px) and (max-width: 1024px) and (min-device-height:768px) and (max-device-height:1024px){
+    @each $margin in $margin_top_tablet {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-top: nth($margin, 7) !important;
+      }
+    }
+  }
+  @media (min-width: 695px) and (max-width: 1024px) and (min-device-height:695px) and (max-device-height:1024px){
+    @each $margin in $margin_top_tablet {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-top: nth($margin, 7) !important;
+      }
+    }
+  }
+
+  //For Nexus 7 2013 Landscape
+  @media (min-width: 527px) and (max-width: 960px) and (min-device-height: 527px) and (max-device-height: 960px)  and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2){
+    @each $margin in $margin_top_tablet {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-top: nth($margin, 5) !important;
+      }
+    }
+  }
+  
+}
+
+//margin-bottom alignment
+@mixin set-margin-bottom-tablet($label-margin) {
+  //1
+  @media (min-width: 600px) and (max-width: 1024px) and (-webkit-max-device-pixel-ratio: 1) {
+    @each $margin in $margin_bottom_tablet {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-bottom: nth($margin, 2) !important;
+      }
+    }
+
+  }
+  //2
+  @media (min-width: 800px) and (max-width: 1280px) and (min-device-height: 800px) and (max-device-height: 1280px) and (-webkit-max-device-pixel-ratio: 1) {
+    @each $margin in $margin_bottom_tablet {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-bottom: nth($margin, 3) !important;
+      }
+    }
+  }
+
+  //3
+  @media (min-width: 604px) and (max-width: 967px) and  (-webkit-min-device-pixel-ratio: 1.3) and (-webkit-max-device-pixel-ratio: 1.4){
+      @each $margin in $margin_bottom_tablet {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+          margin-bottom: nth($margin, 4) !important;
+        }
+      }
+  }
+  @media (min-device-height: 604px) and (max-device-height: 967px) and  (-webkit-min-device-pixel-ratio: 1.3) and (-webkit-max-device-pixel-ratio: 1.4){
+      @each $margin in $margin_bottom_tablet {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+          margin-bottom: nth($margin, 4) !important;
+        }
+      }
+  }
+  
+
+  //4
+  @media (min-width: 600px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2){
+    @each $margin in $margin_bottom_tablet {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-bottom: nth($margin, 5) !important;
+      }
+    }
+
+  }
+
+  //4
+  @media (min-width: 600px) and (max-width: 960px) and (min-device-height: 600px) and (max-device-height: 960px)  and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    @each $margin in $margin_bottom_tablet {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-bottom: nth($margin, 5) !important;
+      }
+    }
+  }
+
+  //5
+  @media (min-width: 774px) and (max-width: 1280px) and (min-device-height: 774px) and (max-device-height: 1280px) and  (-webkit-min-device-pixel-ratio: 2){
+    @each $margin in $margin_bottom_tablet {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-bottom: nth($margin, 6) !important;
+      }
+    }
+  }
+
+  //6
+  @media (min-width: 768px) and (max-width: 1024px) and (min-device-height:768px) and (max-device-height:1024px){
+    @each $margin in $margin_bottom_tablet {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-bottom: nth($margin, 7) !important;
+      }
+    }
+  }
+  @media (min-width: 695px) and (max-width: 1024px) and (min-device-height:695px) and (max-device-height:1024px){
+    @each $margin in $margin_bottom_tablet {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-bottom: nth($margin, 7) !important;
+      }
+    }
+  }
+  //For Nexus 7 2013 Landscape
+  @media (min-width: 527px) and (max-width: 960px) and (min-device-height: 527px) and (max-device-height: 960px)  and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2){
+      @each $margin in $margin_bottom_tablet {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-bottom: nth($margin, 5) !important;
+      }
+    }
+  }
+}
+  
+//set margin-right for devices
+@mixin set-margin-right-tablet($label-margin) {
+
+  //1
+  @media (min-width: 600px) and (max-width: 1024px) and (-webkit-max-device-pixel-ratio: 1) {
+    @each $margin in $margin_right_tablet {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-right: nth($margin, 2) !important;
+      }
+    }
+
+  }
+
+  //2
+  @media (min-width: 800px) and (max-width: 1280px) and (min-device-height: 800px) and (max-device-height: 1280px) and (-webkit-max-device-pixel-ratio: 1) {
+    @each $margin in $margin_right_tablet {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-right: nth($margin, 3) !important;
+      }
+    }
+
+  }
+
+  //3
+  @media (min-width: 604px) and (max-width: 967px) and  (-webkit-min-device-pixel-ratio: 1.3) and (-webkit-max-device-pixel-ratio: 1.4) {
+    @each $margin in $margin_right_tablet {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-right: nth($margin, 4) !important;
+      }
+    }
+  }
+  @media (min-device-height: 604px) and (max-device-height: 967px) and  (-webkit-min-device-pixel-ratio: 1.3) and (-webkit-max-device-pixel-ratio: 1.4){
+    @each $margin in $margin_right_tablet {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-right: nth($margin, 4) !important;
+      }
+    }
+  }
+
+  //4
+  @media (min-width: 600px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+    @each $margin in $margin_right_tablet {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-right: nth($margin, 5) !important;
+      }
+    }
+  }
+
+  //4
+  @media (min-width: 600px) and (max-width: 960px) and (min-device-height: 600px) and (max-device-height: 960px)  and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    @each $margin in $margin_right_tablet {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-right: nth($margin, 5) !important;
+      }
+    }
+  }
+
+  //5
+  @media (min-width: 774px) and (max-width: 1280px) and (min-device-height: 774px) and (max-device-height: 1280px) and  (-webkit-min-device-pixel-ratio: 2) {
+    @each $margin in $margin_right_tablet {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-right: nth($margin, 6) !important;
+      }
+    }
+  }
+
+  //6
+  @media (min-width: 768px) and (max-width: 1024px) and (min-device-height:768px) and (max-device-height:1024px){
+    @each $margin in $margin_right_tablet {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-right: nth($margin, 7) !important;
+      }
+    }
+  }
+  @media (min-width: 695px) and (max-width: 1024px) and (min-device-height:695px) and (max-device-height:1024px){
+    @each $margin in $margin_right_tablet {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-right: nth($margin, 7) !important;
+      }
+    }
+  }
+  //For Nexus 7 2013 Landscape
+  @media (min-width: 527px) and (max-width: 960px) and (min-device-height: 527px) and (max-device-height: 960px)  and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2){
+    @each $margin in $margin_right_tablet {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-right: nth($margin, 5) !important;
+      }
+    }
+  }
+}
+
+//set width for devices
+@mixin set-margin-left-tablet($label-margin) {
+
+  //1
+  @media (min-width: 600px) and (max-width: 1024px) and (-webkit-max-device-pixel-ratio: 1) {
+    @each $margin in $margin_left_tablet {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-left: nth($margin, 2) !important;
+      }
+    }
+
+  }
+
+  //2
+  @media (min-width: 800px) and (max-width: 1280px) and (min-device-height: 800px) and (max-device-height: 1280px) and (-webkit-max-device-pixel-ratio: 1) {
+    @each $margin in $margin_left_tablet {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-left: nth($margin, 3) !important;
+      }
+    }
+
+  }
+
+  //3
+  @media (min-width: 604px) and (max-width: 967px) and  (-webkit-min-device-pixel-ratio: 1.3) and (-webkit-max-device-pixel-ratio: 1.4) {
+    @each $margin in $margin_left_tablet {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-left: nth($margin, 4) !important;
+      }
+    }
+  }
+   @media (min-device-height: 604px) and (max-device-height: 967px) and  (-webkit-min-device-pixel-ratio: 1.3) and (-webkit-max-device-pixel-ratio: 1.4) {
+    @each $margin in $margin_left_tablet {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-left: nth($margin, 4) !important;
+      }
+    }
+  }
+
+  //4
+  @media (min-width: 600px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+    @each $margin in $margin_left_tablet {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-left: nth($margin, 5) !important;
+      }
+    }
+  }
+
+  //4
+  @media (min-width: 600px) and (max-width: 960px) and (min-device-height: 600px) and (max-device-height: 960px)  and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2){
+    @each $margin in $margin_left_tablet {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-left: nth($margin, 5) !important;
+      }
+    }
+  }
+
+  //5
+  @media (min-width: 774px) and (max-width: 1280px) and (min-device-height: 774px) and (max-device-height: 1280px) and  (-webkit-min-device-pixel-ratio: 2){
+    @each $margin in $margin_left_tablet {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-left: nth($margin, 6) !important;
+      }
+    }
+  }
+
+  //6
+  @media (min-width: 768px) and (max-width: 1024px) and (min-device-height:768px) and (max-device-height:1024px){
+    @each $margin in $margin_left_tablet {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-left: nth($margin, 7) !important;
+      }
+    }
+  }
+  @media (min-width: 695px) and (max-width: 1024px) and (min-device-height:695px) and (max-device-height:1024px){
+    @each $margin in $margin_left_tablet {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-left: nth($margin, 7) !important;
+      }
+    }
+  }
+  //For Nexus 7 2013 Landscape
+  @media (min-width: 527px) and (max-width: 960px) and (min-device-height: 527px) and (max-device-height: 960px)  and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2){
+       @each $margin in $margin_left_tablet {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-left: nth($margin, 5) !important;
+      }
+    }
+  }
+  
+}

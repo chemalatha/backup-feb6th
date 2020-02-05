@@ -1,0 +1,1630 @@
+{
+    "odata.metadata": "https://clientvisitmanagementsvc.ciostage.accenture.com/ClientVisitManagement-Service/$metadata#GetAccentureOffices/@Element",
+    "AccentureOffices": [{
+        "FacilityID": 1,
+        "CityName": "Bangalore",
+        "FacilityName": "BDC9",
+        "Address": "Accenture Services Pvt Ltd Prestige Technopolis 8/1, Dr. M.H Marogowda Raod, Adugodi Bangalore  560029 India",
+        "Longitude": "77.607508",
+        "Latitude": "12.936784"
+    }, {
+        "FacilityID": 2,
+        "CityName": "Bangalore",
+        "FacilityName": "BDC1",
+        "Address": "Accenture Services Pvt Ltd.71, Cunningham Road Bangalore - 560052",
+        "Longitude": "77.590984",
+        "Latitude": "12.99015"
+    }, {
+        "FacilityID": 3,
+        "CityName": "Bangalore",
+        "FacilityName": "BDC10",
+        "Address": "Accenture Services PVT\u2013 BDC10 Bagmane Developers Pvt Ltd SEZ-II, KR Puram, Marathalli Ring Road,Doddanekundi Village, KR Puram Hobli, Bangalore- 560048",
+        "Longitude": "77.708126",
+        "Latitude": "12.985359"
+    }, {
+        "FacilityID": 7,
+        "CityName": "Bangalore",
+        "FacilityName": "BDC3A",
+        "Address": "Accenture Services Pvt. Ltd. IBC Knowledge Park No.4/1, Bannerghatta Main Road Bangalore - 560029",
+        "Longitude": "77.60193452",
+        "Latitude": "12.93299069"
+    }, {
+        "FacilityID": 8,
+        "CityName": "Bangalore",
+        "FacilityName": "BDC3B",
+        "Address": "Accenture Services Pvt. Ltd. IBC Knowledge Park No.4/1, Bannerghatta Main Road Bangalore - 560029",
+        "Longitude": "77.60193452",
+        "Latitude": "12.93299069"
+    }, {
+        "FacilityID": 10,
+        "CityName": "Bangalore",
+        "FacilityName": "BDC4A",
+        "Address": "Accenture services Pvt. Ltd. RMZ Ecospace - Campus 2A& 2B Outer Ring Road, Bellandur Village, Varthur Hobli Bangalore - 560037 ",
+        "Longitude": "77.68170927",
+        "Latitude": "12.92704416"
+    }, {
+        "FacilityID": 11,
+        "CityName": "Bangalore",
+        "FacilityName": "BDC4B",
+        "Address": "Accenture services Pvt. Ltd. RMZ Ecospace - Campus 2A& 2B Outer Ring Road, Bellandur Village, Varthur Hobli Bangalore - 560037 ",
+        "Longitude": "77.68170927",
+        "Latitude": "12.92704416"
+    }, {
+        "FacilityID": 12,
+        "CityName": "Bangalore",
+        "FacilityName": "BDC5",
+        "Address": "Accenture services Pvt. Ltd.Kalyani Magnum 165/2 DS Palya, JP Nagar 7th phase Bannerghatta Road Bangalore - 560076",
+        "Longitude": "77.597165",
+        "Latitude": "12.899351"
+    }, {
+        "FacilityID": 13,
+        "CityName": "Bangalore",
+        "FacilityName": "BDC6",
+        "Address": "Accenture Services Pvt Ltd. Divyashree Techno Park (SEZ) No.36/2, K R Puram Hobli Whitefield Bangalore - 560066",
+        "Longitude": "77.724105",
+        "Latitude": "12.968797"
+    }, {
+        "FacilityID": 14,
+        "CityName": "Bangalore",
+        "FacilityName": "BDC6A",
+        "Address": "Accenture Services Pvt Ltd. Divyashree Techno Park (SEZ) No.36/2, K R Puram Hobli Whitefield Bangalore - 560066",
+        "Longitude": "77.724105",
+        "Latitude": "12.968797"
+    }, {
+        "FacilityID": 15,
+        "CityName": "Bangalore",
+        "FacilityName": "BDC6B",
+        "Address": "Accenture Services Pvt Ltd. Divyashree Techno Park (SEZ) No.36/2, K R Puram Hobli Whitefield Bangalore - 560066",
+        "Longitude": "77.724105",
+        "Latitude": "12.968797"
+    }, {
+        "FacilityID": 16,
+        "CityName": "Bangalore",
+        "FacilityName": "BDC6C",
+        "Address": "Accenture Services Pvt Ltd. Divyashree Techno Park (SEZ) No.36/2, K R Puram Hobli Whitefield Bangalore - 560066",
+        "Longitude": "77.724105",
+        "Latitude": "12.968797"
+    }, {
+        "FacilityID": 17,
+        "CityName": "Bangalore",
+        "FacilityName": "BDC6D",
+        "Address": "Accenture Services Pvt Ltd. Divyashree Techno Park (SEZ) No.36/2, K R Puram Hobli Whitefield Bangalore - 560066",
+        "Longitude": "77.724105",
+        "Latitude": "12.968797"
+    }, {
+        "FacilityID": 18,
+        "CityName": "Bangalore",
+        "FacilityName": "BDC7",
+        "Address": "Accenture Services Pvt Ltd. (Bang 7)Pritech Park SEZ, Block 7 Outer Ring Road, Bellandur Village Varthur Hobli Bangalore - 560103",
+        "Longitude": "77.6818532\r\n",
+        "Latitude": "12.920971"
+    }, {
+        "FacilityID": 19,
+        "CityName": "Bangalore",
+        "FacilityName": "BDC7C",
+        "Address": "Accenture Services Pvt Ltd. (Bang 7)Pritech Park SEZ, Block 7 Outer Ring Road, Bellandur Village Varthur Hobli Bangalore - 560103",
+        "Longitude": "77.6818532\r\n",
+        "Latitude": "12.920971"
+    }, {
+        "FacilityID": 20,
+        "CityName": "Bangalore",
+        "FacilityName": "BDC8A",
+        "Address": "Accenture Services Pvt Ltd. Global Village - Special Economic Zone Mylasandra & Patanegere Villages Bangalore - 560059",
+        "Longitude": "77.501727",
+        "Latitude": "12.920339"
+    }, {
+        "FacilityID": 21,
+        "CityName": "Bangalore",
+        "FacilityName": "BDC8B",
+        "Address": "Accenture Services Pvt Ltd. Global Village - Special Economic Zone Mylasandra & Patanegere Villages Bangalore - 560059",
+        "Longitude": "77.501727",
+        "Latitude": "12.920339"
+    }, {
+        "FacilityID": 22,
+        "CityName": "Bangalore",
+        "FacilityName": "BDC8C",
+        "Address": "Accenture Services Pvt Ltd. Global Village - Special Economic Zone Mylasandra & Patanegere Villages Bangalore - 560059",
+        "Longitude": "77.501727",
+        "Latitude": "12.920339"
+    }, {
+        "FacilityID": 25,
+        "CityName": "Chennai",
+        "FacilityName": "CDC1A",
+        "Address": "Accenture Services Pvt Ltd.No:51,T E K Meadows,Old Mahabalipuram Road,Sholinganallur,Chennai - 600119",
+        "Longitude": "80.228104",
+        "Latitude": "12.906854"
+    }, {
+        "FacilityID": 26,
+        "CityName": "Chennai",
+        "FacilityName": "CDC1B",
+        "Address": "Accenture Services Pvt Ltd.No:51,T E K Meadows,Old Mahabalipuram Road,Sholinganallur,Chennai - 600119",
+        "Longitude": "80.228104",
+        "Latitude": "12.906854"
+    }, {
+        "FacilityID": 27,
+        "CityName": "Chennai",
+        "FacilityName": "CDC2A",
+        "Address": "Accenture Services Pvt Ltd.Shriram, the Gateway (SEZ)16, GST Road, New Perungalathur Chennai - 600063",
+        "Longitude": "80.09143432",
+        "Latitude": "12.89874525"
+    }, {
+        "FacilityID": 28,
+        "CityName": "Chennai",
+        "FacilityName": "CDC2B",
+        "Address": "Accenture Services Pvt Ltd.Shriram, the Gateway (SEZ)16, GST Road, New Perungalathur Chennai - 600063",
+        "Longitude": "80.09143432",
+        "Latitude": "12.89874525"
+    }, {
+        "FacilityID": 29,
+        "CityName": "Chennai",
+        "FacilityName": "CDC2C",
+        "Address": "Accenture Services Pvt Ltd.Shriram, the Gateway (SEZ)16, GST Road, New Perungalathur Chennai - 600063",
+        "Longitude": "80.09143432",
+        "Latitude": "12.89874525"
+    }, {
+        "FacilityID": 30,
+        "CityName": "Chennai",
+        "FacilityName": "CDC2D",
+        "Address": "Accenture Services Pvt Ltd.Shriram, the Gateway (SEZ)16, GST Road, New Perungalathur Chennai - 600063",
+        "Longitude": "80.09143432",
+        "Latitude": "12.89874525"
+    }, {
+        "FacilityID": 31,
+        "CityName": "Chennai",
+        "FacilityName": "CDC3",
+        "Address": "Tecci Park \u2013 STPI, No.173, Old Mahabalipuram Road, Sholinganallur, Chennai - 600 119, INDIA",
+        "Longitude": "80.226885",
+        "Latitude": "12.910596"
+    }, {
+        "FacilityID": 32,
+        "CityName": "Chennai",
+        "FacilityName": "CDC4",
+        "Address": "Accenture \u2013 CDC 4 DLF IT Park, Block 1C, First Floor, Ramapuram, Chennai - 600089, INDIA",
+        "Longitude": "80.17503619",
+        "Latitude": "13.02362055"
+    }, {
+        "FacilityID": 33,
+        "CityName": "New Delhi",
+        "FacilityName": "DDC3",
+        "Address": "Accenture \u2013 Noida \u2013 DDC 3 Tower B&C, 2nd Floor Green Boulevard, Plot No- B-9/A, Sector-62, Noida \u2013 201301, Uttar Pradesh, INDIA",
+        "Longitude": "77.367048",
+        "Latitude": "28.623409"
+    }, {
+        "FacilityID": 35,
+        "CityName": "Noida",
+        "FacilityName": "DDC4A",
+        "Address": "Accenture \u2013 Noida \u2013 DDC 4 Building No. 3, Ground to Fourth Floor, Infospace, Plot No 20 & 21 Sea view Developer, Sector -135, Noida-201301, Uttar Pradesh, INDIA",
+        "Longitude": "77.404853",
+        "Latitude": "28.49934437"
+    }, {
+        "FacilityID": 36,
+        "CityName": "Noida",
+        "FacilityName": "DDC4B",
+        "Address": "Accenture \u2013 Noida \u2013 DDC 4 Building No. 3, Ground to Fourth Floor, Infospace, Plot No 20 & 21 Sea view Developer, Sector -135, Noida-201301, Uttar Pradesh, INDIA",
+        "Longitude": "77.404853",
+        "Latitude": "28.49934437"
+    }, {
+        "FacilityID": 37,
+        "CityName": "Gurgaon",
+        "FacilityName": "DDC1",
+        "Address": "Accenture \u2013 Gurgaon \u2013 DDC 1 1st floor, Tower B & C, Building No. 8, DLF Cyber City, Phase II, Gurgaon - 122002, INDIA",
+        "Longitude": "77.08889578",
+        "Latitude": "28.4948556"
+    }, {
+        "FacilityID": 38,
+        "CityName": "Gurgaon",
+        "FacilityName": "DDC1A",
+        "Address": "Accenture \u2013 Gurgaon \u2013 DDC 1 1st floor, Tower B & C, Building No. 8, DLF Cyber City, Phase II, Gurgaon - 122002, INDIA",
+        "Longitude": "77.08889578",
+        "Latitude": "28.4948556"
+    }, {
+        "FacilityID": 39,
+        "CityName": "Gurgaon",
+        "FacilityName": "DDC2",
+        "Address": "Accenture \u2013 Gurgaon \u2013 DDC 2 Ground to 7th floor, Building B1, DLF SEZ Zone, Sec 30, Vill: - Silokhera, Gurgaon-122001, INDIA",
+        "Longitude": "77.05614",
+        "Latitude": "28.465056"
+    }, {
+        "FacilityID": 40,
+        "CityName": "Gurgaon",
+        "FacilityName": "DDC5A",
+        "Address": "Accenture \u2013 Gurgaon \u2013 DDC 5 2nd Floor, Building No. 2, Tower-A, 8th & 11th Floor Building No.1, Tower-B Unitech Infospace (SEZ), Sector-21, Dundahera, Gurgaon \u2013 122001, INDIA",
+        "Longitude": "77.071576",
+        "Latitude": "28.510582"
+    }, {
+        "FacilityID": 41,
+        "CityName": "Gurgaon",
+        "FacilityName": "DDC5B",
+        "Address": "Accenture \u2013 Gurgaon \u2013 DDC 5 2nd Floor, Building No. 2, Tower-A, 8th & 11th Floor Building No.1, Tower-B Unitech Infospace (SEZ), Sector-21, Dundahera, Gurgaon \u2013 122001, INDIA",
+        "Longitude": "77.071576",
+        "Latitude": "28.510582"
+    }, {
+        "FacilityID": 42,
+        "CityName": "Gurgaon",
+        "FacilityName": "DDC5C",
+        "Address": "Accenture \u2013 Gurgaon \u2013 DDC 5 2nd Floor, Building No. 2, Tower-A, 8th & 11th Floor Building No.1, Tower-B Unitech Infospace (SEZ), Sector-21, Dundahera, Gurgaon \u2013 122001, INDIA",
+        "Longitude": "77.071576",
+        "Latitude": "28.510582"
+    }, {
+        "FacilityID": 43,
+        "CityName": "Gurgaon",
+        "FacilityName": "DDC5D",
+        "Address": "Accenture \u2013 Gurgaon \u2013 DDC 5 2nd Floor, Building No. 2, Tower-A, 8th & 11th Floor Building No.1, Tower-B Unitech Infospace (SEZ), Sector-21, Dundahera, Gurgaon \u2013 122001, INDIA",
+        "Longitude": "77.071576",
+        "Latitude": "28.510582"
+    }, {
+        "FacilityID": 44,
+        "CityName": "Gurgaon",
+        "FacilityName": "DDC6",
+        "Address": "3rd - 5th Floor, Tower B, SP Infocity, Plot No. 243, Phase - 1, Udyog Vihar, Gurgaon \u2013 122016, INDIA",
+        "Longitude": "77.08667",
+        "Latitude": "28.513286"
+    }, {
+        "FacilityID": 45,
+        "CityName": "Hyderabad",
+        "FacilityName": "HDC1",
+        "Address": "Accenture Services Pvt Ltd. Bldg.No.1A and 1B Raheja Mind Space, Hitech City, Madhapur Hyderabad - 500086 ",
+        "Longitude": "78.381462",
+        "Latitude": "17.444713"
+    }, {
+        "FacilityID": 46,
+        "CityName": "Hyderabad",
+        "FacilityName": "HDC1A",
+        "Address": "Accenture Services Pvt Ltd. Bldg.No.1A and 1B Raheja Mind Space, Hitech City, Madhapur Hyderabad - 500086 ",
+        "Longitude": "78.381462",
+        "Latitude": "17.444713"
+    }, {
+        "FacilityID": 47,
+        "CityName": "Hyderabad",
+        "FacilityName": "HDC1B",
+        "Address": "Accenture Services Pvt Ltd. Bldg.No.1A and 1B Raheja Mind Space, Hitech City, Madhapur Hyderabad - 500086 ",
+        "Longitude": "78.381462",
+        "Latitude": "17.444713"
+    }, {
+        "FacilityID": 48,
+        "CityName": "Hyderabad",
+        "FacilityName": "HDC2",
+        "Address": "Accenture Services Pvt Ltd. Waverock building, APIIC (IT/ITES SEZ)Nanankramguda Village Survey No.115(Part 1) Hyderabad - 500081",
+        "Longitude": "78.347621",
+        "Latitude": "17.418737"
+    }, {
+        "FacilityID": 49,
+        "CityName": "Hyderabad",
+        "FacilityName": "HDC3A",
+        "Address": "Accenture Services Pvt Ltd.Divyasree Orion, IT/ITES SEZ, Sy No. 66/1, Raidurg Village,Serilingampally Mandal, Ranga Reddy DistrictHyderabad - 500032 ",
+        "Longitude": "78.384881",
+        "Latitude": "17.445169"
+    }, {
+        "FacilityID": 50,
+        "CityName": "Hyderabad",
+        "FacilityName": "HDC3B",
+        "Address": "Accenture Services Pvt Ltd.Divyasree Orion, IT/ITES SEZ, Sy No. 66/1, Raidurg Village,Serilingampally Mandal, Ranga Reddy DistrictHyderabad - 500032 ",
+        "Longitude": "78.384881",
+        "Latitude": "17.445169"
+    }, {
+        "FacilityID": 51,
+        "CityName": "Hyderabad",
+        "FacilityName": "HDC3i",
+        "Address": "Accenture Services Pvt Ltd.Divyasree Orion, IT/ITES SEZ, Sy No. 66/1, Raidurg Village,Serilingampally Mandal, Ranga Reddy DistrictHyderabad - 500032",
+        "Longitude": "78.384881",
+        "Latitude": "17.445169"
+    }, {
+        "FacilityID": 53,
+        "CityName": "Kolkata",
+        "FacilityName": "KDC1",
+        "Address": "\"Accenture \u2013 KDC 1 Tower-3B, Unitech Infospace (SEZ) Plot No. DH-1, DH-2. & DH-3 & DH-3/1, Block No-DH, Action Area-1, New Town, Kolkata - 700156",
+        "Longitude": "88.482873",
+        "Latitude": "22.574583"
+    }, {
+        "FacilityID": 54,
+        "CityName": "Kolkata",
+        "FacilityName": "KDC1B",
+        "Address": "Accenture \u2013 KDC 1 Tower-3B, Unitech Infospace (SEZ) Plot No. DH-1, DH-2. & DH-3 & DH-3/1, Block No-DH, Action Area-1, New Town, Kolkata - 700156",
+        "Longitude": "88.482873",
+        "Latitude": "22.574583"
+    }, {
+        "FacilityID": 55,
+        "CityName": "Mumbai",
+        "FacilityName": "MDC2B",
+        "Address": "Accenture Services Pvt.Ltd Plant 3, Godrej & Boyce Complex,Pirojshanagar, LBS Marg Vikhroli (West) Mumbai - 400079",
+        "Longitude": "72.921754",
+        "Latitude": "19.103657"
+    }, {
+        "FacilityID": 56,
+        "CityName": "Mumbai",
+        "FacilityName": "MDC3",
+        "Address": "Accenture Services Pvt.Ltd Level 1 & 6, Tower 1 & 2,Andheri Kurla Rd, Andheri (East)Mumbai - 400072 ",
+        "Longitude": "72.8851",
+        "Latitude": "19.103394"
+    }, {
+        "FacilityID": 60,
+        "CityName": "Mumbai",
+        "FacilityName": "MDC4",
+        "Address": "Accenture Services Pvt.Ltd Unit no.801, 8th Floor Building No.4,Infinity Park, Ahead of Dindoshi Malad (East)Mumbai - 400097 ",
+        "Longitude": "72.882919",
+        "Latitude": "19.176504"
+    }, {
+        "FacilityID": 61,
+        "CityName": "Mumbai",
+        "FacilityName": "MDC5",
+        "Address": "Accenture Services Pvt. Ltd. 1st, 2nd, 3rd, & 4th Office Level,Building No. 02, Mindspace,Serene Properties IT/ITES SEZ,Thane-Belapur Road, Airoli,Navi Mumbai - 400 708 ",
+        "Longitude": "73.001231",
+        "Latitude": "19.163121"
+    }, {
+        "FacilityID": 62,
+        "CityName": "Mumbai",
+        "FacilityName": "MDC5B",
+        "Address": "Accenture Services Pvt. Ltd. 1st, 2nd, 3rd, & 4th Office Level,Building No. 02, Mindspace,Serene Properties IT/ITES SEZ,Thane-Belapur Road, Airoli,Navi Mumbai - 400 708 ",
+        "Longitude": "73.001231",
+        "Latitude": "19.163121"
+    }, {
+        "FacilityID": 63,
+        "CityName": "Pune",
+        "FacilityName": "PDC1",
+        "Address": "Accenture Services Pvt Ltd.Tower No.5, Level-6, Cyber City,Hadapsar-Mundhwa Road Pune - 411013 ",
+        "Longitude": "73.924213",
+        "Latitude": "18.513258"
+    }, {
+        "FacilityID": 64,
+        "CityName": "Pune",
+        "FacilityName": "PDC2A",
+        "Address": "Accenture Services Pvt Ltd. Building B-1, Magarpatta City (SEZ) Magarpatta City Hadapsar-Mundhwa Road Pune - 411013\"",
+        "Longitude": "73.922521",
+        "Latitude": "18.517266"
+    }, {
+        "FacilityID": 65,
+        "CityName": "Pune",
+        "FacilityName": "PDC2B",
+        "Address": "Accenture Services Pvt Ltd. Building B-1, Magarpatta City (SEZ) Magarpatta City Hadapsar-Mundhwa Road Pune - 411013\"",
+        "Longitude": "73.922521",
+        "Latitude": "18.517266"
+    }, {
+        "FacilityID": 66,
+        "CityName": "Pune",
+        "FacilityName": "PDC3A",
+        "Address": "Accenture Services Pvt Ltd. IT-1 Building, Flagship Infrastructure Pvt Ltd-SEZ, Survey No. 154/6 Rajiv Gandhi Infotech Park Phase 1, Hinjewadi Pune - 411057 ",
+        "Longitude": "73.737016",
+        "Latitude": "18.580766"
+    }, {
+        "FacilityID": 67,
+        "CityName": "Pune",
+        "FacilityName": "PDC3B",
+        "Address": "Accenture Services Pvt Ltd. IT-1 Building, Flagship Infrastructure Pvt Ltd-SEZ, Survey No. 154/6 Rajiv Gandhi Infotech Park Phase 1, Hinjewadi Pune - 411057 ",
+        "Longitude": "73.737016",
+        "Latitude": "18.580766"
+    }, {
+        "FacilityID": 68,
+        "CityName": "Luanda",
+        "FacilityName": "Largo 17 de Setembro",
+        "Address": "n\u00ba3 2\u00ba andar, Sala 241, Luanda, Rep\u00fablica de Angola Luanda, Angola",
+        "Longitude": "13.242665",
+        "Latitude": "-8.802516"
+    }, {
+        "FacilityID": 69,
+        "CityName": "Gaborone",
+        "FacilityName": "Pula Holdings Building Kgale Mews",
+        "Address": "Pula Holdings Building Kgale Mews Gaborone, Botswana",
+        "Longitude": "13.849579",
+        "Latitude": "44.866623"
+    }, {
+        "FacilityID": 70,
+        "CityName": "Mauritius",
+        "FacilityName": "Royal Road Cassis",
+        "Address": "Royal Road Cassis Port Louis, Mauritius",
+        "Longitude": "57.505652",
+        "Latitude": "-20.159578"
+    }, {
+        "FacilityID": 71,
+        "CityName": "Morocco",
+        "FacilityName": "Shore 10, Etage 1 Nearshore Park 1100",
+        "Address": "Bd El Qods Sidi Maarouf- Maroc Casablanca, Morocco",
+        "Longitude": "-7.657593",
+        "Latitude": "33.534997"
+    }, {
+        "FacilityID": 72,
+        "CityName": "Lagos",
+        "FacilityName": "2nd Floor, Citi Bank Building 27",
+        "Address": "2nd Floor, Citi Bank Building 27, Kofo Abayomi Street Victoria Islan Lagos, Nigeria",
+        "Longitude": "3.379206",
+        "Latitude": "6.524379"
+    }, {
+        "FacilityID": 73,
+        "CityName": "Cape Town",
+        "FacilityName": "8th Floor Convention Towers",
+        "Address": "8th Floor Convention Towers C/o Heerengracht and Coen Steytler Foreshore Capetown, South Africa",
+        "Longitude": "18.428439",
+        "Latitude": "-33.917273"
+    }, {
+        "FacilityID": 74,
+        "CityName": "Johannesburg",
+        "FacilityName": "Building 19 Harrowdene Office",
+        "Address": "Building 19 Harrowdene Office Park Kelvin Drive Woodmead Sandton Johannesburg, South Africa",
+        "Longitude": "28.069773",
+        "Latitude": "-26.069740"
+    }, {
+        "FacilityID": 75,
+        "CityName": "Pretoria",
+        "FacilityName": "46 Centurion Office Park",
+        "Address": "46 Centurion Office Park Cnr Hendrik Verwoerd and Embankment Drive Centurion Pretoria, South Africa",
+        "Longitude": "28.185999",
+        "Latitude": "-25.855321"
+    }, {
+        "FacilityID": 76,
+        "CityName": "Buenos Aires",
+        "FacilityName": "RSP Building (Main Office)",
+        "Address": "RSP Building (Main Office), Roque Saenz Pe\u00f1a 777, Capital Federal, Buenos Aires, Argentina Buenos Aires, Argentina, C1035AAC",
+        "Longitude": "-58.381559",
+        "Latitude": "-34.603684"
+    }, {
+        "FacilityID": 77,
+        "CityName": "Buenos Aires",
+        "FacilityName": "C\u00f3rdoba Building",
+        "Address": "Av C\u00f3rdoba 2057, Capital Federal, Buenos Aires, Argentina Buenos Aires, Argentina, C1120AAC",
+        "Longitude": "-58.396671",
+        "Latitude": "-34.599746"
+    }, {
+        "FacilityID": 78,
+        "CityName": "Buenos Aires",
+        "FacilityName": "La Plata Building",
+        "Address": "Diagonal 80 942, La Plata, Buenos Aires, Argentina Buenos Aires, Argentina, B1900CCN",
+        "Longitude": "-57.948681",
+        "Latitude": "-34.910635"
+    }, {
+        "FacilityID": 79,
+        "CityName": "Buenos Aires",
+        "FacilityName": "Panamerican Building",
+        "Address": "Bouchard 4191, Munro, Buenos Aires, Argentina Buenos Aires, Argentina, 1605",
+        "Longitude": "-58.539466",
+        "Latitude": "-34.544628"
+    }, {
+        "FacilityID": 80,
+        "CityName": "Santa Fe",
+        "FacilityName": "Rosario Building",
+        "Address": "Santa Fe 1173, Rosario, Santa Fe, Argentina Santa Fe, Argentina, S2000ATO",
+        "Longitude": "-60.638884",
+        "Latitude": "-32.944934"
+    }, {
+        "FacilityID": 81,
+        "CityName": "Barueri",
+        "FacilityName": "Alphaville",
+        "Address": "Av. Andr\u00f4meda, 2.000 - bloco 11 \u2013 t\u00e9rreo \u2013 Alphaville - Barueri (SP) Barueri, Brazil, CEP 06473-900",
+        "Longitude": "-46.872942",
+        "Latitude": "-23.511369"
+    }, {
+        "FacilityID": 82,
+        "CityName": "Brasilia",
+        "FacilityName": "Edif\u00edcio Business Center Park",
+        "Address": "Edif\u00edcio Business Center Park SHS, quadra 6, conjunto A, bloco E, sala 817 \u2013 Bras\u00edlia (DF) Brasilia, Brazil, CEP 70322-915",
+        "Longitude": "-47.882166",
+        "Latitude": "-15.794229"
+    }, {
+        "FacilityID": 83,
+        "CityName": "Belo Horizonte",
+        "FacilityName": "Rua Senador Milton Campos",
+        "Address": "Rua Senador Milton Campos 115 - 3\u00ba andar Shopping Alta Vila - Vila da Serra - Nova Lima(MG) Nova Lima, Brazil, CEP 34000-000",
+        "Longitude": "-43.936526",
+        "Latitude": "-19.979398"
+    }, {
+        "FacilityID": 84,
+        "CityName": "Curitiba",
+        "FacilityName": "Edif\u00edcio Oscar Santos Av. Mal.",
+        "Address": "Edif\u00edcio Oscar Santos Av. Mal. Deodoro, 558 \u2013 1\u00ba andar - Centro - Curitiba(PR) Paran\u00e1 - Curitiba, Brazil, CEP 80010-010",
+        "Longitude": "-49.267137",
+        "Latitude": "-25.428954"
+    }, {
+        "FacilityID": 85,
+        "CityName": "Porto Alegre",
+        "FacilityName": "PUCRS",
+        "Address": "PUCRS Av. Ipiranga, 6.681 \u2013 6\u00ba andar \u2013 Partenon - Porto Alegre (RS) Porto Alegre, Brazil, CEP 90619-900",
+        "Longitude": "-51.173839",
+        "Latitude": "-30.057480"
+    }, {
+        "FacilityID": 86,
+        "CityName": "Recife",
+        "FacilityName": "Edif\u00edcio Vasco Rodrigues Rua Cais do Apolo",
+        "Address": "Edif\u00edcio Vasco Rodrigues Rua Cais do Apolo, 222 \u2013 10\u00ba andar - Recife Antigo - Recife (PE) Recife, Brazil, CEP 50030-230",
+        "Longitude": "-34.882897",
+        "Latitude": "-8.057838"
+    }, {
+        "FacilityID": 87,
+        "CityName": "Rio de Janeiro",
+        "FacilityName": "Edif\u00edcio Rio Metropolitan Avenida",
+        "Address": "Edif\u00edcio Rio Metropolitan Avenida Rep\u00fablica do Chile, 500 - 18\u00ba andar - Centro - Rio de Janeiro (RJ) Rio de Janeiro, Brazil, CEP 20031-170",
+        "Longitude": "-43.182578",
+        "Latitude": "-22.909603"
+    }, {
+        "FacilityID": 88,
+        "CityName": "Sau Paulo",
+        "FacilityName": "Rua Alexandre Dumas",
+        "Address": "Rua Alexandre Dumas, 2.051 - Ch\u00e1cara Santo Ant\u00f4nio \u2013 S\u00e3o Paulo (SP) S\u00e3o Paulo \u2013 S\u00e3o Paulo, Brazil, CEP 04717-004",
+        "Longitude": "-46.709981",
+        "Latitude": "-23.628847"
+    }, {
+        "FacilityID": 89,
+        "CityName": "Vit\u00f3ria",
+        "FacilityName": "Edif\u00edcio Petro Tower",
+        "Address": "Edif\u00edcio Petro Tower Av. N. Sra. dos Navegantes, 451 \u2013 15\u00ba andar \u2013 Enseada do Su\u00e1 \u2013 Vit\u00f3ria (ES) Vitoria, Brazil, CEP 29050-335",
+        "Longitude": "-40.295777",
+        "Latitude": "-20.297618"
+    }, {
+        "FacilityID": 90,
+        "CityName": "Calgary",
+        "FacilityName": "Sun Life Plaza",
+        "Address": "Sun Life Plaza, Suite 300, 140 4th Avenue SW, Calgary, Alberta Calgary, Canada, T2P 3N3",
+        "Longitude": "-114.064783",
+        "Latitude": "51.049893"
+    }, {
+        "FacilityID": 91,
+        "CityName": "Edmonton",
+        "FacilityName": "300-10020 101A Ave",
+        "Address": "300-10020 101A Ave, Edmonton Edmonton, Canada, T5J 3G2",
+        "Longitude": "-113.492005",
+        "Latitude": "53.542456"
+    }, {
+        "FacilityID": 92,
+        "CityName": "Fredericton",
+        "FacilityName": "495 Prospect Street, Unit D",
+        "Address": "495 Prospect Street, UNIT D, Fredericton, New Brunswick Fredericton, Canada, E3B 9M4",
+        "Longitude": "-66.661189",
+        "Latitude": "45.937858"
+    }, {
+        "FacilityID": 93,
+        "CityName": "Mississauga",
+        "FacilityName": "33 City Centre Drive, Suite 400",
+        "Address": "33 City Centre Drive, SUITE 400, Mississauga, Ontario Mississauga, Canada, L5B 2N5",
+        "Longitude": "-79.638915",
+        "Latitude": "43.594771"
+    }, {
+        "FacilityID": 94,
+        "CityName": "Toronto Explorer Drive",
+        "FacilityName": "5450 Explorer Drive",
+        "Address": "5450 Explorer Drive, Suite 200, Mississauga, Ontario Mississauga, Canada, L4W 5M1",
+        "Longitude": "-79.606889",
+        "Latitude": "43.661200"
+    }, {
+        "FacilityID": 95,
+        "CityName": "Montreal",
+        "FacilityName": "1800 McGill College Avenue",
+        "Address": "1800 McGill College Avenue, Suite 800, Montreal, Qu\u00e9bec Montreal, Canada, H3A 3J6",
+        "Longitude": "-73.572268",
+        "Latitude": "45.502037"
+    }, {
+        "FacilityID": 96,
+        "CityName": "Ottawa",
+        "FacilityName": "45 O Connor Street, Suite 600",
+        "Address": "45 O Connor Street, Suite 600, Ottawa, Ontario Ottawa, Canada, K1P 1A4",
+        "Longitude": "-75.698305",
+        "Latitude": "45.421121"
+    }, {
+        "FacilityID": 97,
+        "CityName": "Niagara Region",
+        "FacilityName": "3401 Schmon Parkway",
+        "Address": "3401 Schmon Parkway, Thorold, Ontario Thorold, Canada, L2V 4Y6",
+        "Longitude": "-79.239726",
+        "Latitude": "43.112542"
+    }, {
+        "FacilityID": 98,
+        "CityName": "Toronto",
+        "FacilityName": "145 King Street West",
+        "Address": "145 King Street West, Suite 1401, Toronto, Ontario Toronto, Canada, M5H 1J8",
+        "Longitude": "-79.384193",
+        "Latitude": "43.647469"
+    }, {
+        "FacilityID": 99,
+        "CityName": "Vancouver",
+        "FacilityName": "401 West Georgia Street, Suite 1500",
+        "Address": "401 West Georgia Street, Suite 1500, Vancouver, British Columbia Vancouver, Canada, V6B 5A1",
+        "Longitude": "-123.114617",
+        "Latitude": "49.281342"
+    }, {
+        "FacilityID": 100,
+        "CityName": "Santiago",
+        "FacilityName": "Rosario Norte 530",
+        "Address": "Rosario Norte 530, 6 th floor, Las Condes, Santiago, Chile Las Condes, Chile, 7550000",
+        "Longitude": "-70.573014",
+        "Latitude": "-33.404549"
+    }, {
+        "FacilityID": 101,
+        "CityName": "Bogota",
+        "FacilityName": "Carrera 7, N\u00famero 71-52",
+        "Address": "Carrera 7, N\u00famero 71-52, Torre A Piso 10, Bogot\u00e1 Bogota, Colombia, 11",
+        "Longitude": "-74.100686",
+        "Latitude": "4.564088"
+    }, {
+        "FacilityID": 102,
+        "CityName": "Heredia",
+        "FacilityName": "Plaza Bratsi",
+        "Address": "Plaza Bratsi, Heredia, 50m north of Paseo de las, Flores Mall on Central Street, Heredia, Costa Rica Heredia, Costa Rica, 40101",
+        "Longitude": "-84.117001",
+        "Latitude": "9.994744"
+    }, {
+        "FacilityID": 103,
+        "CityName": "Cuidad de Mexico",
+        "FacilityName": "Calzada de Tlalpan No. 639",
+        "Address": "Accenture Technology Solutions, Calzada de Tlalpan No. 639, Colonia Alamos Mexico City, Mexico, 03400",
+        "Longitude": "-99.141464",
+        "Latitude": "19.399121"
+    }, {
+        "FacilityID": 104,
+        "CityName": "Mexico City",
+        "FacilityName": "Blvd. Manuel Avila Camacho",
+        "Address": "Blvd. Manuel Avila Camacho, No. 138 Piso 7, Col. Lomas de Chapultepec, Mexico D.F. Mexico City, Mexico, 11000",
+        "Longitude": "-99.210263",
+        "Latitude": "19.433217"
+    }, {
+        "FacilityID": 105,
+        "CityName": "Monterrey",
+        "FacilityName": "Oficinas en el Parque",
+        "Address": "Oficinas en el Parque, Blvd. Antonio L. Rodr\u00edguez #1884, Torre 1, Piso 7, Col. Santa Maria, Monterrey, Nuevo Le\u00f3n, M\u00e9xico Monterrey, Mexico, 64650",
+        "Longitude": "-100.374704",
+        "Latitude": "25.673295"
+    }, {
+        "FacilityID": 106,
+        "CityName": "Lima",
+        "FacilityName": "Av. Nicol\u00e1s de Pi\u00e9rola 589",
+        "Address": "Av. Nicol\u00e1s de Pi\u00e9rola 589 piso 6, Cercado de Lima, Lima Lima, Peru, Lima 01",
+        "Longitude": "-76.893798",
+        "Latitude": "-12.024712"
+    }, {
+        "FacilityID": 107,
+        "CityName": "Albany",
+        "FacilityName": "111 Washington Street",
+        "Address": "111 Washington Street, Albany, NY Albany, USA, 12210",
+        "Longitude": "-73.759615",
+        "Latitude": "42.655357"
+    }, {
+        "FacilityID": 108,
+        "CityName": "Arlington",
+        "FacilityName": "800 North Glebe Road",
+        "Address": "800 North Glebe Road, Suite 300, Arlington, VA Arlington, USA, 22203",
+        "Longitude": "-77.114864",
+        "Latitude": "38.880192"
+    }, {
+        "FacilityID": 109,
+        "CityName": "Atlanta",
+        "FacilityName": "75 Fifth Street NW Suite 1100",
+        "Address": "75 Fifth Street NW Suite 1100, Atlanta, Georgia Atlanta, USA, 30308",
+        "Longitude": "-84.389508",
+        "Latitude": "33.777526"
+    }, {
+        "FacilityID": 110,
+        "CityName": "Austin",
+        "FacilityName": "1501 South MoPac, Suite 300",
+        "Address": "1501 South MoPac, Suite 300, Austin, TX Austin, USA, 78746",
+        "Longitude": "-97.789959",
+        "Latitude": "30.260941"
+    }, {
+        "FacilityID": 111,
+        "CityName": "Bolivar",
+        "FacilityName": "1807 Jones Street",
+        "Address": "1807 Jones Street, Bolivar, MO Bolivar, USA, 65613-330",
+        "Longitude": "-93.431681",
+        "Latitude": "37.597925"
+    }, {
+        "FacilityID": 112,
+        "CityName": "Boston",
+        "FacilityName": "Prudential Tower",
+        "Address": "Prudential Tower, 800 Boylston Street, Suite 2300 Boston, MA Boston, USA, 02199",
+        "Longitude": "-71.082518",
+        "Latitude": "42.347143"
+    }, {
+        "FacilityID": 113,
+        "CityName": "Charlotte",
+        "FacilityName": "201 South College Street, Suite 1900",
+        "Address": "201 South College Street, Suite 1900, Charlotte, NC Charlotte, USA, 28244",
+        "Longitude": "-80.843375",
+        "Latitude": "35.224922"
+    }, {
+        "FacilityID": 114,
+        "CityName": "Chicago",
+        "FacilityName": "161 North Clark",
+        "Address": "161 North Clark, Chicago, IL Chicago, USA, 60601",
+        "Longitude": "-87.630611",
+        "Latitude": "41.884778"
+    }, {
+        "FacilityID": 115,
+        "CityName": "Cinncinati",
+        "FacilityName": "Atrium One",
+        "Address": "Atrium One, 201 East Fourth Street, Suite 1600, Cincinnati, OH Cincinnati, USA, 45202",
+        "Longitude": "-84.506488",
+        "Latitude": "39.103197"
+    }, {
+        "FacilityID": 116,
+        "CityName": "Cleveland",
+        "FacilityName": "200 Public Square",
+        "Address": "200 Public Square, Suite 1900, Cleveland, Ohio Cleveland, USA, 44114",
+        "Longitude": "-81.692192",
+        "Latitude": "41.499972"
+    }, {
+        "FacilityID": 117,
+        "CityName": "Columbia",
+        "FacilityName": "1441 Main St.",
+        "Address": "1441 Main St., Columbia, SC Columbia, USA, 29201",
+        "Longitude": "-81.035675",
+        "Latitude": "34.004788"
+    }, {
+        "FacilityID": 118,
+        "CityName": "Columbus",
+        "FacilityName": "250 West Street, Suite 150",
+        "Address": "250 West Street, Suite 150, Columbus, Ohio Columbus, USA, 43215",
+        "Longitude": "-83.006723",
+        "Latitude": "39.967295"
+    }, {
+        "FacilityID": 120,
+        "CityName": "Denver",
+        "FacilityName": "1400 16th Street",
+        "Address": "1400 16th Street, Suite 500, Denver CO Denver, USA, 80202",
+        "Longitude": "-104.998871",
+        "Latitude": "39.749902"
+    }, {
+        "FacilityID": 121,
+        "CityName": "Los Angeles",
+        "FacilityName": "2141 Rosecrans Avenue",
+        "Address": "2141 Rosecrans Avenue, Suite 3100, El Segundo, California El Segundo, USA, 90245",
+        "Longitude": "-118.386921",
+        "Latitude": "33.902700"
+    }, {
+        "FacilityID": 122,
+        "CityName": "Florham Park",
+        "FacilityName": "300 Campus Drive",
+        "Address": "300 Campus Drive, Florham Park, NJ Florham Park, USA, 07932",
+        "Longitude": "-74.425217",
+        "Latitude": "40.784535"
+    }, {
+        "FacilityID": 123,
+        "CityName": "Hartford",
+        "FacilityName": "One Financial Plaza",
+        "Address": "One Financial Plaza, Hartford, CT Hartford, USA, 06103",
+        "Longitude": "-72.673927",
+        "Latitude": "41.765498"
+    }, {
+        "FacilityID": 124,
+        "CityName": "Houston",
+        "FacilityName": "1301 Fannin, Suite 1900",
+        "Address": "1301 Fannin, Suite 1900, Houston, TX Houston, USA, 77002",
+        "Longitude": "-95.365771",
+        "Latitude": "29.753536"
+    }, {
+        "FacilityID": 125,
+        "CityName": "Indianapolis",
+        "FacilityName": "111 Monument Circle, Suite 2100",
+        "Address": "111 Monument Circle, Suite 2100, Indianapolis, IN Indianapolis, USA, 46204",
+        "Longitude": "-86.157066",
+        "Latitude": "39.768905"
+    }, {
+        "FacilityID": 126,
+        "CityName": "Las Colinas",
+        "FacilityName": "5221 North O Connor Boulevard",
+        "Address": "5221 North O Connor Boulevard, Suite 1400, Irving, TX Irving, USA, 75039",
+        "Longitude": "-96.937884",
+        "Latitude": "32.870454"
+    }, {
+        "FacilityID": 127,
+        "CityName": "Miami",
+        "FacilityName": "5201 Blue Lagoon Drive",
+        "Address": "5201 Blue Lagoon Drive, Suite 250, Miami FL Miami, USA, 33126",
+        "Longitude": "-80.281436",
+        "Latitude": "25.783364"
+    }, {
+        "FacilityID": 128,
+        "CityName": "Milwaukee",
+        "FacilityName": "111 East Kilbourn, Suite 1200",
+        "Address": "111 East Kilbourn, Suite 1200, Milwaukee, Wisconsin Milwaukee, USA, 53202",
+        "Longitude": "-87.911561",
+        "Latitude": "43.041848"
+    }, {
+        "FacilityID": 129,
+        "CityName": "Minneapolis",
+        "FacilityName": "333 South Seventh Street",
+        "Address": "333 South Seventh Street, 7th Minneapolis, MN Minneapolis, USA, 55402",
+        "Longitude": "-93.269686",
+        "Latitude": "44.975480"
+    }, {
+        "FacilityID": 130,
+        "CityName": "Murray Hill",
+        "FacilityName": "5 Spring Street, Murray Hill",
+        "Address": "5 Spring Street, Murray Hill, NJ",
+        "Longitude": "-74.407468",
+        "Latitude": "40.729224"
+    }, {
+        "FacilityID": 131,
+        "CityName": "New York",
+        "FacilityName": "1345 Avenue of the Americas",
+        "Address": "1345 Avenue of the Americas, New York, NY New York, USA, 10105",
+        "Longitude": "-73.978703",
+        "Latitude": "40.762971"
+    }, {
+        "FacilityID": 132,
+        "CityName": "Kansas City",
+        "FacilityName": "7500 College Boulevard Ste",
+        "Address": "7500 College Boulevard Ste 1400 Overland Park, KS Overland Park, USA, 66210",
+        "Longitude": "-94.673436",
+        "Latitude": "38.929313"
+    }, {
+        "FacilityID": 133,
+        "CityName": "Philidelphia",
+        "FacilityName": "2005 Market Street, One Commerce Square",
+        "Address": "2005 Market Street, One Commerce Square, 15th Floor, Philadelphia, PA Philadelphia, USA, 19103",
+        "Longitude": "-75.166074",
+        "Latitude": "39.952998"
+    }, {
+        "FacilityID": 134,
+        "CityName": "Phoenix",
+        "FacilityName": "3200 E. Camelback Rd., Suite 245",
+        "Address": "3200 E. Camelback Rd., Suite 245, Phoenix, AZ Phoenix, USA, 85018",
+        "Longitude": "-112.011620",
+        "Latitude": "33.510707"
+    }, {
+        "FacilityID": 135,
+        "CityName": "Pittsburgh",
+        "FacilityName": "K&L Gates Center",
+        "Address": "K&L Gates Center, 210 6th Avenue Suite 3650, Pittsburgh, PA Pittsburgh, USA, 15222",
+        "Longitude": "-79.993398",
+        "Latitude": "40.447526"
+    }, {
+        "FacilityID": 136,
+        "CityName": "One Renaissance Center",
+        "FacilityName": "3301 Benson Drive, Suite 503",
+        "Address": "3301 Benson Drive, Suite 503, Raleigh, NC Raleigh, USA, 27609",
+        "Longitude": "-78.622671",
+        "Latitude": "35.829487"
+    }, {
+        "FacilityID": 137,
+        "CityName": "Sacramento",
+        "FacilityName": "1800 Third St., Suite 215",
+        "Address": "1800 Third St., Suite 215, Sacramento, CA Sacramento, USA, 95811",
+        "Longitude": "-121.507077",
+        "Latitude": "38.573706"
+    }, {
+        "FacilityID": 138,
+        "CityName": "San Antonio",
+        "FacilityName": "BPO, 6415 Babcock Rd., Suite 100",
+        "Address": "BPO, 6415 Babcock Rd., Suite 100, San Antonio, TX San Antonio, USA, 78249",
+        "Longitude": "-98.605074",
+        "Latitude": "29.567614"
+    }, {
+        "FacilityID": 139,
+        "CityName": "San Diego",
+        "FacilityName": "1615 Murray Canyon Road, Suite 400",
+        "Address": "1615 Murray Canyon Road, Suite 400, San Diego, CA San Diego, USA, 92108",
+        "Longitude": "-117.157549",
+        "Latitude": "32.775206"
+    }, {
+        "FacilityID": 140,
+        "CityName": "San Francisco",
+        "FacilityName": "560 Mission Street, Suite 1200",
+        "Address": "560 Mission Street, Suite 1200, San Francisco, CA San Francisco, USA, 94105",
+        "Longitude": "-122.399372",
+        "Latitude": "37.788696"
+    }, {
+        "FacilityID": 141,
+        "CityName": "San Jose",
+        "FacilityName": "50 West San Fernando Street, Suite 1100",
+        "Address": "50 West San Fernando Street, Suite 1100, San Jose, CA San Jose, USA, 95113",
+        "Longitude": "-121.889274",
+        "Latitude": "37.333902"
+    }, {
+        "FacilityID": 142,
+        "CityName": "Seattle",
+        "FacilityName": "818 Stewart St., Suite 400",
+        "Address": "818 Stewart St., Suite 400, Seattle, WA Seattle, USA, 98101",
+        "Longitude": "-122.335163",
+        "Latitude": "47.615708"
+    }, {
+        "FacilityID": 143,
+        "CityName": "Detroit",
+        "FacilityName": "3000 Town Center, Ste 2400",
+        "Address": "3000 Town Center, Ste 2400, Southfield, MI Southfield, USA, 48075",
+        "Longitude": "-83.244660",
+        "Latitude": "42.478481"
+    }, {
+        "FacilityID": 144,
+        "CityName": "St. Louis",
+        "FacilityName": "211 North Broadway, Suite 2950",
+        "Address": "211 North Broadway, Suite 2950, St. Louis MO St Louis, USA, 63102",
+        "Longitude": "-90.189525",
+        "Latitude": "38.627623"
+    }, {
+        "FacilityID": 145,
+        "CityName": "Tallahassee",
+        "FacilityName": "2002 Old St. Augustine Road, Suite E-45",
+        "Address": "2002 Old St. Augustine Road, Suite E-45, Tallahassee FL Tallahassee, USA, 32301",
+        "Longitude": "-84.246417",
+        "Latitude": "30.426570"
+    }, {
+        "FacilityID": 146,
+        "CityName": "Wilmington",
+        "FacilityName": "501 Carr Road",
+        "Address": "501 Carr Road, Wilmington DE Wilmington, USA, 19808",
+        "Longitude": "-75.513209",
+        "Latitude": "39.776617"
+    }, {
+        "FacilityID": 147,
+        "CityName": "Caracas",
+        "FacilityName": "Centro Seguros La Paz, Piso 7",
+        "Address": "Centro Seguros La Paz, Piso 7, Ala Noreste, Avenida Francisco de Miranda, La California Norte, Caracas, Venezuela Caracas, Venezuela, 1010-A",
+        "Longitude": "-66.821598",
+        "Latitude": "10.481346"
+    }, {
+        "FacilityID": 148,
+        "CityName": "Brisbane",
+        "FacilityName": "Level 24, 400 George St, Brisbane QLD",
+        "Address": "Level 24, 400 George St, Brisbane QLD Brisbane, Australia, 4001",
+        "Longitude": "153.023323",
+        "Latitude": "-27.470167"
+    }, {
+        "FacilityID": 149,
+        "CityName": "Canberra",
+        "FacilityName": "Brindabella Business Park",
+        "Address": "Ground Floor, 4 Brindabella Circuit, Brindabella Business Park, Canberra Airport ACT Canberra, Australia, 2609",
+        "Longitude": "149.188074",
+        "Latitude": "-35.312994"
+    }, {
+        "FacilityID": 150,
+        "CityName": "Melbourne",
+        "FacilityName": "Level 18, 180 Lonsdale Street",
+        "Address": "Level 18, 180 Lonsdale Street, Melbourne, Victoria Melbourne, Australia, 3000",
+        "Longitude": "144.966510",
+        "Latitude": "-37.810648"
+    }, {
+        "FacilityID": 151,
+        "CityName": "Perth",
+        "FacilityName": "Level 3, 5 Mill Street",
+        "Address": "Level 3, 5 Mill Street, Perth, WA Perth, Australia, 6000",
+        "Longitude": "115.852097",
+        "Latitude": "-31.954306"
+    }, {
+        "FacilityID": 152,
+        "CityName": "Sydney",
+        "FacilityName": "48 Pirrama Road",
+        "Address": "48 Pirrama Road, Pyrmont NSW Sydney, Australia, 2009",
+        "Longitude": "151.195570",
+        "Latitude": "-33.866714"
+    }, {
+        "FacilityID": 153,
+        "CityName": "Bashundhara",
+        "FacilityName": "GP House",
+        "Address": "Ka-19/3, Jagannathpur, GP House, Baridhara, Bashundhara, Dhaka, Bangladesh Bashundhara, Bangladesh, 1229",
+        "Longitude": "90.452595",
+        "Latitude": "23.819144"
+    }, {
+        "FacilityID": 154,
+        "CityName": "Dhaka",
+        "FacilityName": "Niloy Mansion",
+        "Address": "House #11, Road #113/A, Gulshan-2, Dhaka, Bangladesh Gulshan 2, Bangladesh, 1212",
+        "Longitude": "90.413340",
+        "Latitude": "23.794818"
+    }, {
+        "FacilityID": 155,
+        "CityName": "Beijing",
+        "FacilityName": "21/F West Tower, World Financial Center, No. 1",
+        "Address": "21/F West Tower, World Financial Center, No. 1, East 3rd Ring Middle Road, Chaoyang District, Beijing Beijing, China, 100020",
+        "Longitude": "116.453013",
+        "Latitude": "39.914284"
+    }, {
+        "FacilityID": 156,
+        "CityName": "Chengdu",
+        "FacilityName": "7-8F, Building C7, Tianfu Software Park",
+        "Address": "7-8F, Building C7, Tianfu Software Park, No.81 Tian Hua 2nd Road, High-tech Zone, Chengdu Chengdu, China, 610041",
+        "Longitude": "104.028213",
+        "Latitude": "30.630391"
+    }, {
+        "FacilityID": 157,
+        "CityName": "Dalian",
+        "FacilityName": "No.1, North Section, Digital Road, Software Park",
+        "Address": "No.1, North Section, Digital Road, Software Park, Dalian Dalian, China, 116023",
+        "Longitude": "121.522957",
+        "Latitude": "38.879663"
+    }, {
+        "FacilityID": 158,
+        "CityName": "Guangzhou",
+        "FacilityName": "13/F, Xin Yuan Building, No. 898",
+        "Address": "13/F, Xin Yuan Building, No. 898 TianHeBei Road, Guangzhou Guangzhou, China, 510898",
+        "Longitude": "113.264385",
+        "Latitude": "23.129110"
+    }, {
+        "FacilityID": 159,
+        "CityName": "Hong Kong",
+        "FacilityName": "85/F International Commerce Centre",
+        "Address": "85/F International Commerce Centre, 1 Austin Road West, Kowloon, Hong Kong Hong Kong, China, 8523",
+        "Longitude": "114.160231",
+        "Latitude": "22.303381"
+    }, {
+        "FacilityID": 160,
+        "CityName": "Hong Kong",
+        "FacilityName": "85F International Commerce Centre",
+        "Address": "1 Austin Road West, Kowloon, Hong Kong Hong Kong, Hong Kong, 8523",
+        "Longitude": "114.176347",
+        "Latitude": "22.301919"
+    }, {
+        "FacilityID": 161,
+        "CityName": "Shanghai",
+        "FacilityName": "26/F, Zhao Feng Mansion",
+        "Address": "26/F, Zhao Feng Mansion, 1027 Chang Ning Road, Shanghai Shanghai, China, 200050",
+        "Longitude": "121.423029",
+        "Latitude": "31.217286"
+    }, {
+        "FacilityID": 162,
+        "CityName": "Jakarta",
+        "FacilityName": "Wisma 46 Kota BNI",
+        "Address": "Wisma 46 Kota BNI\u201418th floor, Jl. Jendral Sudirman Kav. 1, Jakarta, Indonesia Jakarta, Indonesia, 10220",
+        "Longitude": "106.819214",
+        "Latitude": "-6.203819"
+    }, {
+        "FacilityID": 163,
+        "CityName": "Tokyo",
+        "FacilityName": "Akasaka Intercity 1-11-44",
+        "Address": "Akasaka Intercity 1-11-44 Akasaka Minato-ku, Tokyo Tokyo, Japan, 107-8672",
+        "Longitude": "139.736086",
+        "Latitude": "35.675677"
+    }, {
+        "FacilityID": 164,
+        "CityName": "Kuala Lumpur",
+        "FacilityName": "Level 35, The Gardens North Tower",
+        "Address": "Level 35, The Gardens North Tower, Mid Valley City, Lingkaran Syed Putra, Kuala Lumpur Kuala Lumpur, Malaysia, 59200",
+        "Longitude": "101.678418",
+        "Latitude": "3.116971"
+    }, {
+        "FacilityID": 165,
+        "CityName": "Kuching",
+        "FacilityName": "Suite 107, 1st Floor Crown Towers",
+        "Address": "Suite 107, 1st Floor Crown Towers, 88 Jalan Pending, Kuching, Sarawak Kuching, Malaysia, 93450",
+        "Longitude": "110.375902",
+        "Latitude": "1.550614"
+    }, {
+        "FacilityID": 166,
+        "CityName": "Selangor",
+        "FacilityName": "Kelana ParkView Tower No. 1",
+        "Address": "Suite 2.09(A), Block E, Level 1, Kelana ParkView Tower No. 1, Jalan SS 6/2, Kelana Jaya, Petaling Jaya Petaling Jaya, Malaysia, 47301",
+        "Longitude": "101.598714",
+        "Latitude": "3.108282"
+    }, {
+        "FacilityID": 167,
+        "CityName": "Cebu",
+        "FacilityName": "Pioneer House",
+        "Address": "Pioneer House, Cardinal Rosales cor. Panglao Street, Cebu City Cebu, Philippines, 6000",
+        "Longitude": "123.912589",
+        "Latitude": "10.321844"
+    }, {
+        "FacilityID": 169,
+        "CityName": "Singapore",
+        "FacilityName": "250 North Bridge Road",
+        "Address": "250 North Bridge Road, #33-00, Raffles City Tower, Singapore Singapore, Singapore, 179101",
+        "Longitude": "103.852787",
+        "Latitude": "1.293497"
+    }, {
+        "FacilityID": 170,
+        "CityName": "Busan",
+        "FacilityName": "15th Fl., Centum Science Park",
+        "Address": "15th Fl., Centum Science Park, 1463-1, U-dong, Haeundae-gu, Busan, South Korea Busan, South Korea, 612-020",
+        "Longitude": "129.149165",
+        "Latitude": "35.162579"
+    }, {
+        "FacilityID": 171,
+        "CityName": "Seoul",
+        "FacilityName": "10th Fl., Posco P&S Tower",
+        "Address": "10th Fl., Posco P&S Tower, 735-3, Yeoksam-dong, Gangnam-gu, Seoul, South Korea Seoul, South Korea, 135-923",
+        "Longitude": "127.040660",
+        "Latitude": "37.504654"
+    }, {
+        "FacilityID": 172,
+        "CityName": "Taipei",
+        "FacilityName": "21F/L, Cathay Taipei Int\u2019l Building B 218",
+        "Address": "21F/L, Cathay Taipei Int\u2019l Building B 218, Tun Hwa S. Road, Sec. 2, Taipei, Taiwan Taipei, Taiwan, 106",
+        "Longitude": "121.542709",
+        "Latitude": "25.026158"
+    }, {
+        "FacilityID": 173,
+        "CityName": "Bangkok",
+        "FacilityName": "30th Floor, Abdulrahim Place",
+        "Address": "30th Floor, Abdulrahim Place, 990, Rama IV Road, Bangrak, Bangkok, Thailand Bangkok, Thailand, 10500",
+        "Longitude": "100.526799",
+        "Latitude": "13.726240"
+    }, {
+        "FacilityID": 174,
+        "CityName": "Ho Chih Minh City",
+        "FacilityName": "M Floor, Etown, 364 Cong Hoa",
+        "Address": "M Floor, Etown, 364 Cong Hoa, Ward 13, Tan Binh District Ho Chih Minh, Vietnam",
+        "Longitude": "106.652597",
+        "Latitude": "10.801466"
+    }, {
+        "FacilityID": 175,
+        "CityName": "Andorra",
+        "FacilityName": "Andorra la Vella",
+        "Address": "Andorra la Vella Andorra la Vella, Andorra",
+        "Longitude": "1.521835",
+        "Latitude": "42.506317"
+    }, {
+        "FacilityID": 176,
+        "CityName": "Vienna",
+        "FacilityName": "Boersengebaeude",
+        "Address": "Boersengebaeude, Schottenring 16, Wien Wien, Austria, A-1010",
+        "Longitude": "16.366341",
+        "Latitude": "48.215376"
+    }, {
+        "FacilityID": 177,
+        "CityName": "Brussels",
+        "FacilityName": "Waterloolaan 16 boulevard de Waterloo",
+        "Address": "Waterloolaan 16 boulevard de Waterloo, Brussels Brussels, Belgium, 1000",
+        "Longitude": "4.359761",
+        "Latitude": "50.838199"
+    }, {
+        "FacilityID": 178,
+        "CityName": "Bucharova 8",
+        "FacilityName": "Prague 5",
+        "Address": "Prague 5, Czech Republic Prague, Czech Republic, 158 00",
+        "Longitude": "14.358335",
+        "Latitude": "50.054781"
+    }, {
+        "FacilityID": 179,
+        "CityName": "The Dancing House",
+        "FacilityName": "Jir\u00e1skovo n\u00e1mest\u00ed 6",
+        "Address": "Jir\u00e1skovo n\u00e1mest\u00ed 6, Prague 2, Czech Republic Prague, Czech Republic, 120 00",
+        "Longitude": "14.414194",
+        "Latitude": "50.075451"
+    }, {
+        "FacilityID": 180,
+        "CityName": "V Parku 2316/12",
+        "FacilityName": "Prague 4, Czech Republic",
+        "Address": "Prague 4, Czech Republic Prague, Czech Republic, 148 00",
+        "Longitude": "14.487641",
+        "Latitude": "50.014822"
+    }, {
+        "FacilityID": 181,
+        "CityName": "Copenhagen",
+        "FacilityName": "Accenture, Arne Jacobsens All\u00e9 15",
+        "Address": "Accenture, Arne Jacobsens All\u00e9 15, K\u00f8benhavn S Copenhagen, Denmark, DK-2300",
+        "Longitude": "12.578675",
+        "Latitude": "55.631734"
+    }, {
+        "FacilityID": 182,
+        "CityName": "Helsinki",
+        "FacilityName": "Porkkalankatu 5",
+        "Address": "Porkkalankatu 5, Helsinki Helsinki, Finland, 00180",
+        "Longitude": "24.909423",
+        "Latitude": "60.164443"
+    }, {
+        "FacilityID": 183,
+        "CityName": "Lyon",
+        "FacilityName": "Centre d\u2019affaires Multiburo",
+        "Address": "10 place Charles B\u00e9raudier, Immeuble l\u2019Orient, LYON Lyon, France, 69003",
+        "Longitude": "4.859205",
+        "Latitude": "45.760120"
+    }, {
+        "FacilityID": 184,
+        "CityName": "Paris",
+        "FacilityName": "118, avenue de France",
+        "Address": "118, avenue de France, Paris Paris, France, 75636 Cedex 13",
+        "Longitude": "2.357777",
+        "Latitude": "48.824034"
+    }, {
+        "FacilityID": 185,
+        "CityName": "Sophia Antipolis",
+        "FacilityName": "400 avenue de Roumanille",
+        "Address": "400 avenue de Roumanille - Bt 1A, CS 80099, Sophia Antipolis Cedex Sophia Antipolis, France, 06902 Cedex",
+        "Longitude": "5.375219",
+        "Latitude": "43.888441"
+    }, {
+        "FacilityID": 186,
+        "CityName": "Berlin",
+        "FacilityName": "Friedrichstra\u00dfe 78",
+        "Address": "Friedrichstra\u00dfe 78, Quartier 207, Berlin Berlin, Germany, D-10117",
+        "Longitude": "13.384754",
+        "Latitude": "52.515510"
+    }, {
+        "FacilityID": 187,
+        "CityName": "D\u00fcsseldorf",
+        "FacilityName": "Kaistra\u00dfe 20",
+        "Address": "Kaistra\u00dfe 20, D\u00fcsseldorf D\u00fcsseldorf, Germany, D-40221",
+        "Longitude": "6.756122",
+        "Latitude": "51.215816"
+    }, {
+        "FacilityID": 188,
+        "CityName": "Frankfurt",
+        "FacilityName": "Campus Kronberg1, Kronberg i.",
+        "Address": "Campus Kronberg1, Kronberg i. Ts. Frankfurt, Germany, D-61476",
+        "Longitude": "8.511923",
+        "Latitude": "50.186234"
+    }, {
+        "FacilityID": 189,
+        "CityName": "Hamburg",
+        "FacilityName": "Wendenstra\u00dfe 12",
+        "Address": "Wendenstra\u00dfe 12, Hamburg Accenture Media Management Hamburg, Germany, D-20097",
+        "Longitude": "10.017699",
+        "Latitude": "53.548038"
+    }, {
+        "FacilityID": 190,
+        "CityName": "M\u00fcnchen",
+        "FacilityName": "Anni-Albers-Stra\u00dfe 11",
+        "Address": "Anni-Albers-Stra\u00dfe 11, M\u00fcnchen M\u00fcnchen, Germany, D-80807",
+        "Longitude": "11.591379",
+        "Latitude": "48.177695"
+    }, {
+        "FacilityID": 191,
+        "CityName": "Athens",
+        "FacilityName": "1, Arcadias Str.",
+        "Address": "1, Arcadias Str., Kifissia, Athens, Greece Athens, Greece, 145 64",
+        "Longitude": "23.729360",
+        "Latitude": "37.983917"
+    }, {
+        "FacilityID": 192,
+        "CityName": "Budapest",
+        "FacilityName": "East West Business Center",
+        "Address": "East West Business Center, Budapest, R\u00e1k\u00f3czi \u00fat 1-3 Budapest, Hungary, 1088-H",
+        "Longitude": "19.049327",
+        "Latitude": "47.585398"
+    }, {
+        "FacilityID": 193,
+        "CityName": "Belfast",
+        "FacilityName": "Midtown Business Centre",
+        "Address": "Accenture, Northern Ireland, Midtown Business Centre, 25 Talbot Street, Cathedral Quarter, Belfast Belfast, Ireland, BT1 2LD",
+        "Longitude": "-5.928763",
+        "Latitude": "54.602579"
+    }, {
+        "FacilityID": 194,
+        "CityName": "Dublin",
+        "FacilityName": "Accenture Global Services Limited",
+        "Address": "Accenture Global Services Limited, 3 Grand Canal Plaza, Grand Canal Street Upper, Ireland Dublin, Ireland, Dublin 4",
+        "Longitude": "-6.236486",
+        "Latitude": "53.337964"
+    }, {
+        "FacilityID": 195,
+        "CityName": "Milano",
+        "FacilityName": "Via Maurizio Quadrio 17",
+        "Address": "Via Maurizio Quadrio 17, Milano Milano, Italy, 20154",
+        "Longitude": "9.183474",
+        "Latitude": "45.483859"
+    }, {
+        "FacilityID": 196,
+        "CityName": "Roma",
+        "FacilityName": "Piazzale dell\u2019Industria 40",
+        "Address": "Piazzale dell\u2019Industria 40, Roma Rome, Italy, 00144",
+        "Longitude": "12.474026",
+        "Latitude": "41.836384"
+    }, {
+        "FacilityID": 197,
+        "CityName": "Torino",
+        "FacilityName": "Via Nizza 262 int. 57",
+        "Address": "Via Nizza 262 int. 57, Torino Torino, Italy, 10126",
+        "Longitude": "7.665429",
+        "Latitude": "45.031995"
+    }, {
+        "FacilityID": 198,
+        "CityName": "Riga",
+        "FacilityName": "214 Brivibas",
+        "Address": "214 Brivibas, Riga, Latvia Riga, Latvia",
+        "Longitude": "24.125783",
+        "Latitude": "56.958957"
+    }, {
+        "FacilityID": 199,
+        "CityName": "Luxembourg",
+        "FacilityName": "46A, avenue J-F Kennedy",
+        "Address": "46A, avenue J-F Kennedy Luxembourg, Luxembourg, 1855",
+        "Longitude": "6.171989",
+        "Latitude": "49.632086"
+    }, {
+        "FacilityID": 200,
+        "CityName": "Amsterdam",
+        "FacilityName": "Gustav Mahlerplein 90",
+        "Address": "Gustav Mahlerplein 90, 1082 MA Amsterdam, Netherlands, Postbus 75797, 1070",
+        "Longitude": "4.872962",
+        "Latitude": "52.337244"
+    }, {
+        "FacilityID": 201,
+        "CityName": "Bergen",
+        "FacilityName": "Solheimsgaten",
+        "Address": "Solheimsgaten 11 P.O. Box 7165 Bergen, Norway, N-5020 Bergen",
+        "Longitude": "5.334679",
+        "Latitude": "60.377059"
+    }, {
+        "FacilityID": 202,
+        "CityName": "Fornebu, Oslo",
+        "FacilityName": "Rolfsbuktveien 2",
+        "Address": "Rolfsbuktveien 2, 1364 Fornebu P.O. Box 363 Oslo, Norway, N-1326 Lysaker",
+        "Longitude": "10.627263",
+        "Latitude": "59.894291"
+    }, {
+        "FacilityID": 203,
+        "CityName": "Stavanger",
+        "FacilityName": "Maskinveien 26",
+        "Address": "Maskinveien 26, N-4033 Stavanger P.O. Box 234 Forus Stavanger, Norway, N-4066 Stavanger",
+        "Longitude": "5.704981",
+        "Latitude": "58.901264"
+    }, {
+        "FacilityID": 204,
+        "CityName": "Lodz",
+        "FacilityName": "University Business Park",
+        "Address": "University Business Park W\u00f3lczanska 178 Lodz, Poland, 90-530",
+        "Longitude": "19.456066",
+        "Latitude": "51.753888"
+    }, {
+        "FacilityID": 205,
+        "CityName": "Warsaw",
+        "FacilityName": "Europlex Building Chocimska",
+        "Address": "Europlex Building Chocimska 17 Warsaw, Poland, 00-791",
+        "Longitude": "21.022410",
+        "Latitude": "52.210106"
+    }, {
+        "FacilityID": 206,
+        "CityName": "Lisbon",
+        "FacilityName": "Avenida Eng. Duarte Pacheco Amoreiras",
+        "Address": "Avenida Eng. Duarte Pacheco Amoreiras, Torre 1-16 piso Lisbon, Portugal, 1070-101",
+        "Longitude": "-9.162048",
+        "Latitude": "38.724390"
+    }, {
+        "FacilityID": 207,
+        "CityName": "Porto",
+        "FacilityName": "Avenida da Boavista",
+        "Address": "Avenida da Boavista, n\u00ba 1837 Edif\u00edcio Torre Burgo, 13\u00ba Andar \u2013 Sala 3 Porto, Portugal, 4100 \u2013 133",
+        "Longitude": "-8.645760",
+        "Latitude": "41.160682"
+    }, {
+        "FacilityID": 208,
+        "CityName": "Bucharest",
+        "FacilityName": "24 Preciziei Bd",
+        "Address": "24 Preciziei Bd, Westgate Office Park, H1 building, 1st floor, Bucharest, Romania, 062204",
+        "Longitude": "26.102538",
+        "Latitude": "44.426767"
+    }, {
+        "FacilityID": 209,
+        "CityName": "Moscow",
+        "FacilityName": "Paveletskaya Square 2/2",
+        "Address": "Paveletskaya Square 2/2 Moscow, Russia, 115054",
+        "Longitude": "37.635876",
+        "Latitude": "55.730200"
+    }, {
+        "FacilityID": 210,
+        "CityName": "Tver",
+        "FacilityName": "D.Donskogo, 37",
+        "Address": "D.Donskogo, 37 Tver, Russia, 170006",
+        "Longitude": "35.886172",
+        "Latitude": "56.861299"
+    }, {
+        "FacilityID": 211,
+        "CityName": "Bratislava",
+        "FacilityName": "Plynarenska 7/C",
+        "Address": "Plynarenska 7/C Bratislava, Slovak Republic, 821 09",
+        "Longitude": "17.142167",
+        "Latitude": "48.145478"
+    }, {
+        "FacilityID": 212,
+        "CityName": "Barcelona",
+        "FacilityName": "Avinguda Diagonal",
+        "Address": "Avinguda Diagonal, 615 Barcelona, Spain, 08028",
+        "Longitude": "2.128774",
+        "Latitude": "41.388220"
+    }, {
+        "FacilityID": 213,
+        "CityName": "Bilbao",
+        "FacilityName": "On Diego L\u00f3pez",
+        "Address": "On Diego L\u00f3pez Haroko Kale Nagusia, 45 Bilbao, Spain, 48011",
+        "Longitude": "-2.937087",
+        "Latitude": "43.263353"
+    }, {
+        "FacilityID": 214,
+        "CityName": "Madrid",
+        "FacilityName": "Pza. Pablo Ruiz Picasso",
+        "Address": "Pza. Pablo Ruiz Picasso, s/n, Torre Picasso, Madrid Madrid, Spain, 28020",
+        "Longitude": "-3.695290",
+        "Latitude": "40.456373"
+    }, {
+        "FacilityID": 215,
+        "CityName": "Sevilla",
+        "FacilityName": "c/ Max Plank",
+        "Address": "c/ Max Plank, s/n Isla de la Cartuja Edificio Iris I (3\u00aa planta) Seville, Spain, 41092",
+        "Longitude": "-6.007057",
+        "Latitude": "37.403782"
+    }, {
+        "FacilityID": 216,
+        "CityName": "Gothenburg",
+        "FacilityName": "Kungsgatan",
+        "Address": "Kungsgatan 20 Box 2186 Gothenburg, Sweden",
+        "Longitude": "11.960868",
+        "Latitude": "57.703588"
+    }, {
+        "FacilityID": 217,
+        "CityName": "Malmo",
+        "FacilityName": "Stortorget 9",
+        "Address": "Stortorget 9 Malmo, Sweden, 211 22",
+        "Longitude": "12.999020",
+        "Latitude": "55.606587"
+    }, {
+        "FacilityID": 218,
+        "CityName": "Stockholm",
+        "FacilityName": "Box 12502 Alstr\u00f6mergatan",
+        "Address": "Box 12502 Alstr\u00f6mergatan 12 Stockholm, Sweden, 102 29",
+        "Longitude": "18.031192",
+        "Latitude": "59.335824"
+    }, {
+        "FacilityID": 219,
+        "CityName": "Z\u00fcrich",
+        "FacilityName": "Fraum\u00fcnsterstrasse 16",
+        "Address": "Fraum\u00fcnsterstrasse 16 Zurich, Switzerland, CH-8001",
+        "Longitude": "8.541097",
+        "Latitude": "47.368796"
+    }, {
+        "FacilityID": 220,
+        "CityName": "Istanbul",
+        "FacilityName": "RBS Building Tamburi",
+        "Address": "RBS Building Tamburi Ali Efendi Sokak No: 13 Etiler Istanbul, Turkey, 34330",
+        "Longitude": "29.013986",
+        "Latitude": "41.088813"
+    }, {
+        "FacilityID": 221,
+        "CityName": "Edinburgh",
+        "FacilityName": "9-10 St Andrew Square",
+        "Address": "9-10 St Andrew Square Edinburgh, United Kingdom, EH2 2AF",
+        "Longitude": "-3.193973",
+        "Latitude": "55.953537"
+    }, {
+        "FacilityID": 222,
+        "CityName": "London",
+        "FacilityName": "30 Fenchurch Street",
+        "Address": "30 Fenchurch Street London, United Kingdom, \nEC3M 3BD",
+        "Longitude": "-0.082254",
+        "Latitude": "51.511461"
+    }, {
+        "FacilityID": 223,
+        "CityName": "Manchester",
+        "FacilityName": "Kingsley Hall 20",
+        "Address": "Kingsley Hall 20 Bailey Lane Manchester Airport Manchester, United Kingdom, M90 4AN",
+        "Longitude": "-2.273772",
+        "Latitude": "53.371375"
+    }, {
+        "FacilityID": 224,
+        "CityName": "Newcastle",
+        "FacilityName": "15a, 1 Quick Silver Way",
+        "Address": "15a, 1 Quick Silver Way \nCobalt Business Park \nNewcastle Upon Tyne \nTyne and Wear Newcastle, United Kingdom, \nNE27 0QQ",
+        "Longitude": "-107.761722",
+        "Latitude": "39.501114"
+    }, {
+        "FacilityID": 225,
+        "CityName": "Tel-Aviv",
+        "FacilityName": "Accenture, 11 Galgalei Haplada Street",
+        "Address": "Accenture, 11 Galgalei Haplada Street, Herzelia, Israel Tel-Aviv, Israel, 46733",
+        "Longitude": "-84.898478",
+        "Latitude": "40.805764"
+    }, {
+        "FacilityID": 226,
+        "CityName": "Doha",
+        "FacilityName": "Accenture Middle East BV",
+        "Address": "Accenture Middle East BV, QFC Branch, Al Fardan Office Tower, Doha, Qatar Doha, Qatar, P.O. Box 31316",
+        "Longitude": "-81.713052",
+        "Latitude": "31.700562"
+    }, {
+        "FacilityID": 227,
+        "CityName": "Dammam",
+        "FacilityName": "Accenture Saudi Arabia Limited",
+        "Address": "Accenture Saudi Arabia Limited, 2nd floor, tower B, Novotel Business Park, Dammam Khobar High Way, Dammam Dammam, Saudi Arabia, 31952",
+        "Longitude": "50.145506",
+        "Latitude": "26.388721"
+    }, {
+        "FacilityID": 228,
+        "CityName": "Riyadh",
+        "FacilityName": "Branch Office Accenture Middle East",
+        "Address": "Branch Office Accenture Middle East B.V King Faisal Foundation Building (Al Khaiyria Building), South Tower, 8 floor, Olaya, P.O.Box 301340 , Riyadh, Kingdom of Saudi Arabia Riyadh, Saudi Arabia, 11372",
+        "Longitude": "-73.880130",
+        "Latitude": "40.752792"
+    }, {
+        "FacilityID": 229,
+        "CityName": "Abu Dhabi ",
+        "FacilityName": "Accenture Middle East BV",
+        "Address": "Accenture Middle East BV, 9th Floor - Al Sila Tower, Sowwah Square, Al Maryah Island, Abu Dhabi, UAE Abu Dhabi, United Arab Emirates, P.O.BOX 29002",
+        "Longitude": "-81.231402",
+        "Latitude": "34.125899"
+    }, {
+        "FacilityID": 230,
+        "CityName": "Dubai",
+        "FacilityName": "Arenco Tower, Media City",
+        "Address": "Arenco Tower, Media City, Dubai, 6th Floor \u2013 office number 607 Dubai, United Arab Emirates, P.O. Box 33283",
+        "Longitude": "55.158452",
+        "Latitude": "25.091683"
+    }, {
+        "FacilityID": 231,
+        "CityName": "Cebu",
+        "FacilityName": "Cybergate Park",
+        "Address": null,
+        "Longitude": "123.891964",
+        "Latitude": "10.310345"
+    }, {
+        "FacilityID": 232,
+        "CityName": "Cebu",
+        "FacilityName": "Ebloc",
+        "Address": null,
+        "Longitude": "123.905562",
+        "Latitude": "10.3305915"
+    }, {
+        "FacilityID": 233,
+        "CityName": "Manila",
+        "FacilityName": "Robinsons Cybergate 1",
+        "Address": null,
+        "Longitude": "121.0482296",
+        "Latitude": "14.57058184"
+    }, {
+        "FacilityID": 234,
+        "CityName": "Manila",
+        "FacilityName": "Robinsons Cybergate 2",
+        "Address": null,
+        "Longitude": "121.0485542",
+        "Latitude": "14.57129308"
+    }, {
+        "FacilityID": 235,
+        "CityName": "Manila",
+        "FacilityName": "Robinsons Cybergate 3",
+        "Address": null,
+        "Longitude": "121.0501111",
+        "Latitude": "14.5708394"
+    }, {
+        "FacilityID": 236,
+        "CityName": "Manila",
+        "FacilityName": "GT Tower",
+        "Address": null,
+        "Longitude": "121.016807",
+        "Latitude": "14.560184"
+    }, {
+        "FacilityID": 237,
+        "CityName": "Manila",
+        "FacilityName": "PhilamLife Building",
+        "Address": null,
+        "Longitude": "121.0218482",
+        "Latitude": "14.557421"
+    }, {
+        "FacilityID": 238,
+        "CityName": "Manila",
+        "FacilityName": "Gateway Tower 1",
+        "Address": null,
+        "Longitude": "121.0531139",
+        "Latitude": "14.62250012"
+    }, {
+        "FacilityID": 239,
+        "CityName": "Manila",
+        "FacilityName": "Gateway Tower 2",
+        "Address": null,
+        "Longitude": "121.0525909",
+        "Latitude": "14.62230866"
+    }, {
+        "FacilityID": 240,
+        "CityName": "Manila",
+        "FacilityName": "One Campus Place A",
+        "Address": null,
+        "Longitude": "121.0527411",
+        "Latitude": "14.53351114"
+    }, {
+        "FacilityID": 241,
+        "CityName": "Manila",
+        "FacilityName": "One Campus Place B",
+        "Address": null,
+        "Longitude": "121.0533071",
+        "Latitude": "14.5335381"
+    }, {
+        "FacilityID": 242,
+        "CityName": "Manila",
+        "FacilityName": "Science Hub 1",
+        "Address": null,
+        "Longitude": "121.0517567",
+        "Latitude": "14.53226587"
+    }, {
+        "FacilityID": 243,
+        "CityName": "Manila",
+        "FacilityName": "Science Hub 2",
+        "Address": null,
+        "Longitude": "121.0518158",
+        "Latitude": "14.53183167"
+    }, {
+        "FacilityID": 244,
+        "CityName": "Manila",
+        "FacilityName": "Eastwood 1880",
+        "Address": null,
+        "Longitude": "121.0791863",
+        "Latitude": "14.6100082"
+    }, {
+        "FacilityID": 245,
+        "CityName": "Manila",
+        "FacilityName": "Global One",
+        "Address": null,
+        "Longitude": "121.081546",
+        "Latitude": "14.608541"
+    }],
+    "ResponseStatus": "Success",
+    "ResponseMessage": ""
+}

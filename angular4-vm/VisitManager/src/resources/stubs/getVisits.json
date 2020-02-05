@@ -1,0 +1,52 @@
+{
+  "ResponseStatus": "Success",
+  "ResponseMessage": "",
+  "Visits": [
+  {
+    "VisitID": "1",
+    "VisitTitle": "Bangalore Visit",
+    "VisitStartDate": "2015-05-15T00:00:00",
+    "VisitEndDate": "2015-05-15T00:00:00",
+    "CityID": 1,
+    "CityName": "Bangalore",
+    "Longtitude": "",
+    "Latitude": "",
+    "Country": "India",
+    "FacilityName": "BDC3"
+  },
+  {
+    "VisitID": "2",
+    "VisitTitle": "Bangalore Visit",
+    "VisitStartDate": "2015-06-02T00:00:00",
+    "VisitEndDate": "2015-06-03T00:00:00",
+    "CityID": 1,
+    "CityName": "Bangalore",
+    "Longtitude": "",
+    "Latitude": "",
+    "Country": "India",
+    "FacilityName": "BDC6"
+  },
+  {
+    "VisitID": "3",
+    "VisitTitle": "Delhi Visit",
+    "VisitStartDate": "2015-11-12T00:00:00",
+    "VisitEndDate": "2015-11-13T00:00:00",
+    "CityID": 1,
+    "CityName": "Delhi",
+    "Longtitude": "",
+    "Latitude": "",
+    "Country": "India",
+    "FacilityName": "DDC1"
+  },{
+    "VisitID": "4",
+    "VisitTitle": "Philippines Visit",
+    "VisitStartDate": "2015-09-12T00:00:00",
+    "VisitEndDate": "2015-09-13T00:00:00",
+    "CityID": 1,
+    "CityName": "Manila",
+    "Longtitude": "",
+    "Latitude": "",
+    "Country": "Philippines",
+    "FacilityName": "PDC1"
+  }]
+}

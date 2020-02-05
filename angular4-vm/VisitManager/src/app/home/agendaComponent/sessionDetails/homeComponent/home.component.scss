@@ -1,0 +1,84 @@
+@import "../../../../theme/theme.scss";
+.agenda-session-details {
+    .session-theme-image {
+        @include set-Height('height-p280-t570');
+        margin: 0.938rem 0;
+    }
+    .agenda-session-date-label {
+        @include set-font-size('text-p24-t28-Arial');
+        color: $info-text;
+    }
+    .agenda-details-title {
+        @include set-font-size('text-p34-t44-Arial');
+        color: $color-primary;
+    }
+    .agenda-calender-icon-container {
+        position: relative;
+        top: 0.15rem;
+    }
+    .agenda-calender-icon {
+        @include set-icon-font-size('icon-p26-t32');
+        padding-right: 0.1rem;
+        margin-left: 0.15rem;
+    }
+    .agenda-clock-icon {
+        @include set-icon-font-size('icon-p26-t32');
+        position: relative;
+        top: 0.1rem;
+    }
+    .agenda-meeting-icon-container {
+        height: 1.5rem;
+    }
+    .agenda-meeting-icon {
+        @include set-icon-font-size('icon-p38-t47');
+        position: relative;
+        top: 0.15rem;
+    }
+    .agenda-room-label {
+        margin-top: 0.3rem;
+        padding-left: 0.35rem;
+    }
+    .agenda-location-container {
+        margin-top: 0.2rem;
+    }
+    .agenda-location-icon {
+        @include set-icon-font-size('icon-p26-t32');
+        margin-left: 0.15rem;
+        padding-top: 0.05rem;
+    }
+    .agenda-details-city-label {
+        padding-left: 0.55rem;
+    }
+    .agenda-notes-header {
+        line-height: 3rem;
+        color: $info-text;
+    }
+    .agenda-details-description {
+        font-size: 0.938rem;
+        color: $label-text;
+        border-bottom: 1px solid $label-text;
+    }
+    .agenda-note-icon-container {
+        position: relative;
+    }
+    .agenda-add-icon-container {
+        position: absolute;
+        right: 0;
+    }
+    .agenda-email-icon-container {
+        position: absolute;
+        right: 3rem;
+    }
+    .agenda-add-icon {
+        font-size: 1.250rem;
+        color: $label-text;
+    }
+    .agenda-email-icon {
+        font-size: 2.938rem;
+        color: $color-primary;
+    }
+    .agenda-notes-label {
+        font-size: 0.938rem;
+        color: $label-text;
+    }
+}

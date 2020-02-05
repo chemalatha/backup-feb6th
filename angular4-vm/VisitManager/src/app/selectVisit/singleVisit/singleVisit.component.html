@@ -1,0 +1,23 @@
+<div class="visitView">
+    <div class="container">
+        <div class="visitview-welcome-heading">
+            <div class="header"> {{ "welcomeToAccenture" | translate}} </div>
+            <span>Your visit dates are {{visitStartDate | amDateFormat:'Do MMM YYYY'}}-{{visitEndDate | amDateFormat:'Do MMM YYYY'}} will be hosted in the following centres:</span>
+        </div>
+    </div>
+    <div class="visitview-title-city-name">
+        <span class="selected-city">{{selectedMapCityName}}</span>
+    </div>
+    <div id='flatMapContainerPhone' class='nativeMapContainer'>
+    </div>
+    <div class="footer" *ngIf="displayFooterSection">
+        <div class="row no-gutters">
+            <div class="offset-1 col-5 offset-sm-1 col-sm-1 offset-md-5 col-md-3">
+                <div class="tag-line pl-3">Click start to proceed.</div>
+            </div>
+            <div class="col-6  col-sm-6 col-md-3 pl-3">
+                <button type="button" class="btn btn-primary" (click)="goToWelcomeView()"> Start</button>
+            </div>
+        </div>
+    </div>
+</div>

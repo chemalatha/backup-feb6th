@@ -1,0 +1,62 @@
+<div class="safetyOverview">
+  <div class="logistics-sub-header">Safety Overview</div>
+  <div class="safetyOverview-carousel-container">
+    <ngb-carousel>
+      <ng-template ngbSlide *ngFor='let overviewData of safetyOverviewDetails'>
+        <div class="carousel-dec">
+          <p class="safety-dec" [innerHTML]="overviewData.Overview"></p>
+          <p class="safety-list-title">Mandatory Facility and Safety Overview</p>
+          <ul class="safety-list">
+            <li>Access control system installed and CCTV cameras strategically located.</li>
+            <li>Fire Detection and Suppression system installed in the facility.</li>
+            <li>Bi Annual Fire Drills and Floor Warden (First Responders) training on fire fighting and first aid are conducted.</li>
+            <li>Accenture practices Occupation Health & Safety Policy & Strategy – Progressively obtains and maintains</li>
+            <li>certification to OHSAS 18001:2007 from BSI, an international standard for OHS Management System</li>
+          </ul>
+        </div>
+      </ng-template>
+    </ngb-carousel>
+  </div>
+  <div class="row">
+    <div class="col-8 col-xs-8 col-sm-8 location-dropDown-container">
+      <div class="location-dropDown">
+        <label class="select mb-0">
+          <select name="email" id="email" (change)="floorPlanCitySelect($event.target.value)">
+            <option *ngFor='let location of visitFloorPlanDropdown' [ngValue]="location">{{location}}</option>
+          </select>
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="row no-gutters location-list-container">
+    <div class="col-10 col-xs-10 col-sm-10 location-list">
+      <div class="row no-gutters location-list-item" *ngFor='let facility of visitFloorPlanList' (click)="viewVisitFloorPlan(facility.CityName,facility.FloorID)">
+        <div class="col-10 col-xs-10 col-sm-10 p-0">
+          <p class="mb-0 location-facility-title">{{facility.Description}} - <span>Facility{{facility.CityID}}</span></p>
+          <p class="mb-0 location-floor">{{facility.Floor}}</p>
+        </div>
+        <div class="col-2 col-xs-2 col-sm-2 p-0">
+          <div class="float-right">
+            <span class="icon-next align-middle"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ng-template #safetypopup let-c="close" let-d="dismiss">
+  <div class="modal-header safetyOverviewPopup-header">
+    <h4 class="modal-title text-center">BDC7B 6th Floor</h4>
+    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span class="icon-close" aria-hidden="true"></span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <ngb-carousel>
+      <ng-template ngbSlide  *ngFor='let img of floorPlanImages'>
+        <img [src]="img" alt="Random first slide">
+      </ng-template>
+    </ngb-carousel>
+  </div>
+</ng-template>

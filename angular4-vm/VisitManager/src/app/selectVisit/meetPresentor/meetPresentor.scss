@@ -1,0 +1,47 @@
+@import "../../theme/theme.scss";
+.presenterView {
+    .presenter-details {
+        @include set-margin-top(presenterView-presenter-details-margin-top);
+        border-bottom: 1px solid $dark-grey;
+    }
+    .user-info {
+        padding-left: 0.625rem;
+    }
+    .user-name {
+        @include set-margin-bottom(presenterView-user-name-margin-bottom);
+        @include set-font-size('text-p40-t48-Arial');
+    }
+    .icon-addtocontacts {
+        color: $tab-disable;
+        font-size: 1.50rem;
+    }
+    .user-designation {
+        @include set-font-size('text-p24-t28-Arial');
+        color: $info-text;
+        @include set-margin-bottom(presenterView-user-designation-margin-bottom);
+    }
+    .red-color-class {
+        color: $color-primary
+    }
+    .pocView-common {
+        color: $label-text;
+        padding-left: 0.313rem;
+    }
+    .name {
+        @include set-font-size('text-p28-t28-Arial');
+        color: $info-text;
+    }
+    .row {
+        width: 100%;
+    }
+    .common{
+        float: left;
+        margin-top: 0.313rem;
+        padding-right: 0.781rem;
+       
+    }
+    .main{
+   @include set-margin-top(presenterView-main-margin-top);
+    }
+}
+

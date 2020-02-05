@@ -1,0 +1,34 @@
+<div [formGroup]="feedbackGroupForm">
+    <div class="container">
+        <div *ngFor="let control of feedbackControls;let i = index;" class="form-row">
+            <label [attr.for]="control.name" class="questionLabel">{{i+1}}.{{control.label}}</label>
+            <div [ngSwitch]="control.type" class="answerClass">
+                <input *ngSwitchCase="'textbox'" [formControlName]="control.name" [id]="control.name" [type]="control.type" [placeholder]="control.placeholder" class="form-control inputText" />
+               
+                <div class="col">
+                    <div ngbDropdown class="dropDownClass" [id]="control.name" *ngSwitchCase="'select'" [formControlName]="control.name" >
+                        <button class="btn btn-outline-primary form-control" id="dropdownBasic1" ngbDropdownToggle>{{control.options[0].value}}</button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownBasic1">
+                            <button class="dropdown-item" *ngFor="let opt of control.options" [value]="opt.key">{{opt.value}}</button>
+                            
+                        </div>
+                    </div>
+                </div>
+                <textarea *ngSwitchCase="'textarea'" rows="control.attributes.rows" cols="control.attributes.cols" [formControlName]="control.name" [id]="control.name" [placeholder]="control.placeholder" class="form-control"></textarea>
+                <ngb-rating *ngSwitchCase="'rating'" [rate]="control.attributes.max" [max]="control.attributes.max" [id]="control.name" [formControlName]="control.name" class="ratingClass">
+                    <ng-template let-fill="fill">
+                        <span class="star col-1" [class.filled]="fill === 100">&#9733;</span>
+                    </ng-template>
+                </ngb-rating>
+                <div *ngSwitchCase="'radio'">
+                    <label *ngFor="let opt of control.options" class="radioLabelClass">
+                        <div class="icon-checkin ">
+                            <input [type]="control.type" [id]="control.name" [name]="control.name" [formControlName]="control.name" [value]="opt.key" [(ngModel)]="opt.value" />{{opt.value}}
+                        </div>
+                    </label>
+                </div>
+                <div class="errorMessage" *ngIf="control?.name.touched && !control?.name.isValid">field is required</div>
+            </div>
+        </div>
+    </div>
+</div>

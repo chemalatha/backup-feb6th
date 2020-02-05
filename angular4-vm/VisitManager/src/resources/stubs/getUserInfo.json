@@ -1,0 +1,13 @@
+{
+  "ResponseStatus": "Success",
+  "ResponseMessage": "",
+  "VisitorFirstName": "Taylor",
+  "VisitorLastName": "Smith",
+  "VisitorContactNumber": "",
+  "VisitorCompanyName": "Absolute",
+  "VisitorDesignation": "Senior Manager",
+  "VisitorPhoto": "",
+  "VisitorEmailID": "taylor.smith@absolute.com",
+  "VisitDate": "01 November 2016",
+  "IsCheckedIn": false
+}

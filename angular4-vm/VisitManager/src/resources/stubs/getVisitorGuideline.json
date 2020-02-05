@@ -1,0 +1,6 @@
+{
+  "odata.metadata": "https://clientvisitmanagementsvc.ciostage.accenture.com/ClientVisitManagement-Service/$metadata#GetVisitorGuideline /@Element",
+  "GuidelineDescription": "<b>Unit test for visitor</b>",
+  "ResponseStatus": "Success",
+  "ResponseMessage": ""
+}

@@ -1,0 +1,58 @@
+<div class="welcomeView">
+    <div class="container" *ngIf="welcomeVisitDetails">
+        <div class="welcome-user-details col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <div class="row no-gutters">
+                <div class="col-3 col-sm-3 offset-md-1 col-md-2 offset-lg-1 col-lg-2 offset-xl-1 col-xl-2">
+                    <div class="image">
+                        <img [src]="welcomeVisitDetails.MDPhoto" class="rounded-circle img-class" [alt]="welcomeVisitDetails.MDName" >
+                    </div>
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                    <div class="user-info">
+                        <div class="row no-gutters">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                <span class="user-name align-vertical-custom">
+                                    <span class="align-left red-color-class">{{welcomeVisitDetails.MDName}}</span>
+                                </span>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                <span class="user-designation">
+                                    {{welcomeVisitDetails.MDDesignation}}
+                                </span>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                <span class="user-email align-vertical-custom" (click)="openMailer('noahcooper@accenture.com')">
+                                    <span class="icon-email align-vertical red-color-class"></span>&nbsp;&nbsp;
+                                    <span class="welcomeView-common">noahcooper@accenture.com</span>
+                                </span>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                <span class="number align-vertical-custom" (click)="openPhoneDialer('+91 9944 666222')">
+                                    <span class="icon-call align-vertical red-color-class"></span>&nbsp;&nbsp;
+                                    <span class="welcomeView-common">+91 9944 666222</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1 col-sm-1">
+                    <span class="align-right" (click)="saveToMobileContact(welcomeVisitDetails)" *ngIf="displayAddContacts">
+                                        <span class="icon-addtocontacts"></span>
+                    </span>
+                </div>
+            </div>
+            <div class="welcome-page-data">
+                <div class="row no-gutters">
+                    <div class="welcome-content col-12 col-sm-12 offset-md-1 col-md-10 offset-lg-1 col-lg-10 offset-xl-1 col-xl-10">
+                        <div>{{welcomeVisitDetails.WelcomeMessage}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer" *ngIf="displayFooterSection">
+        <div class="d-flex justify-content-center">
+          <button type="button" class="btn btn-primary col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3" (click)="navigateToHomeView()">Continue</button>  
+        </div>
+    </div>
+</div>

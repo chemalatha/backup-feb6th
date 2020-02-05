@@ -1,0 +1,13 @@
+<div class="travelGuideView">
+    <div class="container" *ngIf="displayTravelGuide">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            
+                <div class="heading">
+                    {{"Travel Guidelines" | translate}}
+                </div>
+                <div [innerHTML]="displayTravelGuide.ImmigrationDescription"></div>
+            
+        </div>
+    </div>
+</div>
+

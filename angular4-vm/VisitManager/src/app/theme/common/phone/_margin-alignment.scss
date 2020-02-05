@@ -1,0 +1,232 @@
+//(name,ldpi,mdpi,hdpi,xhdpi,xxhdpi)
+//ldpi height<=320px and  width<=240px
+//mdpi 321px>height<=480px and  241px>width<=320px
+//hdpi 481px>height<=600px and  321px>width<=480px
+//xhdpi 600px>height<=800px  and width>481px
+//xxhdpi height>801 -only for height 
+$margin_top: (
+                ('example', 0, 0, 8%, 10%, 10%),
+                ('termsandconditionView-button-margin-top', 0, 0, 8%, 7%, 10%),
+                ('LoginView-infoClass-margin-top', 0, 0,-0.250rem, 7%, 10%),  
+                ('LoginView-labeltextAutoLogin-margin-top', 0, 0,0.125em, 7%, 10%),
+                      
+                
+);
+
+$margin_bottom: (
+                ('example', 0.625em, 0.625em, 0.625em, 0.625em, 0.625em),
+               
+);
+
+$margin_right: (
+                ('example', 10%, 10%, 9%, 9%),
+                ('settingsView-settings-container-margin-right-11.5px', 0, 0, 0.719rem, 1.250rem, 10%),
+               
+
+);
+
+$margin_left: (
+                ('example', 12%, 12%, 9%, 9%),
+                ('LoginView-labeltextAutoLogin-margin-left', 0, 0,0rem, 7%, 10%),
+                ('LoginView-labeltext-margin-left', 0, 0, 1.538rem, 7%, 10%),
+                ('LoginView-infoClass-margin-left', 0, 0,-2rem, 7%, 10%),
+                ('settingsView-row-margin-left-0rem', 3rem, 3.5rem, 0rem, 4.688rem, 4.688rem),
+                ('settingsView-settings-container-margin-left-11.5px', 0, 0, 0.719rem, 1.250rem, 10%), 
+);
+
+//margin-top alignment
+@mixin set-margin-top($label-margin) {
+  //ldpi
+  @media (min-width: 240px) {
+    @each $margin in $margin_top {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-top: nth($margin, 2) !important;
+      }
+    }
+  }
+  //mdpi
+  @media (min-width: 241px) and (max-width: 320px) {
+    @each $margin in $margin_top {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-top: nth($margin, 3) !important;
+      }
+    }
+
+  }
+  //hdpi
+  @media (min-width: 321px) and (max-width: 480px) {
+    @each $margin in $margin_top {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-top: nth($margin, 4) !important;
+      }
+    }
+
+  }
+  //xhdpi
+  @media (min-width: 481px) {
+    @each $margin in $margin_top {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-top: nth($margin, 5) !important;
+      }
+    }
+  }
+  //xxhdpi
+  @media (min-height: 801px) {
+    @each $margin in $margin_top {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-top: nth($margin, 6) !important;
+      }
+    }
+  }
+
+}
+
+//margin-bottom alignment
+@mixin set-margin-bottom($label-margin) {
+  //ldpi
+  @media (min-width: 240px) {
+    @each $margin in $margin_bottom {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-bottom: nth($margin, 2) !important;
+      }
+    }
+
+  }
+  //mdpi
+  @media (min-width: 241px) and (max-width: 320px) {
+    @each $margin in $margin_bottom {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-bottom: nth($margin, 3) !important;
+      }
+    }
+
+  }
+  //hdpi
+  @media (min-width: 321px) and (max-width: 480px){
+    @each $margin in $margin_bottom {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-bottom: nth($margin, 4) !important;
+      }
+    }
+
+  }
+
+  //xhdpi
+  @media (min-width: 481px)  {
+    @each $margin in $margin_bottom {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-bottom: nth($margin, 5) !important;
+      }
+    }
+  }
+  //xxhdpi
+  @media (min-height: 801px) {
+    @each $margin in $margin_bottom {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-bottom: nth($margin, 5) !important;
+      }
+    }
+  }
+}
+
+//set margin-right for devices
+@mixin set-margin-right($label-margin) {
+
+  //ldpi
+  @media (min-width: 240px) {
+    @each $margin in $margin_right {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-right: nth($margin, 2) !important;
+      }
+    }
+
+  }
+
+  //mdpi
+  @media (min-width: 241px) and (max-width: 320px) {
+    @each $margin in $margin_right {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-right: nth($margin, 3) !important;
+      }
+    }
+
+  }
+
+  //hdpi
+  @media (min-width: 321px) and (max-width: 480px) {
+    @each $margin in $margin_right {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-right: nth($margin, 4) !important;
+      }
+    }
+  }
+
+  //xhdpi
+  @media (min-width: 481px) {
+    @each $margin in $margin_right {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-right: nth($margin, 5) !important;
+      }
+    }
+  }
+}
+
+//set width for devices
+@mixin set-margin-left($label-margin) {
+
+  //ldpi
+  @media (min-width: 240px) {
+    @each $margin in $margin_left {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-left: nth($margin, 2) !important;
+      }
+    }
+
+  }
+
+  //mdpi
+  @media (min-width: 241px) and (max-width: 320px) {
+    @each $margin in $margin_left {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-left: nth($margin, 3) !important;
+      }
+    }
+
+  }
+
+  //hdpi
+  @media (min-width: 321px) and (max-width: 480px) {
+    @each $margin in $margin_left {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-left: nth($margin, 4) !important;
+      }
+    }
+  }
+
+  //xhdpi
+  @media (min-width: 481px) {
+    @each $margin in $margin_left {
+      $label: nth($margin, 1); // in SASS, list indices begin at 1
+      @if ($label==$label-margin) {
+        margin-left: nth($margin, 5) !important;
+      }
+    }
+  }
+}

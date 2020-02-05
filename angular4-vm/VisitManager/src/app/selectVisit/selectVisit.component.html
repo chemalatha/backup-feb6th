@@ -1,0 +1,5 @@
+<div class="selectVisitView" >
+    <cvm-header [pageTitle]='headerConfig.title' [isHomeBtn]='headerConfig.isHomeBtn' [isBackBtn]='headerConfig.isBackBtn' [isMenuBtn]='headerConfig.isMenuBtn' (homeButtonEvent) = "goHome($event)" (backButtonEvent) = "goBack($event)"></cvm-header>
+    
+    <router-outlet></router-outlet>
+</div>

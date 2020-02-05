@@ -1,0 +1,72 @@
+@import "../../theme/theme.scss";
+
+.safetyOverview {
+  .logistics-sub-header {
+    @include set-padding-top(safetyOverview-padding-top);
+    @include set-padding-bottom(safetyOverview-padding-bottom);
+    @include set-padding-left(safetyOverview-padding-left);
+    @include set-padding-right(safetyOverview-padding-right);
+  }
+  .location-dropDown-container {
+    margin: 0 auto;
+    float: none;
+    .location-dropDown {
+      margin-top: 1.57rem;
+      margin-bottom: 1.57rem;
+      .select {
+        border: 1px solid $cvm-comment-id-color;
+        border-radius: 5px;
+        overflow: hidden;
+        height: 2.85rem;
+        position: relative;
+        display: block;
+      }
+
+      select{
+        //height: 2.85rem;height-p120-t200
+      @include set-Height('height-p120-t200');
+        padding: 0 1.07rem 1.07rem 1.07rem;
+        border: 0;
+        width: 100%;
+        background: $button-text;
+        font-size: 1rem;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+      }
+      .select:after {
+        content:"\52";
+        font-family: "cvm" !important;
+        color: $button-text;
+        padding: 0.85rem 0.57rem;
+        position: absolute; right: 0; top: 0;
+        background: $cvm-comment-id-color;
+        z-index: 1;
+        text-align: center;
+        width: 15%;
+        height: 100%;
+        pointer-events: none;
+        box-sizing: border-box;
+      }
+    }
+  }
+  .location-list {
+    border-top: 1px solid $dark-grey;
+    margin: 0 auto;
+    float: none;
+    .location-list-item {
+      -webkit-box-align: center;
+      align-items: center;
+      border-bottom: 1px solid $dark-grey;
+      padding: 0.7rem;
+      .location-facility-title {
+        @include set-font-size('text-p22-t28-Arial');
+        color: $color-red;
+      }
+      .location-floor {
+        @include set-font-size('text-p30-t36-Arial');
+      }
+    }
+  }
+}
+
